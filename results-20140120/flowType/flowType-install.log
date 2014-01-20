@@ -1,0 +1,34 @@
+Using library at path:
+- "/private/tmp/RcppDepends/flowType.Rcheck"
+* installing *source* package ‘flowType’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"  -IboostIncl -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c countsAndMeans.cpp -o countsAndMeans.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"  -IboostIncl -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c flowType.cpp -o flowType.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"  -IboostIncl -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c numberGenerator.cpp -o numberGenerator.o
+Using library at path:
+- "/private/tmp/RcppDepends/flowType.Rcheck"
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/lib -o flowType.so countsAndMeans.o flowType.o numberGenerator.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+Using library at path:
+- "/private/tmp/RcppDepends/flowType.Rcheck"
+installing to /private/tmp/RcppDepends/flowType.Rcheck/flowType/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+Warning: replacing previous import by ‘graphics::plot’ when loading ‘flowClust’
+Warning: replacing previous import by ‘flowClust::Map’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::normalize’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::sort’ when loading ‘flowMerge’
+Creating a generic function for ‘summary’ from package ‘base’ in package ‘flowType’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Using library at path:
+- "/private/tmp/RcppDepends/flowType.Rcheck"
+Warning: replacing previous import by ‘graphics::plot’ when loading ‘flowClust’
+Warning: replacing previous import by ‘flowClust::Map’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::normalize’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::sort’ when loading ‘flowMerge’
+* DONE (flowType)

@@ -1,0 +1,31 @@
+Using library at path:
+- "/private/tmp/RcppDepends/pcaMethods.Rcheck"
+* installing *source* package ‘pcaMethods’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c nipals.cpp -o nipals.o
+Using library at path:
+- "/private/tmp/RcppDepends/pcaMethods.Rcheck"
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/lib -o pcaMethods.so nipals.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+Using library at path:
+- "/private/tmp/RcppDepends/pcaMethods.Rcheck"
+installing to /private/tmp/RcppDepends/pcaMethods.Rcheck/pcaMethods/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+Creating a new generic function for ‘loadings’ in package ‘pcaMethods’
+Creating a generic function for ‘print’ from package ‘base’ in package ‘pcaMethods’
+Creating a generic function for ‘biplot’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘summary’ from package ‘base’ in package ‘pcaMethods’
+Creating a generic function for ‘predict’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘resid’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘fitted’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘plot’ from package ‘graphics’ in package ‘pcaMethods’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Using library at path:
+- "/private/tmp/RcppDepends/pcaMethods.Rcheck"
+* DONE (pcaMethods)

@@ -1,0 +1,23 @@
+Using library at path:
+- "/private/tmp/RcppDepends/GOSemSim.Rcheck"
+* installing *source* package ‘GOSemSim’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c ICmethod.cpp -o ICmethod.o
+Using library at path:
+- "/private/tmp/RcppDepends/GOSemSim.Rcheck"
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/lib -o GOSemSim.so ICmethod.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+Using library at path:
+- "/private/tmp/RcppDepends/GOSemSim.Rcheck"
+installing to /private/tmp/RcppDepends/GOSemSim.Rcheck/GOSemSim/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Using library at path:
+- "/private/tmp/RcppDepends/GOSemSim.Rcheck"
+* DONE (GOSemSim)

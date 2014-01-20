@@ -1,0 +1,29 @@
+Using library at path:
+- "/private/tmp/RcppDepends/GOSim.Rcheck"
+* installing *source* package ‘GOSim’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"  `/Library/Frameworks/R.framework/Resources/bin/Rscript -e "require(Rcpp); Rcpp:::CxxFlags()"` -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c OAWrapper.cpp -o OAWrapper.o
+Using library at path:
+- "/private/tmp/RcppDepends/GOSim.Rcheck"
+Loading required package: Rcpp
+clang -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c hungarian2.c -o hungarian2.o
+Using library at path:
+- "/private/tmp/RcppDepends/GOSim.Rcheck"
+Loading required package: Rcpp
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/lib -o GOSim.so OAWrapper.o hungarian2.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+Using library at path:
+- "/private/tmp/RcppDepends/GOSim.Rcheck"
+Loading required package: Rcpp
+installing to /private/tmp/RcppDepends/GOSim.Rcheck/GOSim/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Using library at path:
+- "/private/tmp/RcppDepends/GOSim.Rcheck"
+* DONE (GOSim)

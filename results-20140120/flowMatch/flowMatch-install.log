@@ -1,0 +1,822 @@
+Using library at path:
+- "/private/tmp/RcppDepends/flowMatch.Rcheck"
+* installing *source* package ‘flowMatch’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c BipartiteGraph.cpp -o BipartiteGraph.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c MinWghtEdgCoverBipartite.cpp -o MinWghtEdgCoverBipartite.o
+MinWghtEdgCoverBipartite.cpp:326:9: warning: unused variable 'avgSample2TemplateCost' [-Wunused-variable]
+        double avgSample2TemplateCost;
+               ^
+1 warning generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c flowMatch.cpp -o flowMatch.o
+flowMatch.cpp:74:2: error: reference to 'function' is ambiguous
+        function( "computeMEC" , &computeMEC  , "Match clusters across a pair of sample by mixed edge cover algorithm." ) ;
+        ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:28:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(void), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:36:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(void), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:45:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:53:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:62:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:70:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:79:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:87:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:96:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:104:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:113:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:121:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:130:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:138:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:147:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:155:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:164:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:172:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:181:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:189:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:198:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:206:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:215:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:223:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:232:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:240:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:249:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:257:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:266:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:274:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:283:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:291:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:300:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:308:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:317:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:325:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:334:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:342:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:351:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:359:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:368:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:376:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:385:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:393:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:402:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:410:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:419:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:427:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:436:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:444:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:453:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:461:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:470:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:478:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:487:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:495:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:504:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:512:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:521:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:529:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:538:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:546:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:555:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:563:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:572:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:580:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:589:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:597:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:606:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:614:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:623:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:631:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:640:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:648:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:657:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:665:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:674:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:682:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:691:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:699:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:708:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:716:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:725:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:733:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:742:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:750:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:759:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:767:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:776:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:784:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:793:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:801:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:810:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:818:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:827:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:835:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:844:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:852:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:861:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:869:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:878:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:886:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:895:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:903:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:912:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:920:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:929:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:937:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:946:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:954:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:963:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:971:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:980:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:988:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:997:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1005:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1014:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1022:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1031:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1039:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1048:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1056:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1065:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1073:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1082:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1090:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1099:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1107:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1116:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1124:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1133:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63, U64 u64), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1141:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63, U64 u64), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__functional_03:205:44: note: candidate found by name lookup is 'std::__1::function'
+template<class _Fp> class _LIBCPP_TYPE_VIS function; // undefined
+                                           ^
+1 error generated.
+make: *** [flowMatch.o] Error 1
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c flowMatch.cpp -o flowMatch.o
+flowMatch.cpp:74:2: error: reference to 'function' is ambiguous
+        function( "computeMEC" , &computeMEC  , "Match clusters across a pair of sample by mixed edge cover algorithm." ) ;
+        ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:28:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(void), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:36:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(void), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:45:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:53:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:62:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:70:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:79:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:87:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:96:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:104:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:113:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:121:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:130:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:138:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:147:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:155:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:164:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:172:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:181:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:189:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:198:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:206:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:215:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:223:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:232:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:240:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:249:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:257:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:266:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:274:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:283:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:291:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:300:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:308:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:317:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:325:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:334:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:342:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:351:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:359:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:368:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:376:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:385:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:393:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:402:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:410:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:419:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:427:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:436:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:444:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:453:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:461:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:470:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:478:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:487:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:495:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:504:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:512:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:521:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:529:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:538:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:546:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:555:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:563:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:572:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:580:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:589:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:597:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:606:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:614:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:623:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:631:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:640:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:648:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:657:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:665:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:674:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:682:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:691:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:699:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:708:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:716:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:725:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:733:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:742:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:750:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:759:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:767:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:776:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:784:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:793:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:801:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:810:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:818:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:827:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:835:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:844:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:852:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:861:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:869:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:878:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:886:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:895:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:903:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:912:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:920:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:929:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:937:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:946:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:954:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:963:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:971:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:980:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:988:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:997:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1005:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1014:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1022:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1031:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1039:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1048:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1056:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1065:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1073:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1082:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1090:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1099:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1107:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1116:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1124:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1133:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63, U64 u64), const char* docstring = 0){
+     ^
+/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include/Rcpp/module/Module_generated_function.h:1141:6: note: candidate found by name lookup is 'Rcpp::function'
+void function( const char* name_,  OUT (*fun)(U0 u0, U1 u1, U2 u2, U3 u3, U4 u4, U5 u5, U6 u6, U7 u7, U8 u8, U9 u9, U10 u10, U11 u11, U12 u12, U13 u13, U14 u14, U15 u15, U16 u16, U17 u17, U18 u18, U19 u19, U20 u20, U21 u21, U22 u22, U23 u23, U24 u24, U25 u25, U26 u26, U27 u27, U28 u28, U29 u29, U30 u30, U31 u31, U32 u32, U33 u33, U34 u34, U35 u35, U36 u36, U37 u37, U38 u38, U39 u39, U40 u40, U41 u41, U42 u42, U43 u43, U44 u44, U45 u45, U46 u46, U47 u47, U48 u48, U49 u49, U50 u50, U51 u51, U52 u52, U53 u53, U54 u54, U55 u55, U56 u56, U57 u57, U58 u58, U59 u59, U60 u60, U61 u61, U62 u62, U63 u63, U64 u64), Rcpp::List formals, const char* docstring = 0){
+     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__functional_03:205:44: note: candidate found by name lookup is 'std::__1::function'
+template<class _Fp> class _LIBCPP_TYPE_VIS function; // undefined
+                                           ^
+1 error generated.
+make: *** [flowMatch.o] Error 1
+ERROR: compilation failed for package ‘flowMatch’
+* removing ‘/private/tmp/RcppDepends/flowMatch.Rcheck/flowMatch’

@@ -1,0 +1,24 @@
+* using log directory ‘/private/tmp/RcppDepends/mzR.Rcheck’
+* using R Under development (unstable) (2014-01-10 r64727)
+* using platform: x86_64-apple-darwin13.0.0 (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-vignettes’
+* checking for file ‘mzR/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘mzR’ version ‘1.9.3’
+* checking package namespace information ... OK
+* checking package dependencies ... NOTE
+Packages suggested but not available for checking: ‘msdata’ ‘faahKO’
+* checking if this is a source package ... NOTE
+Found the following apparent object files/libraries:
+  src/win/i386/libnetcdf.a src/win/i386/libz.a src/win/x64/libnetcdf.a
+  src/win/x64/libz.a
+Object files/libraries should not be included in a source package.
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘mzR’ can be installed ... ERROR
+Installation failed.
+See ‘/private/tmp/RcppDepends/mzR.Rcheck/00install.out’ for details.

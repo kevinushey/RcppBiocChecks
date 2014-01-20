@@ -1,0 +1,25 @@
+Using library at path:
+- "/private/tmp/RcppDepends/mosaics.Rcheck"
+* installing *source* package ‘mosaics’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c convolution_1S.cpp -o convolution_1S.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c convolution_2S.cpp -o convolution_2S.o
+Using library at path:
+- "/private/tmp/RcppDepends/mosaics.Rcheck"
+Using library at path:
+- "/private/tmp/RcppDepends/mosaics.Rcheck"
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/lib -o mosaics.so convolution_1S.o convolution_2S.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+installing to /private/tmp/RcppDepends/mosaics.Rcheck/mosaics/libs
+** R
+** inst
+** preparing package for lazy loading
+Creating a generic function for ‘print’ from package ‘base’ in package ‘mosaics’
+Creating a generic function for ‘plot’ from package ‘graphics’ in package ‘mosaics’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Using library at path:
+- "/private/tmp/RcppDepends/mosaics.Rcheck"
+* DONE (mosaics)

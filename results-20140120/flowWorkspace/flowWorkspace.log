@@ -1,0 +1,109 @@
+* using log directory ‘/private/tmp/RcppDepends/flowWorkspace.Rcheck’
+* using R Under development (unstable) (2014-01-10 r64727)
+* using platform: x86_64-apple-darwin13.0.0 (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-vignettes’
+* checking for file ‘flowWorkspace/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘flowWorkspace’ version ‘3.9.45’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... NOTE
+Found the following apparent object files/libraries:
+  inst/lib/libflowWorkspace.so
+Object files/libraries should not be included in a source package.
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘flowWorkspace’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is 57.0Mb
+  sub-directories of 1Mb or more:
+    lib   47.7Mb
+    libs   8.4Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Packages listed in more than one of Depends, Imports, Suggests, Enhances:
+  ‘graph’ ‘Biobase’ ‘gridExtra’
+A package should be listed in only one of these fields.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... NOTE
+Namespaces in Imports field not imported from:
+  ‘Cairo’ ‘IDPmisc’ ‘RBGL’ ‘graphics’ ‘hexbin’
+  All declared Imports should be used.
+Package in Depends field not imported from: ‘Rcpp’
+  These packages need to be imported from for the case when
+  this namespace is loaded but not attached.
+Unexported objects imported by ‘:::’ calls:
+  ‘flowCore:::checkClass’ ‘flowCore:::copyFlowSet’ ‘flowCore:::guid’
+  ‘graph:::.makeEdgeKeys’ ‘lattice:::updateList’
+  ‘ncdfFlow:::.isValidSamples’ ‘stats:::.splinefun’
+  See the note in ?`:::` about the use of this operator.
+There are ::: calls to the package's namespace in its code. A package
+  almost never needs to use ::: for its own objects:
+  ‘.getKeyword’ ‘.load_gs’ ‘.uuid_gen’ ‘trimWhiteSpace’
+See the information on DESCRIPTION files in the chapter ‘Creating R
+packages’ of the ‘Writing R Extensions’ manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+.getTransformations : <anonymous> : f: no visible binding for global
+  variable ‘max_val’
+.getTransformations : <anonymous> : f: no visible binding for global
+  variable ‘decade’
+.getTransformations : <anonymous> : f: no visible binding for global
+  variable ‘min_val’
+.getTransformations : <anonymous>: multiple local function definitions
+  for ‘f’ with different formal arguments
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking compiled code ... NOTE
+File ‘/private/tmp/RcppDepends/flowWorkspace.Rcheck/flowWorkspace/libs/flowWorkspace.so’:
+  Found ‘__ZNSt3__14coutE’, possibly from ‘std::cout’ (C++)
+    Objects: ‘GatingHierarchy.o’, ‘GatingSet.o’, ‘flowJoWorkspace.o’,
+      ‘gate.o’, ‘macFlowJoWorkspace.o’, ‘nodeProperties.o’,
+      ‘transformation.o’, ‘winFlowJoWorkspace.o’, ‘workspace.o’
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console.
+
+See ‘Writing portable packages’ in the ‘Writing R Extensions’ manual.
+* checking sizes of PDF files under ‘inst/doc’ ... OK
+* checking installed files from ‘inst/doc’ ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in tests ... OK
+* checking tests ...
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ... SKIPPED
+* checking re-building of vignette outputs ... SKIPPED
+NOTE: There were 6 notes.
+See
+  ‘/private/tmp/RcppDepends/flowWorkspace.Rcheck/00check.log’
+for details.

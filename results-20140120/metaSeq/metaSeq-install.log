@@ -1,0 +1,15 @@
+Using library at path:
+- "/private/tmp/RcppDepends/metaSeq.Rcheck"
+* installing *source* package ‘metaSeq’ ...
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Using library at path:
+- "/private/tmp/RcppDepends/metaSeq.Rcheck"
+* DONE (metaSeq)

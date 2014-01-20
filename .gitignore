@@ -1,0 +1,5 @@
+*.Rcheck
+lib
+results
+logs
+tarballs

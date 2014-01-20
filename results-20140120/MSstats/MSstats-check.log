@@ -1,0 +1,13 @@
+* using log directory ‘/private/tmp/RcppDepends/MSstats.Rcheck’
+* using R Under development (unstable) (2014-01-10 r64727)
+* using platform: x86_64-apple-darwin13.0.0 (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-vignettes’
+* checking for file ‘MSstats/DESCRIPTION’ ... OK
+* this is package ‘MSstats’ version ‘2.1.3’
+* checking package namespace information ... OK
+* checking package dependencies ... ERROR
+Package required but not available: ‘MSnbase’
+
+See the information on DESCRIPTION files in the chapter ‘Creating R
+packages’ of the ‘Writing R Extensions’ manual.

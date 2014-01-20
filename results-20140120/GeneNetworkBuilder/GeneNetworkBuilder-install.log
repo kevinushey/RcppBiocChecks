@@ -1,0 +1,114 @@
+Using library at path:
+- "/private/tmp/RcppDepends/GeneNetworkBuilder.Rcheck"
+* installing *source* package ‘GeneNetworkBuilder’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c geneTree.cpp -o geneTree.o
+In file included from geneTree.cpp:10:
+In file included from ./geneTree.h:16:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:421:17: error: no matching function for call to object of type 'const cmp_ch'
+        {return static_cast<const _Compare&>(*this)(__x.first, __y);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__tree:2085:14: note: in instantiation of member function 'std::__1::__map_value_compare<const char *, node *, cmp_ch, true>::operator()' requested here
+        if (!value_comp()(__root->__value_, __v))
+             ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__tree:2011:20: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::pair<const char *, node *>, std::__1::__map_value_compare<const char *, node *, cmp_ch, true>, std::__1::allocator<std::__1::pair<const char *, node *> > >::__lower_bound<const char *>' requested here
+    iterator __p = __lower_bound(__v, __root(), __end_node());
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:950:68: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::pair<const char *, node *>, std::__1::__map_value_compare<const char *, node *, cmp_ch, true>, std::__1::allocator<std::__1::pair<const char *, node *> > >::find<const char *>' requested here
+    iterator find(const key_type& __k)             {return __tree_.find(__k);}
+                                                                   ^
+geneTree.cpp:102:14: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::find' requested here
+        it=nodelist.find(s);
+                    ^
+geneTree.cpp:30:14: note: candidate function not viable: 'this' argument has type 'const cmp_ch', but method is not marked const
+bool cmp_ch::operator()(const char* a, const char* b){
+             ^
+In file included from geneTree.cpp:10:
+In file included from ./geneTree.h:16:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:427:17: error: no matching function for call to object of type 'const cmp_ch'
+        {return static_cast<const _Compare&>(*this)(__x, __y.first);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__tree:2012:26: note: in instantiation of member function 'std::__1::__map_value_compare<const char *, node *, cmp_ch, true>::operator()' requested here
+    if (__p != end() && !value_comp()(__v, *__p))
+                         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:950:68: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::pair<const char *, node *>, std::__1::__map_value_compare<const char *, node *, cmp_ch, true>, std::__1::allocator<std::__1::pair<const char *, node *> > >::find<const char *>' requested here
+    iterator find(const key_type& __k)             {return __tree_.find(__k);}
+                                                                   ^
+geneTree.cpp:102:14: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::find' requested here
+        it=nodelist.find(s);
+                    ^
+geneTree.cpp:30:14: note: candidate function not viable: 'this' argument has type 'const cmp_ch', but method is not marked const
+bool cmp_ch::operator()(const char* a, const char* b){
+             ^
+In file included from geneTree.cpp:10:
+In file included from ./geneTree.h:16:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:1032:17: error: no matching function for call to object of type 'const cmp_ch'
+            if (__tree_.value_comp().key_comp()(__k, __nd->__value_.first))
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:1272:36: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::__find_equal_key' requested here
+    __node_base_pointer& __child = __find_equal_key(__parent, __k);
+                                   ^
+geneTree.cpp:143:13: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::operator[]' requested here
+                                nodelist[n->name] = n;
+                                        ^
+geneTree.cpp:30:14: note: candidate function not viable: 'this' argument has type 'const cmp_ch', but method is not marked const
+bool cmp_ch::operator()(const char* a, const char* b){
+             ^
+3 errors generated.
+make: *** [geneTree.o] Error 1
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c geneTree.cpp -o geneTree.o
+In file included from geneTree.cpp:10:
+In file included from ./geneTree.h:16:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:421:17: error: no matching function for call to object of type 'const cmp_ch'
+        {return static_cast<const _Compare&>(*this)(__x.first, __y);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__tree:2085:14: note: in instantiation of member function 'std::__1::__map_value_compare<const char *, node *, cmp_ch, true>::operator()' requested here
+        if (!value_comp()(__root->__value_, __v))
+             ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__tree:2011:20: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::pair<const char *, node *>, std::__1::__map_value_compare<const char *, node *, cmp_ch, true>, std::__1::allocator<std::__1::pair<const char *, node *> > >::__lower_bound<const char *>' requested here
+    iterator __p = __lower_bound(__v, __root(), __end_node());
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:950:68: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::pair<const char *, node *>, std::__1::__map_value_compare<const char *, node *, cmp_ch, true>, std::__1::allocator<std::__1::pair<const char *, node *> > >::find<const char *>' requested here
+    iterator find(const key_type& __k)             {return __tree_.find(__k);}
+                                                                   ^
+geneTree.cpp:102:14: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::find' requested here
+        it=nodelist.find(s);
+                    ^
+geneTree.cpp:30:14: note: candidate function not viable: 'this' argument has type 'const cmp_ch', but method is not marked const
+bool cmp_ch::operator()(const char* a, const char* b){
+             ^
+In file included from geneTree.cpp:10:
+In file included from ./geneTree.h:16:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:427:17: error: no matching function for call to object of type 'const cmp_ch'
+        {return static_cast<const _Compare&>(*this)(__x, __y.first);}
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/__tree:2012:26: note: in instantiation of member function 'std::__1::__map_value_compare<const char *, node *, cmp_ch, true>::operator()' requested here
+    if (__p != end() && !value_comp()(__v, *__p))
+                         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:950:68: note: in instantiation of function template specialization 'std::__1::__tree<std::__1::pair<const char *, node *>, std::__1::__map_value_compare<const char *, node *, cmp_ch, true>, std::__1::allocator<std::__1::pair<const char *, node *> > >::find<const char *>' requested here
+    iterator find(const key_type& __k)             {return __tree_.find(__k);}
+                                                                   ^
+geneTree.cpp:102:14: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::find' requested here
+        it=nodelist.find(s);
+                    ^
+geneTree.cpp:30:14: note: candidate function not viable: 'this' argument has type 'const cmp_ch', but method is not marked const
+bool cmp_ch::operator()(const char* a, const char* b){
+             ^
+In file included from geneTree.cpp:10:
+In file included from ./geneTree.h:16:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:1032:17: error: no matching function for call to object of type 'const cmp_ch'
+            if (__tree_.value_comp().key_comp()(__k, __nd->__value_.first))
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1/map:1272:36: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::__find_equal_key' requested here
+    __node_base_pointer& __child = __find_equal_key(__parent, __k);
+                                   ^
+geneTree.cpp:143:13: note: in instantiation of member function 'std::__1::map<const char *, node *, cmp_ch, std::__1::allocator<std::__1::pair<const char *const, node *> > >::operator[]' requested here
+                                nodelist[n->name] = n;
+                                        ^
+geneTree.cpp:30:14: note: candidate function not viable: 'this' argument has type 'const cmp_ch', but method is not marked const
+bool cmp_ch::operator()(const char* a, const char* b){
+             ^
+3 errors generated.
+make: *** [geneTree.o] Error 1
+ERROR: compilation failed for package ‘GeneNetworkBuilder’
+* removing ‘/private/tmp/RcppDepends/GeneNetworkBuilder.Rcheck/GeneNetworkBuilder’

@@ -1,0 +1,401 @@
+Using library at path:
+- "/private/tmp/RcppDepends/mzR.Rcheck"
+* installing *source* package ‘mzR’ ...
+** libs
+rm -f cramp.o  ramp_base64.o  ramp.o  RcppRamp.o RcppRampModule.o rnetCDF.o ./boost/system/src/error_code.o ./boost/regex/src/posix_api.o ./boost/regex/src/fileiter.o ./boost/regex/src/regex_raw_buffer.o ./boost/regex/src/cregex.o ./boost/regex/src/regex_debug.o ./boost/regex/src/instances.o ./boost/regex/src/icu.o ./boost/regex/src/usinstances.o ./boost/regex/src/regex.o ./boost/regex/src/wide_posix_api.o ./boost/regex/src/regex_traits_defaults.o ./boost/regex/src/winstances.o ./boost/regex/src/wc_regex_traits.o ./boost/regex/src/c_regex_traits.o ./boost/regex/src/cpp_regex_traits.o ./boost/regex/src/static_mutex.o ./boost/regex/src/w32_regex_traits.o ./pwiz/data/msdata/Version.o ./pwiz/utility/minimxml/XMLWriter.o ./pwiz/utility/minimxml/SAXParser.o ./boost/iostreams/src/zlib.o ./boost/thread/src/pthread/once.o ./boost/filesystem/src/operations.o ./pwiz/data/common/MemoryIndex.o ./pwiz/data/common/CVTranslator.o ./pwiz/data/common/cv.o ./pwiz/data/common/ParamTypes.o ./pwiz/data/common/BinaryIndexStream.o ./pwiz/data/common/diff_std.o ./pwiz/data/msdata/SpectrumList_MGF.o ./pwiz/data/msdata/DefaultReaderList.o ./pwiz/data/msdata/ChromatogramList_mzML.o ./pwiz/data/msdata/examples.o ./pwiz/data/msdata/Serializer_mzML.o ./pwiz/data/msdata/Serializer_MSn.o ./pwiz/data/msdata/Reader.o ./pwiz/data/msdata/Serializer_MGF.o ./pwiz/data/msdata/Serializer_mzXML.o ./pwiz/data/msdata/SpectrumList_mzML.o ./pwiz/data/msdata/SpectrumList_MSn.o ./pwiz/data/msdata/BinaryDataEncoder.o ./pwiz/data/msdata/Diff.o ./pwiz/data/msdata/MSData.o ./pwiz/data/msdata/References.o ./pwiz/data/msdata/SpectrumList_mzXML.o ./pwiz/data/msdata/IO.o ./pwiz/data/msdata/SpectrumList_BTDX.o ./pwiz/data/msdata/SpectrumInfo.o ./pwiz/data/msdata/RAMPAdapter.o ./pwiz/data/msdata/LegacyAdapter.o ./pwiz/data/msdata/SpectrumIterator.o ./pwiz/data/msdata/MSDataFile.o ./pwiz/data/msdata/SpectrumListCache.o ./pwiz/utility/misc/IntegerSet.o ./pwiz/utility/misc/Base64.o ./pwiz/utility/misc/IterationListener.o ./pwiz/utility/misc/MSIHandler.o ./pwiz/utility/misc/Filesystem.o ./pwiz/utility/misc/TabReader.o ./pwiz/utility/misc/random_access_compressed_ifstream.o ./pwiz/utility/misc/SHA1.o ./pwiz/utility/misc/SHA1Calculator.o ./pwiz/utility/misc/sha1calc.o ./random_access_gzFile.o rampR.o
+find . -name \*~ -exec rm {} \;   ## from cleanup
+find . -name \*.o -exec rm {} \;  ## from cleanup
+find . -name "#*#" -exec rm {} \; ## from cleanup
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c cramp.cpp -o cramp.o
+cramp.cpp:4:1: warning: '/*' within block comment [-Wcomment]
+/***************************************************************************
+^
+In file included from cramp.cpp:40:
+./cramp.h:236:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampScanInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:236:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+./cramp.h:283:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampRunInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:283:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+cramp.cpp:60:25: warning: field 'm_declaredScansOnly' will be initialized after field 'm_runInfo' [-Wreorder]
+  m_filename(fileName), m_declaredScansOnly(declaredScansOnly), m_runInfo()
+                        ^
+cramp.cpp:288:95: warning: while loop has empty body [-Wempty-body]
+        while (++m_currentScan <= m_cramp.getLastScan() && m_cramp.getScanOffset(m_currentScan) <= 0);
+                                                                                                     ^
+cramp.cpp:288:95: note: put the semicolon on a separate line to silence this warning
+5 warnings generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c ramp_base64.cpp -o ramp_base64.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c ramp.cpp -o ramp.o
+ramp.cpp:214:18: warning: unused variable 'fgot' [-Wunused-variable]
+           char *fgot=ramp_fgets(buf,sizeof(buf)-1,result);
+                 ^
+ramp.cpp:397:11: warning: unused variable 'nread' [-Wunused-variable]
+   size_t nread = ramp_fread(indexOffsetTemp, sizeof(indexOffsetTemp), pFI);
+          ^
+ramp.cpp:576:22: warning: unused variable 'fgot' [-Wunused-variable]
+               char *fgot=ramp_fgets(buf, SIZE_BUF, pFI);
+                     ^
+ramp.cpp:612:22: warning: unused variable 'fgot' [-Wunused-variable]
+               char *fgot=ramp_fgets(buf, SIZE_BUF, pFI);
+                     ^
+ramp.cpp:648:19: warning: unused variable 'fgot' [-Wunused-variable]
+            char *fgot=ramp_fgets(buf, SIZE_BUF, pFI);
+                  ^
+ramp.cpp:1227:22: warning: unused variable 'fgot' [-Wunused-variable]
+               char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+                     ^
+ramp.cpp:1305:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+            ^
+ramp.cpp:1301:10: warning: unused variable 'fgot' [-Wunused-variable]
+   char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+         ^
+ramp.cpp:1799:23: warning: unused variable 'nread' [-Wunused-variable]
+               size_t nread = ramp_fread(pData+partial,(int)(peaksLen-partial), pFI);
+                      ^
+ramp.cpp:1972:21: warning: unused variable 'fgot' [-Wunused-variable]
+              char *fgot=ramp_fgets(buf, sizeof(buf)-1 , pFI);
+                    ^
+ramp.cpp:2016:17: warning: unused variable 'nread' [-Wunused-variable]
+         size_t nread = ramp_fread(pData+partial,peaksLen-partial, pFI);
+                ^
+ramp.cpp:1897:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(buf, sizeof(buf)-1, pFI);
+            ^
+ramp.cpp:2174:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+            ^
+ramp.cpp:2194:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+            ^
+ramp.cpp:2170:10: warning: unused variable 'fgot' [-Wunused-variable]
+   char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+         ^
+ramp.cpp:2336:16: warning: unused variable 'fgot' [-Wunused-variable]
+         char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+               ^
+ramp.cpp:2372:15: warning: unused variable 'fgot' [-Wunused-variable]
+        char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+              ^
+ramp.cpp:2326:10: warning: unused variable 'fgot' [-Wunused-variable]
+   char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+         ^
+18 warnings generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c RcppRamp.cpp -o RcppRamp.o
+In file included from RcppRamp.cpp:1:
+In file included from ./RcppRamp.h:4:
+./cramp.h:236:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampScanInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:236:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+./cramp.h:283:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampRunInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:283:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+RcppRamp.cpp:170:21: warning: unused variable 'info' [-Wunused-variable]
+      rampScanInfo *info = ramp->getScanHeaderInfo( 1 );
+                    ^
+3 warnings generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c RcppRampModule.cpp -o RcppRampModule.o
+In file included from RcppRampModule.cpp:2:
+In file included from ./RcppRamp.h:4:
+./cramp.h:236:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampScanInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:236:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+./cramp.h:283:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampRunInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:283:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+2 warnings generated.
+clang -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c rnetCDF.c -o rnetCDF.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/system/src/error_code.cpp -o boost/system/src/error_code.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/posix_api.cpp -o boost/regex/src/posix_api.o
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:149:9: error: too few template arguments for class template 'vector'
+   std::vector<name> m_sub_names;
+        ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:131:21: error: too few template arguments for class template 'vector'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                    ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:131:35: error: expected a qualified name after 'typename'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                                  ^
+./boost/regex/v4/basic_regex.hpp:131:35: error: unknown type name 'const_iterator'
+./boost/regex/v4/basic_regex.hpp:141:21: error: too few template arguments for class template 'vector'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                    ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:141:35: error: expected a qualified name after 'typename'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                                  ^
+./boost/regex/v4/basic_regex.hpp:141:35: error: unknown type name 'const_iterator'
+./boost/regex/v4/basic_regex.hpp:163:12: error: too few template arguments for class template 'vector'
+      std::vector<Other> v;
+           ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:228:9: error: too few template arguments for class template 'vector'
+   std::vector<
+        ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:269:9: error: too few template arguments for class template 'basic_string'
+   std::basic_string<charT> BOOST_REGEX_CALL str()const
+        ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:271:12: error: too few template arguments for class template 'basic_string'
+      std::basic_string<charT> result;
+           ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:273:24: error: too few template arguments for class template 'basic_string'
+         result = std::basic_string<charT>(this->m_expression, this->m_expression_len);
+                       ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:285:68: error: implicit instantiation of undefined template 'std::pair<unsigned long, unsigned long>'
+      std::pair<const_iterator, const_iterator> p(expression() + pi.first, expression() + pi.second);
+                                                                   ^
+./boost/detail/container_fwd.hpp:92:42: note: template is declared here
+    template <class T1, class T2> struct pair;
+                                         ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:527:9: error: too few template arguments for class template 'basic_string'
+   std::basic_string<charT> BOOST_REGEX_CALL str()const
+        ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:529:52: error: too few template arguments for class template 'basic_string'
+      return m_pimpl.get() ? m_pimpl->str() : std::basic_string<charT>();
+                                                   ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:140:26: error: too few template arguments for class template 'vector'
+   typedef typename std::vector<digraph_type>::const_iterator  list_iterator;
+                         ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:140:48: error: expected a qualified name after 'typename'
+   typedef typename std::vector<digraph_type>::const_iterator  list_iterator;
+                                               ^
+./boost/regex/v4/basic_regex_creator.hpp:140:62: error: expected ';' at end of declaration list
+   typedef typename std::vector<digraph_type>::const_iterator  list_iterator;
+                                                             ^
+                                                             ;
+./boost/regex/v4/basic_regex_creator.hpp:141:4: error: unknown type name 'list_iterator'
+   list_iterator singles_begin()const
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [boost/regex/src/posix_api.o] Error 1
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/posix_api.cpp -o boost/regex/src/posix_api.o
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:149:9: error: too few template arguments for class template 'vector'
+   std::vector<name> m_sub_names;
+        ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:131:21: error: too few template arguments for class template 'vector'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                    ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:131:35: error: expected a qualified name after 'typename'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                                  ^
+./boost/regex/v4/basic_regex.hpp:131:35: error: unknown type name 'const_iterator'
+./boost/regex/v4/basic_regex.hpp:141:21: error: too few template arguments for class template 'vector'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                    ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:141:35: error: expected a qualified name after 'typename'
+      typename std::vector<name>::const_iterator pos = std::lower_bound(m_sub_names.begin(), m_sub_names.end(), t);
+                                  ^
+./boost/regex/v4/basic_regex.hpp:141:35: error: unknown type name 'const_iterator'
+./boost/regex/v4/basic_regex.hpp:163:12: error: too few template arguments for class template 'vector'
+      std::vector<Other> v;
+           ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:228:9: error: too few template arguments for class template 'vector'
+   std::vector<
+        ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:269:9: error: too few template arguments for class template 'basic_string'
+   std::basic_string<charT> BOOST_REGEX_CALL str()const
+        ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:271:12: error: too few template arguments for class template 'basic_string'
+      std::basic_string<charT> result;
+           ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:273:24: error: too few template arguments for class template 'basic_string'
+         result = std::basic_string<charT>(this->m_expression, this->m_expression_len);
+                       ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:285:68: error: implicit instantiation of undefined template 'std::pair<unsigned long, unsigned long>'
+      std::pair<const_iterator, const_iterator> p(expression() + pi.first, expression() + pi.second);
+                                                                   ^
+./boost/detail/container_fwd.hpp:92:42: note: template is declared here
+    template <class T1, class T2> struct pair;
+                                         ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:527:9: error: too few template arguments for class template 'basic_string'
+   std::basic_string<charT> BOOST_REGEX_CALL str()const
+        ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+./boost/regex/v4/basic_regex.hpp:529:52: error: too few template arguments for class template 'basic_string'
+      return m_pimpl.get() ? m_pimpl->str() : std::basic_string<charT>();
+                                                   ^
+./boost/detail/container_fwd.hpp:63:65: note: template is declared here
+    template <class charT, class traits, class Allocator> class basic_string;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:140:26: error: too few template arguments for class template 'vector'
+   typedef typename std::vector<digraph_type>::const_iterator  list_iterator;
+                         ^
+./boost/detail/container_fwd.hpp:82:47: note: template is declared here
+    template <class T, class Allocator> class vector;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:140:48: error: expected a qualified name after 'typename'
+   typedef typename std::vector<digraph_type>::const_iterator  list_iterator;
+                                               ^
+./boost/regex/v4/basic_regex_creator.hpp:140:62: error: expected ';' at end of declaration list
+   typedef typename std::vector<digraph_type>::const_iterator  list_iterator;
+                                                             ^
+                                                             ;
+./boost/regex/v4/basic_regex_creator.hpp:141:4: error: unknown type name 'list_iterator'
+   list_iterator singles_begin()const
+   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [boost/regex/src/posix_api.o] Error 1
+ERROR: compilation failed for package ‘mzR’
+* removing ‘/private/tmp/RcppDepends/mzR.Rcheck/mzR’

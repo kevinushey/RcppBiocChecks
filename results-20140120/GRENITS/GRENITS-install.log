@@ -1,0 +1,60 @@
+Using library at path:
+- "/private/tmp/RcppDepends/GRENITS.Rcheck"
+* installing *source* package ‘GRENITS’ ...
+** libs
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c AR1_Gauss_biocond.cc -o AR1_Gauss_biocond.o
+AR1_Gauss_biocond.cc:49:30: warning: unused variable 'numDiag' [-Wunused-variable]
+  int           num_fixedON, numDiag, p_sqr, free_gammas;
+                             ^
+1 warning generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c AR1_Student_biocond.cc -o AR1_Student_biocond.o
+AR1_Student_biocond.cc:49:30: warning: unused variable 'numDiag' [-Wunused-variable]
+  int           num_fixedON, numDiag, p_sqr, free_gammas;
+                             ^
+1 warning generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c AR1_biocond.cc -o AR1_biocond.o
+AR1_biocond.cc:48:30: warning: unused variable 'numDiag' [-Wunused-variable]
+  int           num_fixedON, numDiag, p_sqr, free_gammas;
+                             ^
+1 warning generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c PSplines_biocond.cc -o PSplines_biocond.o
+PSplines_biocond.cc:45:63: warning: unused variable 'numDiag' [-Wunused-variable]
+  int                 num_fixedON, nodesSpline, degreeSpline, numDiag, free_gammas;
+                                                              ^
+1 warning generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c R_C_interface.cpp -o R_C_interface.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c ReadMCMCFiles.cpp -o ReadMCMCFiles.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c commonFunctions.cc -o commonFunctions.o
+commonFunctions.cc:440:59: warning: unused variable 'num_on' [-Wunused-variable]
+  unsigned int                                            num_on;
+                                                          ^
+commonFunctions.cc:482:59: warning: unused variable 'num_on' [-Wunused-variable]
+  unsigned int                                            num_on;
+                                                          ^
+2 warnings generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c functionsErrorModel.cc -o functionsErrorModel.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c matrixManipulationFunctions.cc -o matrixManipulationFunctions.o
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c updateFunctions_AR1.cc -o updateFunctions_AR1.o
+updateFunctions_AR1.cc:264:59: warning: unused variable 'num_on' [-Wunused-variable]
+  unsigned int                                            num_on;  
+                                                          ^
+1 warning generated.
+clang++ -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/Rcpp/include" -I"/Library/Frameworks/R.framework/Versions/3.1/Resources/library/RcppArmadillo/include"   -fPIC  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c updateFunctions_Splines.cc -o updateFunctions_Splines.o
+Using library at path:
+- "/private/tmp/RcppDepends/GRENITS.Rcheck"
+clang++ -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/lib -o GRENITS.so AR1_Gauss_biocond.o AR1_Student_biocond.o AR1_biocond.o PSplines_biocond.o R_C_interface.o ReadMCMCFiles.o commonFunctions.o functionsErrorModel.o matrixManipulationFunctions.o updateFunctions_AR1.o updateFunctions_Splines.o -L/usr/local/opt/lapack/lib -llapack -L/usr/local/opt/openblas/lib -lopenblas -L/usr/local/Cellar/gfortran/4.8.2/gfortran/lib/gcc/x86_64-apple-darwin12.5.0/4.8.2 -L/usr/local/Cellar/gfortran/4.8.2/gfortran/lib -lgfortran -lquadmath -lm -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+Using library at path:
+- "/private/tmp/RcppDepends/GRENITS.Rcheck"
+installing to /private/tmp/RcppDepends/GRENITS.Rcheck/GRENITS/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Using library at path:
+- "/private/tmp/RcppDepends/GRENITS.Rcheck"
+* DONE (GRENITS)
