@@ -1,4 +1,4 @@
-Rcpp Biocondcutor Check Logs
+Rcpp Bioconductor Check Logs
 ============================
 
 Constructed on 2014-01-22 16:00:58
