@@ -1,0 +1,16 @@
+* installing *source* package ‘GeneNetworkBuilder’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c geneTree.cpp -o geneTree.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c nodefilter.cpp -o nodefilter.o
+clang++ -shared -L/usr/local/lib -o GeneNetworkBuilder.so geneTree.o nodefilter.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/GeneNetworkBuilder.Rcheck/GeneNetworkBuilder/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (GeneNetworkBuilder)

@@ -1,0 +1,18 @@
+* installing *source* package ‘pRoloc’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pRoloc.cpp -o pRoloc.o
+clang++ -shared -L/usr/local/lib -o pRoloc.so pRoloc.o -L/usr/lib/lapack -llapack -L/usr/lib/openblas-base -lopenblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/pRoloc.Rcheck/pRoloc/libs
+** R
+** inst
+** preparing package for lazy loading
+Warning: replacing previous import by ‘MLInterfaces::plot’ when loading ‘pRoloc’
+Warning: replacing previous import by ‘scales::alpha’ when loading ‘pRoloc’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Warning: replacing previous import by ‘MLInterfaces::plot’ when loading ‘pRoloc’
+Warning: replacing previous import by ‘scales::alpha’ when loading ‘pRoloc’
+* DONE (pRoloc)

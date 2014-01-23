@@ -1,0 +1,20 @@
+* installing *source* package ‘flowMatch’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c BipartiteGraph.cpp -o BipartiteGraph.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c MinWghtEdgCoverBipartite.cpp -o MinWghtEdgCoverBipartite.o
+MinWghtEdgCoverBipartite.cpp:326:9: warning: unused variable 'avgSample2TemplateCost' [-Wunused-variable]
+        double avgSample2TemplateCost;
+               ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c flowMatch.cpp -o flowMatch.o
+clang++ -shared -L/usr/local/lib -o flowMatch.so BipartiteGraph.o MinWghtEdgCoverBipartite.o flowMatch.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/flowMatch.Rcheck/flowMatch/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (flowMatch)

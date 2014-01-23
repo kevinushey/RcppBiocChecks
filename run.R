@@ -1,14 +1,19 @@
 #!/usr/bin/r
 
 ## set to TRUE if you want to force updates
+setwd("~/RcppBiocChecks")
 forceUpdate <- FALSE
+
+if (!require(BiocInstaller)) {
+  source("http://bioconductor.org/biocLite.R")
+  biocLite()
+}
 
 cat("Started at ", format(Sys.time()), "\n")
 #library(parallel)
 
-## use a test-local directory, install Rcpp, RcppArmadillo, ... there
-## this will work for sub-shells such as the ones started by system() below
-lib <- "/tmp/RcppDepends/lib"
+## use a directory where we can preserve downloads, etc. across runs
+lib <- "~/RcppBiocChecks/libs"
 Sys.setenv("R_LIBS_USER"=lib)
 Sys.setenv("_R_CHECK_FORCE_SUGGESTS_"=0)
 
@@ -21,58 +26,62 @@ countBioc <- function(vers="release") {
   rcpp <- inEdges("Rcpp", deps)
   return(rcpp[[1]])
 }
-
-setwd("/tmp/RcppDepends")
-
 AP.BioC <- union( countBioc("2.14"), countBioc("release") )
 res <- data.frame(pkg=AP.BioC, res=NA)
+
+## install the flow infrastructure mess
+get <- function(x, ...) {
+  biocLite(x, suppressUpdates=TRUE, lib=lib, destdir=normalizePath("tarballs"))
+}
 
 #for (pi in 1:nrow(res)) {
 #lres <- mclapply(1:nrow(res), mc.cores = 4, FUN=function(pi) {
 exit_codes <- lapply(AP.BioC, function(p) {
-  
-  tarballs <- sort( list.files("tarballs", full.names=TRUE, pattern=p) )
-  
+
   if (forceUpdate) {
-    biocLite(p, suppressUpdates=TRUE, lib=lib, destdir=normalizePath("tarballs"))
+    get(p)
   }
-  
-  if (length(tarballs)) {
-    tarball <- tarballs[1]
-  } else {
-    cat("No tarball available for package", p, "\n")
-    return( setNames(NA, p) )
+
+  tarballs <- sort( list.files("tarballs", full.names=TRUE, pattern=p) )
+
+  if (!length(tarballs)) {
+    cat("No tarball available for package", p, "; trying to download...\n", sep="")
+    get(p)
   }
-  
+
+  tarballs <- sort( list.files("tarballs", full.names=TRUE, pattern=p) )
+  tarball <- tarballs[1]
+  cat("Using tarball '", tarball, "' for installation.\n", sep="")
+
   pkg <- gsub(".*/", "", tarball)
   pkg <- gsub("\\.tar\\.gz", "", pkg)
   cat("Starting check for package '", p, "'.\n", sep="")
   rc <- system(paste("R CMD check --no-manual --no-vignettes ", tarball, " > ", "logs/", pkg, ".log", sep=""))
+  time <- strftime( Sys.time() )
   if (rc == 0) {
-    cat("Package '", p, "' checked successfully at ", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".\n\n", sep="")
+    cat("Package '", p, "' checked successfully at ", time, ".\n\n", sep="")
   } else {
-    cat("Package '", p, "' failed R CMD check at ", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".\n\n", sep="")
+    cat("Package '", p, "' failed R CMD check at ", time, ".\n\n", sep="")
   }
   return( setNames(rc, p) )
 })
 
 res <- data.frame(
-  pkg=lapply(res, names),
-  code=unlist(res)
+  pkg=sapply(exit_codes, names),
+  code=unname( unlist( exit_codes ) )
 )
 
 logs <- list.files("logs")
 
-res <- do.call(rbind, lres)
 print(res)
 write.table(res, file=paste("results/result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".txt", sep=""), sep=",")
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 cat("Ended at ", format(Sys.time()), "\n")
 
 ## Collate all the most relevant results into a nice repository
-lapply(AP.BioC, function(pkg) {
+res <- lapply(AP.BioC, function(pkg) {
   dir.create( file.path("results", pkg), showWarnings=FALSE, recursive=TRUE )
-  
+
   ## copy the log file
   pkg_logs <- sort(list.files("logs", pattern=pkg, full.names=TRUE))
   if (length(pkg_logs)) {
@@ -80,7 +89,7 @@ lapply(AP.BioC, function(pkg) {
     filename <- gsub(".*/(.*)_.*", "\\1", pkg_log)
     file.copy(pkg_log, file.path("results", pkg, paste0(filename, ".log")), overwrite=TRUE)
   }
-  
+
   ## copy relevant output from R CMD check, if available
   Rcheck <- paste0(pkg, ".Rcheck")
   dest <- file.path("results", pkg, Rcheck)
@@ -90,13 +99,13 @@ lapply(AP.BioC, function(pkg) {
     if (file.exists(install.log)) {
       file.copy(install.log, file.path("results", pkg, paste0(pkg, "-install.log")), overwrite=TRUE)
     }
-    
+
     check.log <- file.path(Rcheck, "00check.log")
     if (file.exists(check.log)) {
       file.copy(check.log, file.path("results", pkg, paste0(pkg, "-check.log")), overwrite=TRUE)
     }
   }
-  
+
 })
 
 ## Construct a README.md file containinga summary for each package

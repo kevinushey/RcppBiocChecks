@@ -1,0 +1,470 @@
+* installing *source* package ‘flowWorkspace’ ...
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for size_t... yes
+configure: setting xml2 flags...
+configure: No directory was specified for --with-xml2. Trying to find xml2 using other methods.
+checking for xml2-config... /usr/bin/xml2-config
+configure: No directory was specified for --with-boost. Using bundled boost.
+found  bst  header sources and tar archive;using what is there.
+configure: Using the following compilation and linking flags for flowWorkspace
+configure:    PKG_CPPFLAGS=-I/usr/include/libxml2 
+configure:    PKG_LIBS=-lxml2 
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c GatingHierarchy.cpp -o GatingHierarchy.o
+GatingHierarchy.cpp:813:11: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+        if(target>=0&&target<=boost::num_vertices(tree)-1)
+           ~~~~~~^ ~
+GatingHierarchy.cpp:848:11: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+        if(source>=0&&source<=boost::num_vertices(tree)-1)
+           ~~~~~~^ ~
+GatingHierarchy.cpp:904:6: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+        if(u>=0&&u<=boost::num_vertices(tree)-1)
+           ~^ ~
+GatingHierarchy.cpp:908:73: warning: adding 'VertexID' (aka 'unsigned long') to a string does not append to the string [-Wstring-plus-int]
+                throw(out_of_range("returning empty node due to the invalid vertexID:"+u));
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+GatingHierarchy.cpp:908:73: note: use array indexing to silence this warning
+                throw(out_of_range("returning empty node due to the invalid vertexID:"+u));
+                                                                                      ^
+                                   &                                                  [ ]
+In file included from GatingHierarchy.cpp:8:
+./include/GatingHierarchy.hpp:59:9: warning: logical not is only applied to the left hand side of this comparison [-Wlogical-not-parentheses]
+        if(!u==0)
+           ^ ~~
+bst/boost/graph/graphviz.hpp:270:7: note: in instantiation of function template specialization 'OurVertexPropertyWriterR::operator()<unsigned long>' requested here
+      vpw(out, *i); //print vertex attributes
+      ^
+bst/boost/graph/graphviz.hpp:290:5: note: in instantiation of function template specialization 'boost::write_graphviz<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, nodeProperties, boost::no_property, boost::no_property, boost::listS>, OurVertexPropertyWriterR, boost::default_writer, boost::default_writer, boost::vec_adj_list_vertex_id_map<nodeProperties, unsigned long> >' requested here
+  { write_graphviz(out, g, vpw, epw, gpw, get(vertex_index, g)); }
+    ^
+bst/boost/graph/graphviz.hpp:312:5: note: in instantiation of function template specialization 'boost::write_graphviz<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, nodeProperties, boost::no_property, boost::no_property, boost::listS>, OurVertexPropertyWriterR, boost::default_writer, boost::default_writer>' requested here
+    write_graphviz(out, g, vw, dw, gw);
+    ^
+GatingHierarchy.cpp:574:9: note: in instantiation of function template specialization 'boost::write_graphviz<boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, nodeProperties, boost::no_property, boost::no_property, boost::listS>, OurVertexPropertyWriterR>' requested here
+        boost::write_graphviz(outputFile,tree,OurVertexPropertyWriterR(tree));
+               ^
+./include/GatingHierarchy.hpp:59:9: note: add parentheses after the '!' to evaluate the comparison first
+        if(!u==0)
+           ^
+            (   )
+./include/GatingHierarchy.hpp:59:9: note: add parentheses around left hand side expression to silence this warning
+        if(!u==0)
+           ^
+           ( )
+5 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c GatingSet.cpp -o GatingSet.o
+GatingSet.cpp:167:5: warning: delete called on 'transformation' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+                                delete curTran;
+                                ^
+In file included from GatingSet.cpp:9:
+In file included from ./include/GatingSet.hpp:12:
+In file included from ./include/GatingHierarchy.hpp:13:
+In file included from ./include/populationTree.hpp:11:
+In file included from ./include/nodeProperties.hpp:11:
+In file included from ./include/POPINDICES.hpp:15:
+In file included from ./include/gate.hpp:14:
+In file included from ./include/flowData.hpp:21:
+In file included from bst/boost/archive/text_iarchive.hpp:24:
+In file included from bst/boost/archive/basic_text_iarchive.hpp:31:
+In file included from bst/boost/archive/detail/common_iarchive.hpp:23:
+In file included from bst/boost/archive/detail/interface_iarchive.hpp:22:
+In file included from bst/boost/archive/detail/iserializer.hpp:47:
+In file included from bst/boost/serialization/extended_type_info_typeid.hpp:37:
+bst/boost/serialization/access.hpp:125:9: warning: delete called on 'biexpTrans' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+        delete const_cast<T *>(t);
+        ^
+bst/boost/serialization/extended_type_info_typeid.hpp:133:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<biexpTrans>' requested here
+        boost::serialization::access::destroy(
+                                      ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<biexpTrans>::destroy' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<biexpTrans> >::get_instance' requested here
+        return get_instance();
+               ^
+bst/boost/archive/detail/oserializer.hpp:210:12: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<biexpTrans> >::get_const_instance' requested here
+        >::get_const_instance()
+           ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::archive::detail::pointer_oserializer<boost::archive::binary_oarchive, biexpTrans>::pointer_oserializer' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: (skipping 31 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        return get_instance();
+               ^
+bst/boost/archive/detail/common_oarchive.hpp:69:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::binary_oarchive, const boost::serialization::nvp<const GatingSet> >' requested here
+        archive::save(* this->This(), t);
+                 ^
+bst/boost/archive/basic_binary_oarchive.hpp:75:37: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::binary_oarchive>::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+      this->detail_common_oarchive::save_override(t, static_cast<int>(version));
+                                    ^
+bst/boost/archive/binary_oarchive_impl.hpp:51:47: note: in instantiation of function template specialization 'boost::archive::basic_binary_oarchive<boost::archive::binary_oarchive>::save_override<boost::serialization::nvp<const GatingSet> >' requested here
+        this->basic_binary_oarchive<Archive>::save_override(t, 0L);
+                                              ^
+bst/boost/archive/detail/interface_oarchive.hpp:63:23: note: in instantiation of function template specialization 'boost::archive::binary_oarchive_impl<boost::archive::binary_oarchive, char, std::char_traits<char> >::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+        this->This()->save_override(t, 0);
+                      ^
+GatingSet.cpp:32:11: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::binary_oarchive>::operator<<<const boost::serialization::nvp<const GatingSet> >' requested here
+                        oa << BOOST_SERIALIZATION_NVP(gs);
+                           ^
+In file included from GatingSet.cpp:9:
+In file included from ./include/GatingSet.hpp:12:
+In file included from ./include/GatingHierarchy.hpp:13:
+In file included from ./include/populationTree.hpp:11:
+In file included from ./include/nodeProperties.hpp:11:
+In file included from ./include/POPINDICES.hpp:15:
+In file included from ./include/gate.hpp:14:
+In file included from ./include/flowData.hpp:21:
+In file included from bst/boost/archive/text_iarchive.hpp:24:
+In file included from bst/boost/archive/basic_text_iarchive.hpp:31:
+In file included from bst/boost/archive/detail/common_iarchive.hpp:23:
+In file included from bst/boost/archive/detail/interface_iarchive.hpp:22:
+In file included from bst/boost/archive/detail/iserializer.hpp:47:
+In file included from bst/boost/serialization/extended_type_info_typeid.hpp:37:
+bst/boost/serialization/access.hpp:125:9: warning: delete called on 'transformation' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+        delete const_cast<T *>(t);
+        ^
+bst/boost/serialization/extended_type_info_typeid.hpp:133:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<transformation>' requested here
+        boost::serialization::access::destroy(
+                                      ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<transformation>::destroy' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<transformation> >::get_instance' requested here
+        return get_instance();
+               ^
+bst/boost/serialization/void_cast.hpp:183:49: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<transformation> >::get_const_instance' requested here
+        & type_info_implementation<Base>::type::get_const_instance(),
+                                                ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::serialization::void_cast_detail::void_caster_primitive<biexpTrans, transformation>::void_caster_primitive' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: (skipping 45 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        return get_instance();
+               ^
+bst/boost/archive/detail/common_oarchive.hpp:69:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::binary_oarchive, const boost::serialization::nvp<const GatingSet> >' requested here
+        archive::save(* this->This(), t);
+                 ^
+bst/boost/archive/basic_binary_oarchive.hpp:75:37: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::binary_oarchive>::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+      this->detail_common_oarchive::save_override(t, static_cast<int>(version));
+                                    ^
+bst/boost/archive/binary_oarchive_impl.hpp:51:47: note: in instantiation of function template specialization 'boost::archive::basic_binary_oarchive<boost::archive::binary_oarchive>::save_override<boost::serialization::nvp<const GatingSet> >' requested here
+        this->basic_binary_oarchive<Archive>::save_override(t, 0L);
+                                              ^
+bst/boost/archive/detail/interface_oarchive.hpp:63:23: note: in instantiation of function template specialization 'boost::archive::binary_oarchive_impl<boost::archive::binary_oarchive, char, std::char_traits<char> >::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+        this->This()->save_override(t, 0);
+                      ^
+GatingSet.cpp:32:11: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::binary_oarchive>::operator<<<const boost::serialization::nvp<const GatingSet> >' requested here
+                        oa << BOOST_SERIALIZATION_NVP(gs);
+                           ^
+In file included from GatingSet.cpp:9:
+In file included from ./include/GatingSet.hpp:12:
+In file included from ./include/GatingHierarchy.hpp:13:
+In file included from ./include/populationTree.hpp:11:
+In file included from ./include/nodeProperties.hpp:11:
+In file included from ./include/POPINDICES.hpp:15:
+In file included from ./include/gate.hpp:14:
+In file included from ./include/flowData.hpp:21:
+In file included from bst/boost/archive/text_iarchive.hpp:24:
+In file included from bst/boost/archive/basic_text_iarchive.hpp:31:
+In file included from bst/boost/archive/detail/common_iarchive.hpp:23:
+In file included from bst/boost/archive/detail/interface_iarchive.hpp:22:
+In file included from bst/boost/archive/detail/iserializer.hpp:47:
+In file included from bst/boost/serialization/extended_type_info_typeid.hpp:37:
+bst/boost/serialization/access.hpp:125:9: warning: delete called on 'flinTrans' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+        delete const_cast<T *>(t);
+        ^
+bst/boost/serialization/extended_type_info_typeid.hpp:133:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<flinTrans>' requested here
+        boost::serialization::access::destroy(
+                                      ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<flinTrans>::destroy' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<flinTrans> >::get_instance' requested here
+        return get_instance();
+               ^
+bst/boost/archive/detail/oserializer.hpp:210:12: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<flinTrans> >::get_const_instance' requested here
+        >::get_const_instance()
+           ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::archive::detail::pointer_oserializer<boost::archive::binary_oarchive, flinTrans>::pointer_oserializer' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: (skipping 31 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        return get_instance();
+               ^
+bst/boost/archive/detail/common_oarchive.hpp:69:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::binary_oarchive, const boost::serialization::nvp<const GatingSet> >' requested here
+        archive::save(* this->This(), t);
+                 ^
+bst/boost/archive/basic_binary_oarchive.hpp:75:37: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::binary_oarchive>::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+      this->detail_common_oarchive::save_override(t, static_cast<int>(version));
+                                    ^
+bst/boost/archive/binary_oarchive_impl.hpp:51:47: note: in instantiation of function template specialization 'boost::archive::basic_binary_oarchive<boost::archive::binary_oarchive>::save_override<boost::serialization::nvp<const GatingSet> >' requested here
+        this->basic_binary_oarchive<Archive>::save_override(t, 0L);
+                                              ^
+bst/boost/archive/detail/interface_oarchive.hpp:63:23: note: in instantiation of function template specialization 'boost::archive::binary_oarchive_impl<boost::archive::binary_oarchive, char, std::char_traits<char> >::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+        this->This()->save_override(t, 0);
+                      ^
+GatingSet.cpp:32:11: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::binary_oarchive>::operator<<<const boost::serialization::nvp<const GatingSet> >' requested here
+                        oa << BOOST_SERIALIZATION_NVP(gs);
+                           ^
+In file included from GatingSet.cpp:9:
+In file included from ./include/GatingSet.hpp:12:
+In file included from ./include/GatingHierarchy.hpp:13:
+In file included from ./include/populationTree.hpp:11:
+In file included from ./include/nodeProperties.hpp:11:
+In file included from ./include/POPINDICES.hpp:15:
+In file included from ./include/gate.hpp:14:
+In file included from ./include/flowData.hpp:21:
+In file included from bst/boost/archive/text_iarchive.hpp:24:
+In file included from bst/boost/archive/basic_text_iarchive.hpp:31:
+In file included from bst/boost/archive/detail/common_iarchive.hpp:23:
+In file included from bst/boost/archive/detail/interface_iarchive.hpp:22:
+In file included from bst/boost/archive/detail/iserializer.hpp:47:
+In file included from bst/boost/serialization/extended_type_info_typeid.hpp:37:
+bst/boost/serialization/access.hpp:125:9: warning: delete called on 'logTrans' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+        delete const_cast<T *>(t);
+        ^
+bst/boost/serialization/extended_type_info_typeid.hpp:133:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<logTrans>' requested here
+        boost::serialization::access::destroy(
+                                      ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<logTrans>::destroy' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<logTrans> >::get_instance' requested here
+        return get_instance();
+               ^
+bst/boost/archive/detail/oserializer.hpp:210:12: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<logTrans> >::get_const_instance' requested here
+        >::get_const_instance()
+           ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::archive::detail::pointer_oserializer<boost::archive::binary_oarchive, logTrans>::pointer_oserializer' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: (skipping 31 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        return get_instance();
+               ^
+bst/boost/archive/detail/common_oarchive.hpp:69:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::binary_oarchive, const boost::serialization::nvp<const GatingSet> >' requested here
+        archive::save(* this->This(), t);
+                 ^
+bst/boost/archive/basic_binary_oarchive.hpp:75:37: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::binary_oarchive>::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+      this->detail_common_oarchive::save_override(t, static_cast<int>(version));
+                                    ^
+bst/boost/archive/binary_oarchive_impl.hpp:51:47: note: in instantiation of function template specialization 'boost::archive::basic_binary_oarchive<boost::archive::binary_oarchive>::save_override<boost::serialization::nvp<const GatingSet> >' requested here
+        this->basic_binary_oarchive<Archive>::save_override(t, 0L);
+                                              ^
+bst/boost/archive/detail/interface_oarchive.hpp:63:23: note: in instantiation of function template specialization 'boost::archive::binary_oarchive_impl<boost::archive::binary_oarchive, char, std::char_traits<char> >::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+        this->This()->save_override(t, 0);
+                      ^
+GatingSet.cpp:32:11: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::binary_oarchive>::operator<<<const boost::serialization::nvp<const GatingSet> >' requested here
+                        oa << BOOST_SERIALIZATION_NVP(gs);
+                           ^
+In file included from GatingSet.cpp:9:
+In file included from ./include/GatingSet.hpp:12:
+In file included from ./include/GatingHierarchy.hpp:13:
+In file included from ./include/populationTree.hpp:11:
+In file included from ./include/nodeProperties.hpp:11:
+In file included from ./include/POPINDICES.hpp:15:
+In file included from ./include/gate.hpp:14:
+In file included from ./include/flowData.hpp:21:
+In file included from bst/boost/archive/text_iarchive.hpp:24:
+In file included from bst/boost/archive/basic_text_iarchive.hpp:31:
+In file included from bst/boost/archive/detail/common_iarchive.hpp:23:
+In file included from bst/boost/archive/detail/interface_iarchive.hpp:22:
+In file included from bst/boost/archive/detail/iserializer.hpp:47:
+In file included from bst/boost/serialization/extended_type_info_typeid.hpp:37:
+bst/boost/serialization/access.hpp:125:9: warning: delete called on 'linTrans' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+        delete const_cast<T *>(t);
+        ^
+bst/boost/serialization/extended_type_info_typeid.hpp:133:39: note: in instantiation of function template specialization 'boost::serialization::access::destroy<linTrans>' requested here
+        boost::serialization::access::destroy(
+                                      ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::serialization::extended_type_info_typeid<linTrans>::destroy' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<linTrans> >::get_instance' requested here
+        return get_instance();
+               ^
+bst/boost/archive/detail/oserializer.hpp:210:12: note: in instantiation of member function 'boost::serialization::singleton<boost::serialization::extended_type_info_typeid<linTrans> >::get_const_instance' requested here
+        >::get_const_instance()
+           ^
+bst/boost/serialization/singleton.hpp:106:7: note: in instantiation of member function 'boost::archive::detail::pointer_oserializer<boost::archive::binary_oarchive, linTrans>::pointer_oserializer' requested here
+class singleton_wrapper : public T
+      ^
+bst/boost/serialization/singleton.hpp:141:16: note: (skipping 31 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        return get_instance();
+               ^
+bst/boost/archive/detail/common_oarchive.hpp:69:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::binary_oarchive, const boost::serialization::nvp<const GatingSet> >' requested here
+        archive::save(* this->This(), t);
+                 ^
+bst/boost/archive/basic_binary_oarchive.hpp:75:37: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::binary_oarchive>::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+      this->detail_common_oarchive::save_override(t, static_cast<int>(version));
+                                    ^
+bst/boost/archive/binary_oarchive_impl.hpp:51:47: note: in instantiation of function template specialization 'boost::archive::basic_binary_oarchive<boost::archive::binary_oarchive>::save_override<boost::serialization::nvp<const GatingSet> >' requested here
+        this->basic_binary_oarchive<Archive>::save_override(t, 0L);
+                                              ^
+bst/boost/archive/detail/interface_oarchive.hpp:63:23: note: in instantiation of function template specialization 'boost::archive::binary_oarchive_impl<boost::archive::binary_oarchive, char, std::char_traits<char> >::save_override<const boost::serialization::nvp<const GatingSet> >' requested here
+        this->This()->save_override(t, 0);
+                      ^
+GatingSet.cpp:32:11: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::binary_oarchive>::operator<<<const boost::serialization::nvp<const GatingSet> >' requested here
+                        oa << BOOST_SERIALIZATION_NVP(gs);
+                           ^
+6 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c POPINDICES.cpp -o POPINDICES.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c R_GatingHierarchy.cpp -o R_GatingHierarchy.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c R_GatingSet.cpp -o R_GatingSet.o
+clang -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c bitOps.c -o bitOps.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c calibrationTable.cpp -o calibrationTable.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c flowData.cpp -o flowData.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c flowJoWorkspace.cpp -o flowJoWorkspace.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c gate.cpp -o gate.o
+clang -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c init.c -o init.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c macFlowJoWorkspace.cpp -o macFlowJoWorkspace.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c nodeProperties.cpp -o nodeProperties.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c spline.cpp -o spline.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c transformation.cpp -o transformation.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c winFlowJoWorkspace.cpp -o winFlowJoWorkspace.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c workspace.cpp -o workspace.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c wsNode.cpp -o wsNode.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/archive_exception.cpp -o bst/libs/serialization/src/archive_exception.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_archive.cpp -o bst/libs/serialization/src/basic_archive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_iarchive.cpp -o bst/libs/serialization/src/basic_iarchive.o
+bst/libs/serialization/src/basic_iarchive.cpp:437:23: warning: unused variable 'new_cid' [-Wunused-variable]
+        class_id_type new_cid = register_type(bpis_ptr->get_basic_serializer());
+                      ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_iserializer.cpp -o bst/libs/serialization/src/basic_iserializer.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_oarchive.cpp -o bst/libs/serialization/src/basic_oarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_oserializer.cpp -o bst/libs/serialization/src/basic_oserializer.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_pointer_iserializer.cpp -o bst/libs/serialization/src/basic_pointer_iserializer.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_pointer_oserializer.cpp -o bst/libs/serialization/src/basic_pointer_oserializer.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_serializer_map.cpp -o bst/libs/serialization/src/basic_serializer_map.o
+bst/libs/serialization/src/basic_serializer_map.cpp:46:47: warning: unused variable 'result' [-Wunused-variable]
+    const std::pair<map_type::iterator, bool> result =
+                                              ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_text_iprimitive.cpp -o bst/libs/serialization/src/basic_text_iprimitive.o
+In file included from bst/libs/serialization/src/basic_text_iprimitive.cpp:19:
+bst/boost/archive/impl/basic_text_iprimitive.ipp:47:10: warning: unused function 'is_whitespace' [-Wunused-function]
+    bool is_whitespace(wchar_t t){
+         ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_text_oprimitive.cpp -o bst/libs/serialization/src/basic_text_oprimitive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_text_wiprimitive.cpp -o bst/libs/serialization/src/basic_text_wiprimitive.o
+In file included from bst/libs/serialization/src/basic_text_wiprimitive.cpp:25:
+bst/boost/archive/impl/basic_text_iprimitive.ipp:41:10: warning: unused function 'is_whitespace' [-Wunused-function]
+    bool is_whitespace(char t){
+         ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_text_woprimitive.cpp -o bst/libs/serialization/src/basic_text_woprimitive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/basic_xml_archive.cpp -o bst/libs/serialization/src/basic_xml_archive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/binary_iarchive.cpp -o bst/libs/serialization/src/binary_iarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/binary_oarchive.cpp -o bst/libs/serialization/src/binary_oarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/binary_wiarchive.cpp -o bst/libs/serialization/src/binary_wiarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/binary_woarchive.cpp -o bst/libs/serialization/src/binary_woarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/codecvt_null.cpp -o bst/libs/serialization/src/codecvt_null.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/extended_type_info.cpp -o bst/libs/serialization/src/extended_type_info.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/extended_type_info_no_rtti.cpp -o bst/libs/serialization/src/extended_type_info_no_rtti.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/extended_type_info_typeid.cpp -o bst/libs/serialization/src/extended_type_info_typeid.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/polymorphic_iarchive.cpp -o bst/libs/serialization/src/polymorphic_iarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/polymorphic_oarchive.cpp -o bst/libs/serialization/src/polymorphic_oarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/shared_ptr_helper.cpp -o bst/libs/serialization/src/shared_ptr_helper.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/stl_port.cpp -o bst/libs/serialization/src/stl_port.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/text_iarchive.cpp -o bst/libs/serialization/src/text_iarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/text_oarchive.cpp -o bst/libs/serialization/src/text_oarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/text_wiarchive.cpp -o bst/libs/serialization/src/text_wiarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/text_woarchive.cpp -o bst/libs/serialization/src/text_woarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/utf8_codecvt_facet.cpp -o bst/libs/serialization/src/utf8_codecvt_facet.o
+In file included from bst/libs/serialization/src/utf8_codecvt_facet.cpp:15:
+In file included from bst/boost/detail/utf8_codecvt_facet.ipp:13:
+bst/boost/detail/utf8_codecvt_facet.hpp:171:17: warning: 'boost::archive::detail::utf8_codecvt_facet::do_length' hides overloaded virtual function [-Woverloaded-virtual]
+    virtual int do_length(
+                ^
+/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/bits/codecvt.h:448:11: note: hidden overloaded virtual function 'std::codecvt<wchar_t, char, __mbstate_t>::do_length' declared here: type mismatch at 1st parameter ('state_type &' (aka '__mbstate_t &') vs 'const std::mbstate_t &' (aka 'const __mbstate_t &'))
+      int do_length(state_type&, const extern_type* __from,
+          ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/void_cast.cpp -o bst/libs/serialization/src/void_cast.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/xml_archive_exception.cpp -o bst/libs/serialization/src/xml_archive_exception.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/xml_grammar.cpp -o bst/libs/serialization/src/xml_grammar.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/xml_iarchive.cpp -o bst/libs/serialization/src/xml_iarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/xml_oarchive.cpp -o bst/libs/serialization/src/xml_oarchive.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/xml_wgrammar.cpp -o bst/libs/serialization/src/xml_wgrammar.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/xml_wiarchive.cpp -o bst/libs/serialization/src/xml_wiarchive.o
+In file included from bst/libs/serialization/src/xml_wiarchive.cpp:37:
+In file included from bst/boost/archive/impl/xml_wiarchive_impl.ipp:38:
+In file included from bst/boost/archive/detail/utf8_codecvt_facet.hpp:15:
+bst/boost/detail/utf8_codecvt_facet.hpp:171:17: warning: 'boost::archive::detail::utf8_codecvt_facet::do_length' hides overloaded virtual function [-Woverloaded-virtual]
+    virtual int do_length(
+                ^
+/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/bits/codecvt.h:448:11: note: hidden overloaded virtual function 'std::codecvt<wchar_t, char, __mbstate_t>::do_length' declared here: type mismatch at 1st parameter ('state_type &' (aka '__mbstate_t &') vs 'const std::mbstate_t &' (aka 'const __mbstate_t &'))
+      int do_length(state_type&, const extern_type* __from,
+          ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/serialization/src/xml_woarchive.cpp -o bst/libs/serialization/src/xml_woarchive.o
+In file included from bst/libs/serialization/src/xml_woarchive.cpp:23:
+In file included from bst/boost/archive/impl/xml_woarchive_impl.ipp:42:
+In file included from bst/boost/archive/detail/utf8_codecvt_facet.hpp:15:
+bst/boost/detail/utf8_codecvt_facet.hpp:171:17: warning: 'boost::archive::detail::utf8_codecvt_facet::do_length' hides overloaded virtual function [-Woverloaded-virtual]
+    virtual int do_length(
+                ^
+/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/bits/codecvt.h:448:11: note: hidden overloaded virtual function 'std::codecvt<wchar_t, char, __mbstate_t>::do_length' declared here: type mismatch at 1st parameter ('state_type &' (aka '__mbstate_t &') vs 'const std::mbstate_t &' (aka 'const __mbstate_t &'))
+      int do_length(state_type&, const extern_type* __from,
+          ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/c_regex_traits.cpp -o bst/libs/regex/src/c_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/cpp_regex_traits.cpp -o bst/libs/regex/src/cpp_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/cregex.cpp -o bst/libs/regex/src/cregex.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/fileiter.cpp -o bst/libs/regex/src/fileiter.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/icu.cpp -o bst/libs/regex/src/icu.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/instances.cpp -o bst/libs/regex/src/instances.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/posix_api.cpp -o bst/libs/regex/src/posix_api.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/regex.cpp -o bst/libs/regex/src/regex.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/regex_debug.cpp -o bst/libs/regex/src/regex_debug.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/regex_raw_buffer.cpp -o bst/libs/regex/src/regex_raw_buffer.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/regex_traits_defaults.cpp -o bst/libs/regex/src/regex_traits_defaults.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/static_mutex.cpp -o bst/libs/regex/src/static_mutex.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/usinstances.cpp -o bst/libs/regex/src/usinstances.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/w32_regex_traits.cpp -o bst/libs/regex/src/w32_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/wc_regex_traits.cpp -o bst/libs/regex/src/wc_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/wide_posix_api.cpp -o bst/libs/regex/src/wide_posix_api.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -Wno-deprecated -I/usr/include/libxml2  -Ibst/ -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c bst/libs/regex/src/winstances.cpp -o bst/libs/regex/src/winstances.o
+clang++ -shared -L/usr/local/lib -o flowWorkspace.so GatingHierarchy.o GatingSet.o POPINDICES.o R_GatingHierarchy.o R_GatingSet.o bitOps.o calibrationTable.o flowData.o flowJoWorkspace.o gate.o init.o macFlowJoWorkspace.o nodeProperties.o spline.o transformation.o winFlowJoWorkspace.o workspace.o wsNode.o bst/libs/serialization/src/archive_exception.o bst/libs/serialization/src/basic_archive.o bst/libs/serialization/src/basic_iarchive.o bst/libs/serialization/src/basic_iserializer.o bst/libs/serialization/src/basic_oarchive.o bst/libs/serialization/src/basic_oserializer.o bst/libs/serialization/src/basic_pointer_iserializer.o bst/libs/serialization/src/basic_pointer_oserializer.o bst/libs/serialization/src/basic_serializer_map.o bst/libs/serialization/src/basic_text_iprimitive.o bst/libs/serialization/src/basic_text_oprimitive.o bst/libs/serialization/src/basic_text_wiprimitive.o bst/libs/serialization/src/basic_text_woprimitive.o bst/libs/serialization/src/basic_xml_archive.o bst/libs/serialization/src/binary_iarchive.o bst/libs/serialization/src/binary_oarchive.o bst/libs/serialization/src/binary_wiarchive.o bst/libs/serialization/src/binary_woarchive.o bst/libs/serialization/src/codecvt_null.o bst/libs/serialization/src/extended_type_info.o bst/libs/serialization/src/extended_type_info_no_rtti.o bst/libs/serialization/src/extended_type_info_typeid.o bst/libs/serialization/src/polymorphic_iarchive.o bst/libs/serialization/src/polymorphic_oarchive.o bst/libs/serialization/src/shared_ptr_helper.o bst/libs/serialization/src/stl_port.o bst/libs/serialization/src/text_iarchive.o bst/libs/serialization/src/text_oarchive.o bst/libs/serialization/src/text_wiarchive.o bst/libs/serialization/src/text_woarchive.o bst/libs/serialization/src/utf8_codecvt_facet.o bst/libs/serialization/src/void_cast.o bst/libs/serialization/src/xml_archive_exception.o bst/libs/serialization/src/xml_grammar.o bst/libs/serialization/src/xml_iarchive.o bst/libs/serialization/src/xml_oarchive.o bst/libs/serialization/src/xml_wgrammar.o bst/libs/serialization/src/xml_wiarchive.o bst/libs/serialization/src/xml_woarchive.o bst/libs/regex/src/c_regex_traits.o bst/libs/regex/src/cpp_regex_traits.o bst/libs/regex/src/cregex.o bst/libs/regex/src/fileiter.o bst/libs/regex/src/icu.o bst/libs/regex/src/instances.o bst/libs/regex/src/posix_api.o bst/libs/regex/src/regex.o bst/libs/regex/src/regex_debug.o bst/libs/regex/src/regex_raw_buffer.o bst/libs/regex/src/regex_traits_defaults.o bst/libs/regex/src/static_mutex.o bst/libs/regex/src/usinstances.o bst/libs/regex/src/w32_regex_traits.o bst/libs/regex/src/wc_regex_traits.o bst/libs/regex/src/wide_posix_api.o bst/libs/regex/src/winstances.o -lxml2 -L/usr/local/lib/R/lib -lR
+cp flowWorkspace.so libflowWorkspace.so 
+cp libflowWorkspace.so ../inst/lib
+rm libflowWorkspace.so
+installing to /home/kevin/RcppBiocChecks/flowWorkspace.Rcheck/flowWorkspace/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (flowWorkspace)

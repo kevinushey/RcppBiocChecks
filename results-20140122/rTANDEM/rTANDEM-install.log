@@ -1,0 +1,1968 @@
+* installing *source* package ‘rTANDEM’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c base64.cpp -o base64.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c dataLoader.cpp -o dataLoader.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c loadmspectrum.cpp -o loadmspectrum.o
+In file included from loadmspectrum.cpp:142:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from loadmspectrum.cpp:143:
+./loadmspectrum.h:196:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from loadmspectrum.cpp:143:
+In file included from ./loadmspectrum.h:277:
+In file included from ./saxgamlhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+3 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c masscalc.cpp -o masscalc.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mbiomlreport.cpp -o mbiomlreport.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mpam.cpp -o mpam.o
+In file included from mpam.cpp:137:
+In file included from ./mprocess.h:143:
+In file included from ./mspectrumcondition.h:153:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mpam.cpp:137:
+In file included from ./mprocess.h:145:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mpam.cpp:137:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mpam.cpp:138:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mpam.cpp:138:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+7 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mplugin.cpp -o mplugin.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mpmods.cpp -o mpmods.o
+In file included from mpmods.cpp:137:
+In file included from ./mprocess.h:143:
+In file included from ./mspectrumcondition.h:153:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mpmods.cpp:137:
+In file included from ./mprocess.h:145:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mpmods.cpp:137:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mpmods.cpp:138:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mpmods.cpp:138:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+7 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mprocess.cpp -o mprocess.o
+In file included from mprocess.cpp:155:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mprocess.cpp:157:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mprocess.cpp:158:
+./loadmspectrum.h:196:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mprocess.cpp:158:
+In file included from ./loadmspectrum.h:277:
+In file included from ./saxgamlhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mprocess.cpp:160:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+In file included from mprocess.cpp:161:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+mprocess.cpp:440:7: warning: unused variable 'bC' [-Wunused-variable]
+        bool bC = false;
+             ^
+mprocess.cpp:2472:9: warning: unused variable 'c' [-Wunused-variable]
+        size_t c = 0;
+               ^
+mprocess.cpp:2476:9: warning: unused variable 'tLast' [-Wunused-variable]
+        size_t tLast = 0;
+               ^
+mprocess.cpp:3253:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_dNt = m_pScore->m_seqUtil.m_pdAaMod['['];
+                                             ^~~~
+mprocess.cpp:3254:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_dNtAve = m_pScore->m_seqUtilAvg.m_pdAaMod['['];
+                                                   ^~~~
+mprocess.cpp:3255:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_dNg = m_pScore->m_seqUtil.m_pdAaMod['n'];
+                                             ^~~~
+mprocess.cpp:3256:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_dNgAve = m_pScore->m_seqUtilAvg.m_pdAaMod['n'];
+                                                   ^~~~
+mprocess.cpp:3342:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtil.m_pdAaMod['['] = dAcetyl;
+                                                                             ^~~~
+mprocess.cpp:3343:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtilAvg.m_pdAaMod['['] = dAcetylAve;
+                                                                                ^~~~
+mprocess.cpp:3352:37: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                        m_pScore->m_seqUtil.m_pdAaMod['['] = dAcetyl;
+                                                                                     ^~~~
+mprocess.cpp:3353:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                        m_pScore->m_seqUtilAvg.m_pdAaMod['['] = dAcetylAve;
+                                                                                        ^~~~
+mprocess.cpp:3360:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtil.m_pdAaMod['['] = m_dNt;
+                                                                             ^~~~
+mprocess.cpp:3361:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtilAvg.m_pdAaMod['['] = m_dNtAve;
+                                                                                ^~~~
+mprocess.cpp:3366:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtil.m_pdAaMod['n'] = dDeamidate;
+                                                                             ^~~~
+mprocess.cpp:3367:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtilAvg.m_pdAaMod['n'] = dDeamidateAve;
+                                                                                ^~~~
+mprocess.cpp:3390:46: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                                                if(m_iCurrentRound == 1 && (m_bPermute && m_bCrcCheck || m_bPermuteHigh))       {
+                                                                            ~~~~~~~~~~~^~~~~~~~~~~~~~ ~~
+mprocess.cpp:3390:46: note: place parentheses around the '&&' expression to silence this warning
+                                                if(m_iCurrentRound == 1 && (m_bPermute && m_bCrcCheck || m_bPermuteHigh))       {
+                                                                                       ^
+                                                                            (                        )
+mprocess.cpp:3403:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtil.m_pdAaMod['n'] = m_dNg;
+                                                                             ^~~~
+mprocess.cpp:3404:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtilAvg.m_pdAaMod['n'] = m_dNgAve;
+                                                                                ^~~~
+mprocess.cpp:3415:35: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                        m_pScore->m_seqUtil.m_pdAaMod['['] = m_dNt;
+                                                                     ^~~~
+mprocess.cpp:3416:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                        m_pScore->m_seqUtilAvg.m_pdAaMod['['] = m_dNtAve;
+                                                                        ^~~~
+mprocess.cpp:3427:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                                m_pScore->m_seqUtil.m_pdAaMod['['] = dAcetyl;
+                                                                                             ^~~~
+mprocess.cpp:3428:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                                m_pScore->m_seqUtilAvg.m_pdAaMod['['] = dAcetylAve;
+                                                                                                ^~~~
+mprocess.cpp:3436:37: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                        m_pScore->m_seqUtil.m_pdAaMod['n'] = dDeamidate;
+                                                                                     ^~~~
+mprocess.cpp:3437:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                        m_pScore->m_seqUtilAvg.m_pdAaMod['n'] = dDeamidateAve;
+                                                                                        ^~~~
+mprocess.cpp:3459:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtil.m_pdAaMod['['] = m_dNt;
+                                                                             ^~~~
+mprocess.cpp:3460:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                m_pScore->m_seqUtilAvg.m_pdAaMod['['] = m_dNtAve;
+                                                                                ^~~~
+mprocess.cpp:3462:37: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                        m_pScore->m_seqUtil.m_pdAaMod['n'] = m_dNg;
+                                                                                     ^~~~
+mprocess.cpp:3463:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                                        m_pScore->m_seqUtilAvg.m_pdAaMod['n'] = m_dNgAve;
+                                                                                        ^~~~
+mprocess.cpp:3520:34: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        if(m_pScore->m_seqUtil.m_pdAaMod['['] != 0.0 || !m_bQuickPyro)  {
+                                        ^~~~
+mprocess.cpp:3526:32: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_pScore->m_seqUtil.m_pdAaMod['['] = m_pyroState.m_dModMass;
+                                             ^~~~
+mprocess.cpp:3527:35: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_pScore->m_seqUtilAvg.m_pdAaMod['['] = -1.0*m_pScore->m_seqUtilAvg.m_dAmmonia;
+                                                ^~~~
+mprocess.cpp:3537:32: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_pScore->m_seqUtil.m_pdAaMod['['] = m_pyroState.m_dModMass;
+                                             ^~~~
+mprocess.cpp:3538:35: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_pScore->m_seqUtilAvg.m_pdAaMod['['] = -1.0*m_pScore->m_seqUtilAvg.m_dWater;
+                                                ^~~~
+mprocess.cpp:3546:63: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        else if(_c == 'C' && (long)(m_pScore->m_seqUtil.m_pdAaFullMod['C']) == 57)      {
+                                                                     ^~~~
+mprocess.cpp:3548:32: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_pScore->m_seqUtil.m_pdAaMod['['] = m_pyroState.m_dModMass;
+                                             ^~~~
+mprocess.cpp:3549:35: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_pScore->m_seqUtilAvg.m_pdAaMod['['] = -1.0*m_pScore->m_seqUtilAvg.m_dAmmonia;
+                                                ^~~~
+mprocess.cpp:3567:31: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pScore->m_seqUtil.m_pdAaMod['['] = m_dNt;
+                                     ^~~~
+mprocess.cpp:3568:34: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pScore->m_seqUtilAvg.m_pdAaMod['['] = m_dNtAve;
+                                        ^~~~
+mprocess.cpp:4825:21: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+        const uint64_t f = 0x00000000000000FFULL;
+                           ^
+mprocess.cpp:4840:29: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+        const uint64_t POLY64REV = 0x95AC9329AC4BC9B5ULL;
+                                   ^
+mprocess.cpp:4841:30: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+        const uint64_t INITIALCRC = 0xFFFFFFFFFFFFFFFFULL;
+                                    ^
+mprocess.cpp:4843:14: warning: unused variable 'crc' [-Wunused-variable]
+    uint64_t crc = INITIALCRC, part = 0;
+             ^
+50 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mrefine.cpp -o mrefine.o
+In file included from mrefine.cpp:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mrefine.cpp:138:
+In file included from ./mprocess.h:145:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mrefine.cpp:138:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mrefine.cpp:139:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mrefine.cpp:139:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+mrefine.cpp:334:43: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pProcess->m_pScore->m_seqUtil.m_pdAaMod['['] = 0.0;
+                                                 ^~~~
+mrefine.cpp:355:43: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pProcess->m_pScore->m_seqUtil.m_pdAaMod[']'] = 0.0;
+                                                 ^~~~
+mrefine.cpp:250:9: warning: unused variable 'a' [-Wunused-variable]
+        size_t a = 0;
+               ^
+mrefine.cpp:251:9: warning: unused variable 'tActiveNow' [-Wunused-variable]
+        size_t tActiveNow = 0;
+               ^
+11 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mreport.cpp -o mreport.o
+In file included from mreport.cpp:143:
+In file included from ./saxsaphandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mreport.cpp:143:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mreport.cpp:146:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mreport.cpp:150:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+In file included from mreport.cpp:151:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+mreport.cpp:655:74: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                sprintf(pLine,"\t<aa type=\"%c\" mass=\"%.6lf\" />\n",cAa,_p.m_pdAaMass[cAa]);
+                                                                                       ^~~~
+mreport.cpp:646:9: warning: unused variable 'a' [-Wunused-variable]
+        size_t a = 0;
+               ^
+9 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mscore.cpp -o mscore.o
+In file included from mscore.cpp:151:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mscore.cpp:153:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mscore.cpp:155:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mscore.cpp:156:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+mscore.cpp:301:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                   ^~~~
+mscore.cpp:303:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                               ^~~~
+mscore.cpp:372:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                   ^~~~
+mscore.cpp:374:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                               ^~~~
+mscore.cpp:450:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                   ^~~~
+mscore.cpp:452:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                               ^~~~
+mscore.cpp:514:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                   ^~~~
+mscore.cpp:516:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                               ^~~~
+mscore.cpp:586:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                   ^~~~
+mscore.cpp:588:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                               ^~~~
+mscore.cpp:678:38: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                   ^~~~
+mscore.cpp:680:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                               ^~~~
+mscore.cpp:867:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                             ^~~~
+mscore.cpp:867:64: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                                                      ^~~~
+mscore.cpp:994:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                if(a == '[' && m_seqUtil.m_pdAaFullMod['['] != 0.0)     {
+                                                      ^~~~
+mscore.cpp:997:51: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        aaValue.m_dMod = (float)m_seqUtil.m_pdAaFullMod['['];
+                                                                       ^~~~
+mscore.cpp:1001:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                if(a == ']' && m_seqUtil.m_pdAaFullMod[']'] != 0.0)     {
+                                                      ^~~~
+mscore.cpp:1004:51: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        aaValue.m_dMod = (float)m_seqUtil.m_pdAaFullMod[']'];
+                                                                       ^~~~
+mscore.cpp:1244:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                                     ^~~~
+mscore.cpp:1244:65: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                                                              ^~~~
+mscore.cpp:1245:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_dSeqMH -= m_pSeqUtilFrag->m_pdAaMod['['];
+                                                     ^~~~
+mscore.cpp:1246:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_dSeqMH -= m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                     ^~~~
+mscore.cpp:1259:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_dSeqMH += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                             ^~~~
+mscore.cpp:1272:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_dSeqMH += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                             ^~~~
+mscore.cpp:1287:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_dSeqMH -= m_pSeqUtilFrag->m_pdAaMod['['];
+                                                             ^~~~
+mscore.cpp:1288:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                                             ^~~~
+mscore.cpp:1288:66: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                                                                      ^~~~
+mscore.cpp:1293:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_dSeqMH -= m_pSeqUtilFrag->m_pdAaMod['['];
+                                                     ^~~~
+mscore.cpp:1294:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_dSeqMH += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                     ^~~~
+mscore.cpp:1306:41: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_dSeqMH -= m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                             ^~~~
+mscore.cpp:1307:47: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_Term.initialize(m_pSeqUtilFrag->m_pdAaMod['['],m_pSeqUtilFrag->m_pdAaMod[']']);
+                                                                   ^~~~
+mscore.cpp:1307:78: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_Term.initialize(m_pSeqUtilFrag->m_pdAaMod['['],m_pSeqUtilFrag->m_pdAaMod[']']);
+                                                                                                  ^~~~
+mscore.cpp:1310:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_dSeqMH += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                     ^~~~
+mscore.cpp:1635:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_plAA['s'] = 0;
+                              ^~~~
+mscore.cpp:1636:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_plAA['t'] = 0;
+                              ^~~~
+mscore.cpp:1637:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_plAA['n'] = 0;
+                              ^~~~
+mscore.cpp:1638:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_plAA['q'] = 0;
+                              ^~~~
+mscore.cpp:1639:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_plAA['y'] = 0;
+                              ^~~~
+mscore.cpp:1650:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_State.m_bIsPossible = !(m_plAA['s'] + m_plAA['t'] + m_plAA['y'] > 3 || m_plAA['n'] + m_plAA['q'] > 3);
+                                                        ^~~~
+mscore.cpp:1650:50: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_State.m_bIsPossible = !(m_plAA['s'] + m_plAA['t'] + m_plAA['y'] > 3 || m_plAA['n'] + m_plAA['q'] > 3);
+                                                                      ^~~~
+mscore.cpp:1650:64: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_State.m_bIsPossible = !(m_plAA['s'] + m_plAA['t'] + m_plAA['y'] > 3 || m_plAA['n'] + m_plAA['q'] > 3);
+                                                                                    ^~~~
+mscore.cpp:1650:83: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_State.m_bIsPossible = !(m_plAA['s'] + m_plAA['t'] + m_plAA['y'] > 3 || m_plAA['n'] + m_plAA['q'] > 3);
+                                                                                                       ^~~~
+mscore.cpp:1650:97: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                        m_State.m_bIsPossible = !(m_plAA['s'] + m_plAA['t'] + m_plAA['y'] > 3 || m_plAA['n'] + m_plAA['q'] > 3);
+                                                                                                                     ^~~~
+mscore.cpp:1912:39: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                             ^~~~
+mscore.cpp:1912:64: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_Term.initialize(m_seqUtil.m_pdAaMod['['],m_seqUtil.m_pdAaMod[']']);
+                                                                      ^~~~
+mscore.cpp:1951:34: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_dSeqMH += m_seqUtil.m_pdAaMod['['];
+                                               ^~~~
+mscore.cpp:1954:34: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                m_dSeqMH += m_seqUtil.m_pdAaMod[']'];
+                                               ^~~~
+mscore.cpp:1963:37: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_dSeqMH += m_seqUtil.m_pdAaFullMod['['];
+                                           ^~~~
+mscore.cpp:1964:37: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_dSeqMH += m_seqUtil.m_pdAaFullMod[']'];
+                                           ^~~~
+55 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mscore_hrk.cpp -o mscore_hrk.o
+In file included from mscore_hrk.cpp:24:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mscore_hrk.cpp:27:
+In file included from ./mscore_hrk.h:24:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mscore_hrk.cpp:27:
+In file included from ./mscore_hrk.h:24:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+mscore_hrk.cpp:352:7: warning: unused variable 'iTotI' [-Wunused-variable]
+  int iTotI = 0;
+      ^
+mscore_hrk.cpp:371:7: warning: unused variable 'peakCount' [-Wunused-variable]
+  int peakCount = 0;
+      ^
+mscore_hrk.cpp:544:54: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  if(m_Term.m_lN)       dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                           ^~~~
+mscore_hrk.cpp:545:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                         ^~~~
+mscore_hrk.cpp:550:10: warning: unused variable 'pfScore' [-Wunused-variable]
+  float *pfScore = m_pSeqUtilFrag->m_pfAScore;
+         ^
+mscore_hrk.cpp:580:54: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  if(m_Term.m_lN)       dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                           ^~~~
+mscore_hrk.cpp:581:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                         ^~~~
+mscore_hrk.cpp:587:10: warning: unused variable 'pfScore' [-Wunused-variable]
+  float *pfScore = m_pSeqUtilFrag->m_pfBScore;
+         ^
+mscore_hrk.cpp:588:10: warning: unused variable 'pfScorePlus' [-Wunused-variable]
+  float *pfScorePlus = m_pSeqUtilFrag->m_pfYScore;
+         ^
+mscore_hrk.cpp:615:54: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  if(m_Term.m_lN)       dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                                           ^~~~
+mscore_hrk.cpp:616:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                         ^~~~
+mscore_hrk.cpp:623:10: warning: unused variable 'pfScorePlus' [-Wunused-variable]
+  float *pfScorePlus = m_pSeqUtilFrag->m_pfYScore;
+         ^
+mscore_hrk.cpp:622:10: warning: unused variable 'pfScore' [-Wunused-variable]
+  float *pfScore = m_pSeqUtilFrag->m_pfBScore;
+         ^
+mscore_hrk.cpp:648:54: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  if(m_Term.m_lC)       dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                           ^~~~
+mscore_hrk.cpp:649:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                         ^~~~
+mscore_hrk.cpp:658:10: warning: unused variable 'pfScore' [-Wunused-variable]
+  float *pfScore = m_pSeqUtilFrag->m_pfXScore;
+         ^
+mscore_hrk.cpp:657:9: warning: unused variable 'fSub' [-Wunused-variable]
+  float fSub = 0.0;
+        ^
+mscore_hrk.cpp:685:54: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  if(m_Term.m_lC)       dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                           ^~~~
+mscore_hrk.cpp:686:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                         ^~~~
+mscore_hrk.cpp:692:10: warning: unused variable 'pfScore' [-Wunused-variable]
+  float *pfScore = m_pSeqUtilFrag->m_pfYScore;
+         ^
+mscore_hrk.cpp:691:9: warning: unused variable 'fSub' [-Wunused-variable]
+  float fSub = 0.0;
+        ^
+mscore_hrk.cpp:693:10: warning: unused variable 'pfScoreMinus' [-Wunused-variable]
+  float *pfScoreMinus = m_pSeqUtilFrag->m_pfBScore;
+         ^
+mscore_hrk.cpp:729:54: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  if(m_Term.m_lC)       dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                                           ^~~~
+mscore_hrk.cpp:730:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+  dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                         ^~~~
+mscore_hrk.cpp:735:9: warning: unused variable 'fSub' [-Wunused-variable]
+  float fSub = 0.0;
+        ^
+mscore_hrk.cpp:737:10: warning: unused variable 'pfScoreMinus' [-Wunused-variable]
+  float *pfScoreMinus = m_pSeqUtilFrag->m_pfBScore;
+         ^
+mscore_hrk.cpp:736:10: warning: unused variable 'pfScore' [-Wunused-variable]
+  float *pfScore = m_pSeqUtilFrag->m_pfYScore;
+         ^
+mscore_hrk.cpp:761:10: warning: unused variable 'b' [-Wunused-variable]
+  size_t b = 0;
+         ^
+mscore_hrk.cpp:758:17: warning: unused variable 'a' [-Wunused-variable]
+  unsigned long a = 0;
+                ^
+mscore_hrk.cpp:759:17: warning: unused variable 'lCount' [-Wunused-variable]
+  unsigned long lCount = 0;
+                ^
+mscore_hrk.cpp:760:8: warning: unused variable 'lType' [-Wunused-variable]
+  long lType = 0;
+       ^
+36 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mscore_k.cpp -o mscore_k.o
+In file included from mscore_k.cpp:24:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mscore_k.cpp:27:
+In file included from ./mscore_k.h:21:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mscore_k.cpp:27:
+In file included from ./mscore_k.h:21:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+mscore_k.cpp:380:6: warning: unused variable 'lType' [-Wunused-variable]
+long lType = 0;
+     ^
+mscore_k.cpp:381:8: warning: unused variable 'b' [-Wunused-variable]
+size_t b = 0;
+       ^
+mscore_k.cpp:378:15: warning: unused variable 'a' [-Wunused-variable]
+unsigned long a = 0;
+              ^
+mscore_k.cpp:379:15: warning: unused variable 'lCount' [-Wunused-variable]
+unsigned long lCount = 0;
+              ^
+mscore_k.cpp:449:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                   ^~~~
+mscore_k.cpp:451:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                       ^~~~
+mscore_k.cpp:466:14: warning: unused variable 'dZ' [-Wunused-variable]
+const double dZ = (double)_c;
+             ^
+mscore_k.cpp:505:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                   ^~~~
+mscore_k.cpp:507:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                       ^~~~
+mscore_k.cpp:529:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+m_pfSeq[lCount] = pfScore[tC]*pfScorePlus[m_pSeq[a+1]];
+                                         ^~~~~~~~~~~~
+mscore_k.cpp:523:14: warning: unused variable 'dZ' [-Wunused-variable]
+const double dZ = (double)_c;
+             ^
+mscore_k.cpp:567:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaMod['['];
+                                   ^~~~
+mscore_k.cpp:569:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaFullMod['['];
+                                       ^~~~
+mscore_k.cpp:591:42: warning: array subscript is of type 'char' [-Wchar-subscripts]
+m_pfSeq[lCount] = pfScore[tC]*pfScorePlus[m_pSeq[a+1]];
+                                         ^~~~~~~~~~~~
+mscore_k.cpp:584:8: warning: unused variable 'dZ' [-Wunused-variable]
+double dZ = (double)_c;
+       ^
+mscore_k.cpp:615:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                   ^~~~
+mscore_k.cpp:617:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                       ^~~~
+mscore_k.cpp:631:7: warning: unused variable 'fSub' [-Wunused-variable]
+float fSub = 0.0;
+      ^
+mscore_k.cpp:638:8: warning: unused variable 'dZ' [-Wunused-variable]
+double dZ = (double)_c;
+       ^
+mscore_k.cpp:673:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                   ^~~~
+mscore_k.cpp:675:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                       ^~~~
+mscore_k.cpp:677:1: warning: '/*' within block comment [-Wcomment]
+/*
+^
+mscore_k.cpp:706:43: warning: array subscript is of type 'char' [-Wchar-subscripts]
+m_pfSeq[lCount] = pfScore[tC]*pfScoreMinus[m_pSeq[a-1]];
+                                          ^~~~~~~~~~~~
+mscore_k.cpp:712:43: warning: array subscript is of type 'char' [-Wchar-subscripts]
+m_pfSeq[lCount] = pfScore[tC]*pfScoreMinus[m_pSeq[a-1]];
+                                          ^~~~~~~~~~~~
+mscore_k.cpp:684:7: warning: unused variable 'fSub' [-Wunused-variable]
+float fSub = 0.0;
+      ^
+mscore_k.cpp:694:8: warning: unused variable 'dZ' [-Wunused-variable]
+double dZ = (double)_c;
+       ^
+mscore_k.cpp:749:36: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaMod[']'];
+                                   ^~~~
+mscore_k.cpp:751:40: warning: array subscript is of type 'char' [-Wchar-subscripts]
+dValue += m_pSeqUtilFrag->m_pdAaFullMod[']'];
+                                       ^~~~
+mscore_k.cpp:753:1: warning: '/*' within block comment [-Wcomment]
+/*
+^
+mscore_k.cpp:776:43: warning: array subscript is of type 'char' [-Wchar-subscripts]
+m_pfSeq[lCount] = pfScore[tC]*pfScoreMinus[m_pSeq[a-1]];
+                                          ^~~~~~~~~~~~
+mscore_k.cpp:779:43: warning: array subscript is of type 'char' [-Wchar-subscripts]
+m_pfSeq[lCount] = pfScore[tC]*pfScoreMinus[m_pSeq[a-1]];
+                                          ^~~~~~~~~~~~
+mscore_k.cpp:761:7: warning: unused variable 'fSub' [-Wunused-variable]
+float fSub = 0.0;
+      ^
+37 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mscore_tandem.cpp -o mscore_tandem.o
+In file included from mscore_tandem.cpp:135:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mscore_tandem.cpp:137:
+In file included from ./mscore_tandem.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mscore_tandem.cpp:137:
+In file included from ./mscore_tandem.h:136:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+mscore_tandem.cpp:362:9: warning: unused variable 'b' [-Wunused-variable]
+        size_t b = 0;
+               ^
+mscore_tandem.cpp:358:8: warning: unused variable 'fValue0' [-Wunused-variable]
+        float fValue0 = 0.0;
+              ^
+mscore_tandem.cpp:584:9: warning: unused variable 'b' [-Wunused-variable]
+        size_t b = 0;
+               ^
+mscore_tandem.cpp:581:16: warning: unused variable 'a' [-Wunused-variable]
+        unsigned long a = 0;
+                      ^
+mscore_tandem.cpp:583:7: warning: unused variable 'lType' [-Wunused-variable]
+        long lType = 0;
+             ^
+mscore_tandem.cpp:582:16: warning: unused variable 'lCount' [-Wunused-variable]
+        unsigned long lCount = 0;
+                      ^
+11 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c msequencecollection.cpp -o msequencecollection.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c msequenceserver.cpp -o msequenceserver.o
+In file included from msequenceserver.cpp:145:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c msequtilities.cpp -o msequtilities.o
+msequtilities.cpp:336:15: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pdAaFullMod[']'] = 0.0;
+                     ^~~~
+msequtilities.cpp:337:15: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pdAaFullMod['['] = 0.0;
+                     ^~~~
+msequtilities.cpp:384:11: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pdAaMod['['] = 0.0;
+                 ^~~~
+msequtilities.cpp:385:11: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pdAaMod[']'] = 0.0;
+                 ^~~~
+msequtilities.cpp:443:11: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pdAaMod['['] = 0.0;
+                 ^~~~
+msequtilities.cpp:444:11: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        m_pdAaMod[']'] = 0.0;
+                 ^~~~
+msequtilities.cpp:488:19: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        if(fabs(m_pdAaMod['t']-79.966331) < 0.1)        {
+                         ^~~~
+msequtilities.cpp:492:19: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        if(fabs(m_pdAaMod['s']-79.966331) < 0.1)        {
+                         ^~~~
+msequtilities.cpp:496:19: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        if(fabs(m_pdAaMod['y']-79.966331) < 0.1)        {
+                         ^~~~
+msequtilities.cpp:615:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['a'] = pdValue['A'] = m_calc.calcMass("C3H5ON");
+                       ^~~~
+msequtilities.cpp:615:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['a'] = pdValue['A'] = m_calc.calcMass("C3H5ON");
+                                      ^~~~
+msequtilities.cpp:616:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['a'] = pValue['A'] = (float)pdValue['A'];
+                      ^~~~
+msequtilities.cpp:616:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['a'] = pValue['A'] = (float)pdValue['A'];
+                                    ^~~~
+msequtilities.cpp:616:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['a'] = pValue['A'] = (float)pdValue['A'];
+                                                          ^~~~
+msequtilities.cpp:618:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['b'] = pdValue['B'] = m_calc.calcMass("C4H6O2N2");      // Same as N
+                       ^~~~
+msequtilities.cpp:618:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['b'] = pdValue['B'] = m_calc.calcMass("C4H6O2N2");      // Same as N
+                                      ^~~~
+msequtilities.cpp:619:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                      ^~~~
+msequtilities.cpp:619:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                                    ^~~~
+msequtilities.cpp:619:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                                                          ^~~~
+msequtilities.cpp:621:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['c'] = pdValue['C'] = m_calc.calcMass("C3H5ONS");
+                       ^~~~
+msequtilities.cpp:621:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['c'] = pdValue['C'] = m_calc.calcMass("C3H5ONS");
+                                      ^~~~
+msequtilities.cpp:622:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['c'] = pValue['C'] = (float)pdValue['C'];
+                      ^~~~
+msequtilities.cpp:622:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['c'] = pValue['C'] = (float)pdValue['C'];
+                                    ^~~~
+msequtilities.cpp:622:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['c'] = pValue['C'] = (float)pdValue['C'];
+                                                          ^~~~
+msequtilities.cpp:624:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['d'] = pdValue['D'] = m_calc.calcMass("C4H5O3N");
+                       ^~~~
+msequtilities.cpp:624:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['d'] = pdValue['D'] = m_calc.calcMass("C4H5O3N");
+                                      ^~~~
+msequtilities.cpp:625:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['d'] = pValue['D'] = (float)pdValue['D'];
+                      ^~~~
+msequtilities.cpp:625:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['d'] = pValue['D'] = (float)pdValue['D'];
+                                    ^~~~
+msequtilities.cpp:625:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['d'] = pValue['D'] = (float)pdValue['D'];
+                                                          ^~~~
+msequtilities.cpp:627:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['e'] = pdValue['E'] = m_calc.calcMass("C5H7O3N");
+                       ^~~~
+msequtilities.cpp:627:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['e'] = pdValue['E'] = m_calc.calcMass("C5H7O3N");
+                                      ^~~~
+msequtilities.cpp:628:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['e'] = pValue['E'] = (float)pdValue['E'];
+                      ^~~~
+msequtilities.cpp:628:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['e'] = pValue['E'] = (float)pdValue['E'];
+                                    ^~~~
+msequtilities.cpp:628:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['e'] = pValue['E'] = (float)pdValue['E'];
+                                                          ^~~~
+msequtilities.cpp:630:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['f'] = pdValue['F'] = m_calc.calcMass("C9H9ON");
+                       ^~~~
+msequtilities.cpp:630:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['f'] = pdValue['F'] = m_calc.calcMass("C9H9ON");
+                                      ^~~~
+msequtilities.cpp:631:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['f'] = pValue['F'] = (float)pdValue['F'];
+                      ^~~~
+msequtilities.cpp:631:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['f'] = pValue['F'] = (float)pdValue['F'];
+                                    ^~~~
+msequtilities.cpp:631:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['f'] = pValue['F'] = (float)pdValue['F'];
+                                                          ^~~~
+msequtilities.cpp:633:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['g'] = pdValue['G'] = m_calc.calcMass("C2H3ON");
+                       ^~~~
+msequtilities.cpp:633:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['g'] = pdValue['G'] = m_calc.calcMass("C2H3ON");
+                                      ^~~~
+msequtilities.cpp:634:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['g'] = pValue['G'] = (float)pdValue['G'];
+                      ^~~~
+msequtilities.cpp:634:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['g'] = pValue['G'] = (float)pdValue['G'];
+                                    ^~~~
+msequtilities.cpp:634:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['g'] = pValue['G'] = (float)pdValue['G'];
+                                                          ^~~~
+msequtilities.cpp:636:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['h'] = pdValue['H'] = m_calc.calcMass("C6H7ON3");
+                       ^~~~
+msequtilities.cpp:636:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['h'] = pdValue['H'] = m_calc.calcMass("C6H7ON3");
+                                      ^~~~
+msequtilities.cpp:637:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['h'] = pValue['H'] = (float)pdValue['H'];
+                      ^~~~
+msequtilities.cpp:637:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['h'] = pValue['H'] = (float)pdValue['H'];
+                                    ^~~~
+msequtilities.cpp:637:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['h'] = pValue['H'] = (float)pdValue['H'];
+                                                          ^~~~
+msequtilities.cpp:639:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['i'] = pdValue['I'] = m_calc.calcMass("C6H11ON");
+                       ^~~~
+msequtilities.cpp:639:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['i'] = pdValue['I'] = m_calc.calcMass("C6H11ON");
+                                      ^~~~
+msequtilities.cpp:640:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['i'] = pValue['I'] = (float)pdValue['I'];
+                      ^~~~
+msequtilities.cpp:640:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['i'] = pValue['I'] = (float)pdValue['I'];
+                                    ^~~~
+msequtilities.cpp:640:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['i'] = pValue['I'] = (float)pdValue['I'];
+                                                          ^~~~
+msequtilities.cpp:642:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['j'] = pdValue['J'] = 0.0;
+                       ^~~~
+msequtilities.cpp:642:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['j'] = pdValue['J'] = 0.0;
+                                      ^~~~
+msequtilities.cpp:643:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['j'] = pValue['J'] = (float)pdValue['J'];
+                      ^~~~
+msequtilities.cpp:643:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['j'] = pValue['J'] = (float)pdValue['J'];
+                                    ^~~~
+msequtilities.cpp:643:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['j'] = pValue['J'] = (float)pdValue['J'];
+                                                          ^~~~
+msequtilities.cpp:645:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['k'] = pdValue['K'] = m_calc.calcMass("C6H12ON2");
+                       ^~~~
+msequtilities.cpp:645:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['k'] = pdValue['K'] = m_calc.calcMass("C6H12ON2");
+                                      ^~~~
+msequtilities.cpp:646:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['k'] = pValue['K'] = (float)pdValue['K'];
+                      ^~~~
+msequtilities.cpp:646:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['k'] = pValue['K'] = (float)pdValue['K'];
+                                    ^~~~
+msequtilities.cpp:646:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['k'] = pValue['K'] = (float)pdValue['K'];
+                                                          ^~~~
+msequtilities.cpp:648:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['l'] = pdValue['L'] = m_calc.calcMass("C6H11ON");
+                       ^~~~
+msequtilities.cpp:648:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['l'] = pdValue['L'] = m_calc.calcMass("C6H11ON");
+                                      ^~~~
+msequtilities.cpp:649:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['l'] = pValue['L'] = (float)pdValue['L'];
+                      ^~~~
+msequtilities.cpp:649:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['l'] = pValue['L'] = (float)pdValue['L'];
+                                    ^~~~
+msequtilities.cpp:649:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['l'] = pValue['L'] = (float)pdValue['L'];
+                                                          ^~~~
+msequtilities.cpp:651:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['m'] = pdValue['M'] = m_calc.calcMass("C5H9ONS");
+                       ^~~~
+msequtilities.cpp:651:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['m'] = pdValue['M'] = m_calc.calcMass("C5H9ONS");
+                                      ^~~~
+msequtilities.cpp:652:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['m'] = pValue['M'] = (float)pdValue['M'];
+                      ^~~~
+msequtilities.cpp:652:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['m'] = pValue['M'] = (float)pdValue['M'];
+                                    ^~~~
+msequtilities.cpp:652:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['m'] = pValue['M'] = (float)pdValue['M'];
+                                                          ^~~~
+msequtilities.cpp:654:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['n'] = pdValue['N'] = m_calc.calcMass("C4H6O2N2");
+                       ^~~~
+msequtilities.cpp:654:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['n'] = pdValue['N'] = m_calc.calcMass("C4H6O2N2");
+                                      ^~~~
+msequtilities.cpp:655:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['n'] = pValue['N'] = (float)pdValue['N'];
+                      ^~~~
+msequtilities.cpp:655:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['n'] = pValue['N'] = (float)pdValue['N'];
+                                    ^~~~
+msequtilities.cpp:655:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['n'] = pValue['N'] = (float)pdValue['N'];
+                                                          ^~~~
+msequtilities.cpp:657:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['o'] = pdValue['O'] = m_calc.calcMass("C4H6O2N2");      // Same as N
+                       ^~~~
+msequtilities.cpp:657:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['o'] = pdValue['O'] = m_calc.calcMass("C4H6O2N2");      // Same as N
+                                      ^~~~
+msequtilities.cpp:658:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['o'] = pValue['O'] = (float)pdValue['O'];
+                      ^~~~
+msequtilities.cpp:658:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['o'] = pValue['O'] = (float)pdValue['O'];
+                                    ^~~~
+msequtilities.cpp:658:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['o'] = pValue['O'] = (float)pdValue['O'];
+                                                          ^~~~
+msequtilities.cpp:660:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['p'] = pdValue['P'] = m_calc.calcMass("C5H7ON");
+                       ^~~~
+msequtilities.cpp:660:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['p'] = pdValue['P'] = m_calc.calcMass("C5H7ON");
+                                      ^~~~
+msequtilities.cpp:661:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['p'] = pValue['P'] = (float)pdValue['P'];
+                      ^~~~
+msequtilities.cpp:661:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['p'] = pValue['P'] = (float)pdValue['P'];
+                                    ^~~~
+msequtilities.cpp:661:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['p'] = pValue['P'] = (float)pdValue['P'];
+                                                          ^~~~
+msequtilities.cpp:663:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['q'] = pdValue['Q'] = m_calc.calcMass("C5H8O2N2");
+                       ^~~~
+msequtilities.cpp:663:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['q'] = pdValue['Q'] = m_calc.calcMass("C5H8O2N2");
+                                      ^~~~
+msequtilities.cpp:664:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['q'] = pValue['Q'] = (float)pdValue['Q'];
+                      ^~~~
+msequtilities.cpp:664:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['q'] = pValue['Q'] = (float)pdValue['Q'];
+                                    ^~~~
+msequtilities.cpp:664:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['q'] = pValue['Q'] = (float)pdValue['Q'];
+                                                          ^~~~
+msequtilities.cpp:666:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['r'] = pdValue['R'] = m_calc.calcMass("C6H12ON4");
+                       ^~~~
+msequtilities.cpp:666:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['r'] = pdValue['R'] = m_calc.calcMass("C6H12ON4");
+                                      ^~~~
+msequtilities.cpp:667:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['r'] = pValue['R'] = (float)pdValue['R'];
+                      ^~~~
+msequtilities.cpp:667:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['r'] = pValue['R'] = (float)pdValue['R'];
+                                    ^~~~
+msequtilities.cpp:667:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['r'] = pValue['R'] = (float)pdValue['R'];
+                                                          ^~~~
+msequtilities.cpp:669:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['s'] = pdValue['S'] = m_calc.calcMass("C3H5O2N");
+                       ^~~~
+msequtilities.cpp:669:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['s'] = pdValue['S'] = m_calc.calcMass("C3H5O2N");
+                                      ^~~~
+msequtilities.cpp:670:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['s'] = pValue['S'] = (float)pdValue['S'];
+                      ^~~~
+msequtilities.cpp:670:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['s'] = pValue['S'] = (float)pdValue['S'];
+                                    ^~~~
+msequtilities.cpp:670:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['s'] = pValue['S'] = (float)pdValue['S'];
+                                                          ^~~~
+msequtilities.cpp:672:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['t'] = pdValue['T'] = m_calc.calcMass("C4H7O2N");
+                       ^~~~
+msequtilities.cpp:672:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['t'] = pdValue['T'] = m_calc.calcMass("C4H7O2N");
+                                      ^~~~
+msequtilities.cpp:673:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['t'] = pValue['T'] = (float)pdValue['T'];
+                      ^~~~
+msequtilities.cpp:673:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['t'] = pValue['T'] = (float)pdValue['T'];
+                                    ^~~~
+msequtilities.cpp:673:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['t'] = pValue['T'] = (float)pdValue['T'];
+                                                          ^~~~
+msequtilities.cpp:675:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['u'] = pdValue['U'] = m_calc.calcMass("C3H5ONSe");      // selenocysteine
+                       ^~~~
+msequtilities.cpp:675:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['u'] = pdValue['U'] = m_calc.calcMass("C3H5ONSe");      // selenocysteine
+                                      ^~~~
+msequtilities.cpp:676:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['u'] = pValue['U'] = (float)pdValue['U'];
+                      ^~~~
+msequtilities.cpp:676:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['u'] = pValue['U'] = (float)pdValue['U'];
+                                    ^~~~
+msequtilities.cpp:676:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['u'] = pValue['U'] = (float)pdValue['U'];
+                                                          ^~~~
+msequtilities.cpp:678:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['v'] = pdValue['V'] = m_calc.calcMass("C5H9ON");
+                       ^~~~
+msequtilities.cpp:678:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['v'] = pdValue['V'] = m_calc.calcMass("C5H9ON");
+                                      ^~~~
+msequtilities.cpp:679:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['v'] = pValue['V'] = (float)pdValue['V'];
+                      ^~~~
+msequtilities.cpp:679:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['v'] = pValue['V'] = (float)pdValue['V'];
+                                    ^~~~
+msequtilities.cpp:679:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['v'] = pValue['V'] = (float)pdValue['V'];
+                                                          ^~~~
+msequtilities.cpp:681:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['w'] = pdValue['W'] = m_calc.calcMass("C11H10ON2");
+                       ^~~~
+msequtilities.cpp:681:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['w'] = pdValue['W'] = m_calc.calcMass("C11H10ON2");
+                                      ^~~~
+msequtilities.cpp:682:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['w'] = pValue['W'] = (float)pdValue['W'];
+                      ^~~~
+msequtilities.cpp:682:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['w'] = pValue['W'] = (float)pdValue['W'];
+                                    ^~~~
+msequtilities.cpp:682:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['w'] = pValue['W'] = (float)pdValue['W'];
+                                                          ^~~~
+msequtilities.cpp:684:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['x'] = pdValue['X'] = 111.060000;       // Why?
+                       ^~~~
+msequtilities.cpp:684:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['x'] = pdValue['X'] = 111.060000;       // Why?
+                                      ^~~~
+msequtilities.cpp:685:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['x'] = pValue['X'] = (float)pdValue['X'];
+                      ^~~~
+msequtilities.cpp:685:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['x'] = pValue['X'] = (float)pdValue['X'];
+                                    ^~~~
+msequtilities.cpp:685:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['x'] = pValue['X'] = (float)pdValue['X'];
+                                                          ^~~~
+msequtilities.cpp:687:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['y'] = pdValue['Y'] = m_calc.calcMass("C9H9O2N");
+                       ^~~~
+msequtilities.cpp:687:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['y'] = pdValue['Y'] = m_calc.calcMass("C9H9O2N");
+                                      ^~~~
+msequtilities.cpp:688:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['y'] = pValue['Y'] = (float)pdValue['Y'];
+                      ^~~~
+msequtilities.cpp:688:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['y'] = pValue['Y'] = (float)pdValue['Y'];
+                                    ^~~~
+msequtilities.cpp:688:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['y'] = pValue['Y'] = (float)pdValue['Y'];
+                                                          ^~~~
+msequtilities.cpp:690:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['z'] = pdValue['Z'] = m_calc.calcMass("C5H8O2N2");      // Same as Q
+                       ^~~~
+msequtilities.cpp:690:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['z'] = pdValue['Z'] = m_calc.calcMass("C5H8O2N2");      // Same as Q
+                                      ^~~~
+msequtilities.cpp:691:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['z'] = pValue['Z'] = (float)pdValue['Z'];
+                      ^~~~
+msequtilities.cpp:691:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['z'] = pValue['Z'] = (float)pdValue['Z'];
+                                    ^~~~
+msequtilities.cpp:691:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['z'] = pValue['Z'] = (float)pdValue['Z'];
+                                                          ^~~~
+msequtilities.cpp:693:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['b'] = pdValue['B'] = m_calc.calcMass("C10H21O2N3");    // Hypusine
+                       ^~~~
+msequtilities.cpp:693:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['b'] = pdValue['B'] = m_calc.calcMass("C10H21O2N3");    // Hypusine
+                                      ^~~~
+msequtilities.cpp:694:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                      ^~~~
+msequtilities.cpp:694:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                                    ^~~~
+msequtilities.cpp:694:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                                                          ^~~~
+msequtilities.cpp:705:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['a'] = pdValue['A'] = 71.0788;
+                       ^~~~
+msequtilities.cpp:705:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['a'] = pdValue['A'] = 71.0788;
+                                      ^~~~
+msequtilities.cpp:706:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['a'] = pValue['A'] = (float)pdValue['A'];
+                      ^~~~
+msequtilities.cpp:706:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['a'] = pValue['A'] = (float)pdValue['A'];
+                                    ^~~~
+msequtilities.cpp:706:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['a'] = pValue['A'] = (float)pdValue['A'];
+                                                          ^~~~
+msequtilities.cpp:708:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['b'] = pdValue['B'] = 114.1038; // Same as N
+                       ^~~~
+msequtilities.cpp:708:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['b'] = pdValue['B'] = 114.1038; // Same as N
+                                      ^~~~
+msequtilities.cpp:709:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                      ^~~~
+msequtilities.cpp:709:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                                    ^~~~
+msequtilities.cpp:709:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['b'] = pValue['B'] = (float)pdValue['B'];
+                                                          ^~~~
+msequtilities.cpp:711:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['c'] = pdValue['C'] = 103.1388;
+                       ^~~~
+msequtilities.cpp:711:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['c'] = pdValue['C'] = 103.1388;
+                                      ^~~~
+msequtilities.cpp:712:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['c'] = pValue['C'] = (float)pdValue['C'];
+                      ^~~~
+msequtilities.cpp:712:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['c'] = pValue['C'] = (float)pdValue['C'];
+                                    ^~~~
+msequtilities.cpp:712:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['c'] = pValue['C'] = (float)pdValue['C'];
+                                                          ^~~~
+msequtilities.cpp:714:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['d'] = pdValue['D'] = 115.0886;
+                       ^~~~
+msequtilities.cpp:714:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['d'] = pdValue['D'] = 115.0886;
+                                      ^~~~
+msequtilities.cpp:715:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['d'] = pValue['D'] = (float)pdValue['D'];
+                      ^~~~
+msequtilities.cpp:715:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['d'] = pValue['D'] = (float)pdValue['D'];
+                                    ^~~~
+msequtilities.cpp:715:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['d'] = pValue['D'] = (float)pdValue['D'];
+                                                          ^~~~
+msequtilities.cpp:717:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['e'] = pdValue['E'] = 129.1155;
+                       ^~~~
+msequtilities.cpp:717:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['e'] = pdValue['E'] = 129.1155;
+                                      ^~~~
+msequtilities.cpp:718:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['e'] = pValue['E'] = (float)pdValue['E'];
+                      ^~~~
+msequtilities.cpp:718:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['e'] = pValue['E'] = (float)pdValue['E'];
+                                    ^~~~
+msequtilities.cpp:718:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['e'] = pValue['E'] = (float)pdValue['E'];
+                                                          ^~~~
+msequtilities.cpp:720:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['f'] = pdValue['F'] = 147.1766;
+                       ^~~~
+msequtilities.cpp:720:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['f'] = pdValue['F'] = 147.1766;
+                                      ^~~~
+msequtilities.cpp:721:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['f'] = pValue['F'] = (float)pdValue['F'];
+                      ^~~~
+msequtilities.cpp:721:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['f'] = pValue['F'] = (float)pdValue['F'];
+                                    ^~~~
+msequtilities.cpp:721:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['f'] = pValue['F'] = (float)pdValue['F'];
+                                                          ^~~~
+msequtilities.cpp:723:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['g'] = pdValue['G'] = 57.0519;
+                       ^~~~
+msequtilities.cpp:723:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['g'] = pdValue['G'] = 57.0519;
+                                      ^~~~
+msequtilities.cpp:724:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['g'] = pValue['G'] = (float)pdValue['G'];
+                      ^~~~
+msequtilities.cpp:724:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['g'] = pValue['G'] = (float)pdValue['G'];
+                                    ^~~~
+msequtilities.cpp:724:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['g'] = pValue['G'] = (float)pdValue['G'];
+                                                          ^~~~
+msequtilities.cpp:726:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['h'] = pdValue['H'] = 137.1411;
+                       ^~~~
+msequtilities.cpp:726:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['h'] = pdValue['H'] = 137.1411;
+                                      ^~~~
+msequtilities.cpp:727:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['h'] = pValue['H'] = (float)pdValue['H'];
+                      ^~~~
+msequtilities.cpp:727:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['h'] = pValue['H'] = (float)pdValue['H'];
+                                    ^~~~
+msequtilities.cpp:727:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['h'] = pValue['H'] = (float)pdValue['H'];
+                                                          ^~~~
+msequtilities.cpp:729:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['i'] = pdValue['I'] = 113.1594;
+                       ^~~~
+msequtilities.cpp:729:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['i'] = pdValue['I'] = 113.1594;
+                                      ^~~~
+msequtilities.cpp:730:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['i'] = pValue['I'] = (float)pdValue['I'];
+                      ^~~~
+msequtilities.cpp:730:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['i'] = pValue['I'] = (float)pdValue['I'];
+                                    ^~~~
+msequtilities.cpp:730:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['i'] = pValue['I'] = (float)pdValue['I'];
+                                                          ^~~~
+msequtilities.cpp:732:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['j'] = pdValue['J'] = 0.0;
+                       ^~~~
+msequtilities.cpp:732:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['j'] = pdValue['J'] = 0.0;
+                                      ^~~~
+msequtilities.cpp:733:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['j'] = pValue['J'] = (float)pdValue['J'];
+                      ^~~~
+msequtilities.cpp:733:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['j'] = pValue['J'] = (float)pdValue['J'];
+                                    ^~~~
+msequtilities.cpp:733:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['j'] = pValue['J'] = (float)pdValue['J'];
+                                                          ^~~~
+msequtilities.cpp:735:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['k'] = pdValue['K'] = 128.1741;
+                       ^~~~
+msequtilities.cpp:735:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['k'] = pdValue['K'] = 128.1741;
+                                      ^~~~
+msequtilities.cpp:736:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['k'] = pValue['K'] = (float)pdValue['K'];
+                      ^~~~
+msequtilities.cpp:736:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['k'] = pValue['K'] = (float)pdValue['K'];
+                                    ^~~~
+msequtilities.cpp:736:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['k'] = pValue['K'] = (float)pdValue['K'];
+                                                          ^~~~
+msequtilities.cpp:738:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['l'] = pdValue['L'] = 113.1594;
+                       ^~~~
+msequtilities.cpp:738:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['l'] = pdValue['L'] = 113.1594;
+                                      ^~~~
+msequtilities.cpp:739:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['l'] = pValue['L'] = (float)pdValue['L'];
+                      ^~~~
+msequtilities.cpp:739:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['l'] = pValue['L'] = (float)pdValue['L'];
+                                    ^~~~
+msequtilities.cpp:739:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['l'] = pValue['L'] = (float)pdValue['L'];
+                                                          ^~~~
+msequtilities.cpp:741:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['m'] = pdValue['M'] = 131.1926;
+                       ^~~~
+msequtilities.cpp:741:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['m'] = pdValue['M'] = 131.1926;
+                                      ^~~~
+msequtilities.cpp:742:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['m'] = pValue['M'] = (float)pdValue['M'];
+                      ^~~~
+msequtilities.cpp:742:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['m'] = pValue['M'] = (float)pdValue['M'];
+                                    ^~~~
+msequtilities.cpp:742:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['m'] = pValue['M'] = (float)pdValue['M'];
+                                                          ^~~~
+msequtilities.cpp:744:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['n'] = pdValue['N'] = 114.1038;
+                       ^~~~
+msequtilities.cpp:744:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['n'] = pdValue['N'] = 114.1038;
+                                      ^~~~
+msequtilities.cpp:745:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['n'] = pValue['N'] = (float)pdValue['N'];
+                      ^~~~
+msequtilities.cpp:745:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['n'] = pValue['N'] = (float)pdValue['N'];
+                                    ^~~~
+msequtilities.cpp:745:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['n'] = pValue['N'] = (float)pdValue['N'];
+                                                          ^~~~
+msequtilities.cpp:747:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['o'] = pdValue['O'] = 114.1038; // Same as N
+                       ^~~~
+msequtilities.cpp:747:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['o'] = pdValue['O'] = 114.1038; // Same as N
+                                      ^~~~
+msequtilities.cpp:748:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['o'] = pValue['O'] = (float)pdValue['O'];
+                      ^~~~
+msequtilities.cpp:748:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['o'] = pValue['O'] = (float)pdValue['O'];
+                                    ^~~~
+msequtilities.cpp:748:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['o'] = pValue['O'] = (float)pdValue['O'];
+                                                          ^~~~
+msequtilities.cpp:750:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['p'] = pdValue['P'] = 97.1167;
+                       ^~~~
+msequtilities.cpp:750:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['p'] = pdValue['P'] = 97.1167;
+                                      ^~~~
+msequtilities.cpp:751:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['p'] = pValue['P'] = (float)pdValue['P'];
+                      ^~~~
+msequtilities.cpp:751:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['p'] = pValue['P'] = (float)pdValue['P'];
+                                    ^~~~
+msequtilities.cpp:751:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['p'] = pValue['P'] = (float)pdValue['P'];
+                                                          ^~~~
+msequtilities.cpp:753:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['q'] = pdValue['Q'] = 128.1307;
+                       ^~~~
+msequtilities.cpp:753:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['q'] = pdValue['Q'] = 128.1307;
+                                      ^~~~
+msequtilities.cpp:754:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['q'] = pValue['Q'] = (float)pdValue['Q'];
+                      ^~~~
+msequtilities.cpp:754:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['q'] = pValue['Q'] = (float)pdValue['Q'];
+                                    ^~~~
+msequtilities.cpp:754:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['q'] = pValue['Q'] = (float)pdValue['Q'];
+                                                          ^~~~
+msequtilities.cpp:756:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['r'] = pdValue['R'] = 156.1875;
+                       ^~~~
+msequtilities.cpp:756:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['r'] = pdValue['R'] = 156.1875;
+                                      ^~~~
+msequtilities.cpp:757:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['r'] = pValue['R'] = (float)pdValue['R'];
+                      ^~~~
+msequtilities.cpp:757:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['r'] = pValue['R'] = (float)pdValue['R'];
+                                    ^~~~
+msequtilities.cpp:757:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['r'] = pValue['R'] = (float)pdValue['R'];
+                                                          ^~~~
+msequtilities.cpp:759:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['s'] = pdValue['S'] = 87.0782;
+                       ^~~~
+msequtilities.cpp:759:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['s'] = pdValue['S'] = 87.0782;
+                                      ^~~~
+msequtilities.cpp:760:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['s'] = pValue['S'] = (float)pdValue['S'];
+                      ^~~~
+msequtilities.cpp:760:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['s'] = pValue['S'] = (float)pdValue['S'];
+                                    ^~~~
+msequtilities.cpp:760:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['s'] = pValue['S'] = (float)pdValue['S'];
+                                                          ^~~~
+msequtilities.cpp:762:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['t'] = pdValue['T'] = 101.1051;
+                       ^~~~
+msequtilities.cpp:762:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['t'] = pdValue['T'] = 101.1051;
+                                      ^~~~
+msequtilities.cpp:763:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['t'] = pValue['T'] = (float)pdValue['T'];
+                      ^~~~
+msequtilities.cpp:763:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['t'] = pValue['T'] = (float)pdValue['T'];
+                                    ^~~~
+msequtilities.cpp:763:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['t'] = pValue['T'] = (float)pdValue['T'];
+                                                          ^~~~
+msequtilities.cpp:765:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['u'] = pdValue['U'] = 103.1388 - 32.066 + 78.96;        // selenocysteine
+                       ^~~~
+msequtilities.cpp:765:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['u'] = pdValue['U'] = 103.1388 - 32.066 + 78.96;        // selenocysteine
+                                      ^~~~
+msequtilities.cpp:766:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['u'] = pValue['U'] = (float)pdValue['U'];
+                      ^~~~
+msequtilities.cpp:766:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['u'] = pValue['U'] = (float)pdValue['U'];
+                                    ^~~~
+msequtilities.cpp:766:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['u'] = pValue['U'] = (float)pdValue['U'];
+                                                          ^~~~
+msequtilities.cpp:768:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['v'] = pdValue['V'] = 99.1326;
+                       ^~~~
+msequtilities.cpp:768:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['v'] = pdValue['V'] = 99.1326;
+                                      ^~~~
+msequtilities.cpp:769:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['v'] = pValue['V'] = (float)pdValue['V'];
+                      ^~~~
+msequtilities.cpp:769:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['v'] = pValue['V'] = (float)pdValue['V'];
+                                    ^~~~
+msequtilities.cpp:769:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['v'] = pValue['V'] = (float)pdValue['V'];
+                                                          ^~~~
+msequtilities.cpp:771:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['w'] = pdValue['W'] = 186.2132;
+                       ^~~~
+msequtilities.cpp:771:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['w'] = pdValue['W'] = 186.2132;
+                                      ^~~~
+msequtilities.cpp:772:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['w'] = pValue['W'] = (float)pdValue['W'];
+                      ^~~~
+msequtilities.cpp:772:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['w'] = pValue['W'] = (float)pdValue['W'];
+                                    ^~~~
+msequtilities.cpp:772:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['w'] = pValue['W'] = (float)pdValue['W'];
+                                                          ^~~~
+msequtilities.cpp:774:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['x'] = pdValue['X'] = 113.1594; // Why?
+                       ^~~~
+msequtilities.cpp:774:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['x'] = pdValue['X'] = 113.1594; // Why?
+                                      ^~~~
+msequtilities.cpp:775:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['x'] = pValue['X'] = (float)pdValue['X'];
+                      ^~~~
+msequtilities.cpp:775:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['x'] = pValue['X'] = (float)pdValue['X'];
+                                    ^~~~
+msequtilities.cpp:775:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['x'] = pValue['X'] = (float)pdValue['X'];
+                                                          ^~~~
+msequtilities.cpp:777:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['y'] = pdValue['Y'] = 163.1760;
+                       ^~~~
+msequtilities.cpp:777:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['y'] = pdValue['Y'] = 163.1760;
+                                      ^~~~
+msequtilities.cpp:778:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['y'] = pValue['Y'] = (float)pdValue['Y'];
+                      ^~~~
+msequtilities.cpp:778:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['y'] = pValue['Y'] = (float)pdValue['Y'];
+                                    ^~~~
+msequtilities.cpp:778:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['y'] = pValue['Y'] = (float)pdValue['Y'];
+                                                          ^~~~
+msequtilities.cpp:780:10: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['z'] = pdValue['Z'] = 128.1307; // Same as Q
+                       ^~~~
+msequtilities.cpp:780:25: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pdValue['z'] = pdValue['Z'] = 128.1307; // Same as Q
+                                      ^~~~
+msequtilities.cpp:781:9: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['z'] = pValue['Z'] = (float)pdValue['Z'];
+                      ^~~~
+msequtilities.cpp:781:23: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['z'] = pValue['Z'] = (float)pdValue['Z'];
+                                    ^~~~
+msequtilities.cpp:781:45: warning: array subscript is of type 'char' [-Wchar-subscripts]
+                pValue['z'] = pValue['Z'] = (float)pdValue['Z'];
+                                                          ^~~~
+274 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mspectrumcondition.cpp -o mspectrumcondition.o
+In file included from mspectrumcondition.cpp:152:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mspectrumcondition.cpp:154:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mspectrumcondition.cpp:156:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mspectrumcondition.cpp:158:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+6 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mtermmods.cpp -o mtermmods.o
+In file included from mtermmods.cpp:137:
+In file included from ./mprocess.h:143:
+In file included from ./mspectrumcondition.h:153:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mtermmods.cpp:137:
+In file included from ./mprocess.h:145:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mtermmods.cpp:137:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mtermmods.cpp:138:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mtermmods.cpp:138:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+7 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mxxcleavage.cpp -o mxxcleavage.o
+In file included from mxxcleavage.cpp:137:
+In file included from ./mprocess.h:143:
+In file included from ./mspectrumcondition.h:153:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from mxxcleavage.cpp:137:
+In file included from ./mprocess.h:145:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from mxxcleavage.cpp:137:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mxxcleavage.cpp:138:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from mxxcleavage.cpp:138:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+7 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxbiomlhandler.cpp -o saxbiomlhandler.o
+In file included from saxbiomlhandler.cpp:140:
+In file included from ./saxbiomlhandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxbiomlhandler.cpp:140:
+In file included from ./saxbiomlhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxgamlhandler.cpp -o saxgamlhandler.o
+In file included from saxgamlhandler.cpp:139:
+In file included from ./saxgamlhandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxgamlhandler.cpp:139:
+In file included from ./saxgamlhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxhandler.cpp -o saxhandler.o
+In file included from saxhandler.cpp:132:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxhandler.cpp:132:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+saxhandler.cpp:492:32: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+                l = (l << 56) | ((l << 40) & 0x00FF000000000000LL) | ((l << 24) & 0x0000FF0000000000LL) | ((l << 8) & 0x000000FF00000000LL) |
+                                             ^
+saxhandler.cpp:492:69: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+                l = (l << 56) | ((l << 40) & 0x00FF000000000000LL) | ((l << 24) & 0x0000FF0000000000LL) | ((l << 8) & 0x000000FF00000000LL) |
+                                                                                  ^
+saxhandler.cpp:492:105: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+                l = (l << 56) | ((l << 40) & 0x00FF000000000000LL) | ((l << 24) & 0x0000FF0000000000LL) | ((l << 8) & 0x000000FF00000000LL) |
+                                                                                                                      ^
+saxhandler.cpp:493:29: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+                        (l >> 56) | ((l >> 40) & 0x000000000000FF00LL) | ((l >> 24) & 0x0000000000FF0000LL) | ((l >> 8) & 0x00000000FF000000LL) ;
+                                                 ^
+saxhandler.cpp:493:66: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+                        (l >> 56) | ((l >> 40) & 0x000000000000FF00LL) | ((l >> 24) & 0x0000000000FF0000LL) | ((l >> 8) & 0x00000000FF000000LL) ;
+                                                                                      ^
+saxhandler.cpp:493:102: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+                        (l >> 56) | ((l >> 40) & 0x000000000000FF00LL) | ((l >> 24) & 0x0000000000FF0000LL) | ((l >> 8) & 0x00000000FF000000LL) ;
+                                                                                                                          ^
+8 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxmodhandler.cpp -o saxmodhandler.o
+In file included from saxmodhandler.cpp:140:
+In file included from ./saxmodhandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxmodhandler.cpp:140:
+In file included from ./saxmodhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxmzdatahandler.cpp -o saxmzdatahandler.o
+In file included from saxmzdatahandler.cpp:28:
+In file included from ./saxmzdatahandler.h:4:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxmzdatahandler.cpp:28:
+In file included from ./saxmzdatahandler.h:4:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxmzmlhandler.cpp -o saxmzmlhandler.o
+In file included from saxmzmlhandler.cpp:33:
+In file included from ./saxmzmlhandler.h:4:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxmzmlhandler.cpp:33:
+In file included from ./saxmzmlhandler.h:4:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxmzxmlhandler.cpp -o saxmzxmlhandler.o
+In file included from saxmzxmlhandler.cpp:20:
+In file included from ./saxmzxmlhandler.h:4:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxmzxmlhandler.cpp:20:
+In file included from ./saxmzxmlhandler.h:4:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxsaphandler.cpp -o saxsaphandler.o
+In file included from saxsaphandler.cpp:140:
+In file included from ./saxsaphandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxsaphandler.cpp:140:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxtandeminputhandler.cpp -o saxtandeminputhandler.o
+In file included from saxtandeminputhandler.cpp:139:
+In file included from ./saxtandeminputhandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxtandeminputhandler.cpp:139:
+In file included from ./saxtandeminputhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c saxtaxhandler.cpp -o saxtaxhandler.o
+In file included from saxtaxhandler.cpp:139:
+In file included from ./saxtaxhandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from saxtaxhandler.cpp:139:
+In file included from ./saxtaxhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c stdafx.cpp -o stdafx.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c tandem.cpp -o tandem.o
+In file included from tandem.cpp:143:
+In file included from ./tandem.h:13:
+./msequenceserver.h:172:23: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                UNKNOWN = 0xFFFFFFFF,
+                                    ^
+In file included from tandem.cpp:143:
+In file included from ./tandem.h:15:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from tandem.cpp:143:
+In file included from ./tandem.h:17:
+In file included from ./mscore.h:144:
+In file included from ./mscorepam.h:135:
+In file included from ./saxsaphandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+In file included from tandem.cpp:143:
+In file included from ./tandem.h:17:
+./mscore.h:420:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_Z =   0x20,
+                            ^
+./mscore.h:428:10: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                S_Z =   6,
+                         ^
+./mscore.h:434:24: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                T_FRAGMENT_PPM =        0x08,
+                                            ^
+In file included from tandem.cpp:143:
+In file included from ./tandem.h:18:
+./mprocess.h:353:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+tandem.cpp:201:20: warning: variable length arrays are a C99 feature [-Wvla-extension]
+        pthread_t pThreads[lMaxThreads];
+                          ^
+tandem.cpp:225:62: warning: if statement has empty body [-Wempty-body]
+        if(!pProcess[0]->load(param, peptide, saps, mods, spectrum));
+                                                                    ^
+tandem.cpp:225:62: note: put the semicolon on a separate line to silence this warning
+tandem.cpp:277:12: warning: unused variable 'tCount' [-Wunused-variable]
+    size_t tCount = pProcess[0]->m_vSpectra.size();
+           ^
+10 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c xmlparameter.cpp -o xmlparameter.o
+In file included from xmlparameter.cpp:144:
+In file included from ./saxtandeminputhandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from xmlparameter.cpp:144:
+In file included from ./saxtandeminputhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c xmltaxonomy.cpp -o xmltaxonomy.o
+In file included from xmltaxonomy.cpp:160:
+In file included from ./saxtaxhandler.h:140:
+In file included from ./saxhandler.h:137:
+In file included from ./mspectrum.h:142:
+./mhistogram.h:446:7: warning: unused variable 'lZeros' [-Wunused-variable]
+                int lZeros = m_lHigh - a - 1;
+                    ^
+In file included from xmltaxonomy.cpp:160:
+In file included from ./saxtaxhandler.h:140:
+./saxhandler.h:230:13: warning: commas at the end of enumerator lists are a C++11 extension [-Wc++11-extensions]
+                I_Z =   0x20,
+                            ^
+2 warnings generated.
+clang++ -shared -L/usr/local/lib -o rTANDEM.so base64.o dataLoader.o loadmspectrum.o masscalc.o mbiomlreport.o mpam.o mplugin.o mpmods.o mprocess.o mrefine.o mreport.o mscore.o mscore_hrk.o mscore_k.o mscore_tandem.o msequencecollection.o msequenceserver.o msequtilities.o mspectrumcondition.o mtermmods.o mxxcleavage.o saxbiomlhandler.o saxgamlhandler.o saxhandler.o saxmodhandler.o saxmzdatahandler.o saxmzmlhandler.o saxmzxmlhandler.o saxsaphandler.o saxtandeminputhandler.o saxtaxhandler.o stdafx.o tandem.o xmlparameter.o xmltaxonomy.o -lpthread -lexpat -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/rTANDEM.Rcheck/rTANDEM/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (rTANDEM)
