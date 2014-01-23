@@ -7,7 +7,9 @@ Error Summary
 -------------
 
 `flowWorkspace` fails due to failed tests unrelated to `Rcpp`.
+
 `Rdisop` fails because it depends on both `RcppClassic` and `Rcpp`.
+
 `mzR` fails because it tries to include `Rcpp/iostream/Rostream.h`, which
 no longer exists (consolidated into `Rcpp/iostream/Rstreambuf.h`) (fixed for
 purposes of this test, since many packages depend on it)
