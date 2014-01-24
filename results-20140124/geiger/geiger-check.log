@@ -1,0 +1,134 @@
+* using log directory ‘/home/kevin/RcppBiocChecks/geiger.Rcheck’
+* using R Under development (unstable) (2014-01-16 r64804)
+* using platform: x86_64-unknown-linux-gnu (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-vignettes’
+* checking for file ‘geiger/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘geiger’ version ‘1.99-3.1’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘geiger’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... NOTE
+Unexported object imported by a ‘:::’ call: ‘coda:::set.mfrow’
+  See the note in ?`:::` about the use of this operator.
+See the information on DESCRIPTION files in the chapter ‘Creating R
+packages’ of the ‘Writing R Extensions’ manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... NOTE
+Packages unavailable to check Rd xrefs: ‘phytools’, ‘TreeSim’
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking compiled code ... OK
+* checking sizes of PDF files under ‘inst/doc’ ... OK
+* checking installed files from ‘inst/doc’ ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘geiger-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: congruify.phylo
+> ### Title: ultrametricization of trees from a supplied timetree
+> ### Aliases: congruify.phylo
+> ### Keywords: graphs manip
+> 
+> ### ** Examples
+> 
+> sal=get(data(caudata))
+> res=congruify.phylo(sal$fam, sal$phy, sal$tax, tol=0, scale=NA)
+Loading required package: parallel
+
+ *** caught segfault ***
+address 0x7fc9db62c9d0, cause 'memory not mapped'
+
+ *** caught segfault ***
+address 0x7fc9db62c9d0, cause 'memory not mapped'
+
+Traceback:
+ 1: mcexit(0L)
+ 2: FUN(1:2[[1L]], ...)
+ 3: lapply(seq_len(cores), inner.do)
+ 4: 
+Traceback:
+ 1: mcexit(0L)
+ 2: FUN(1:2[[2L]], ...)
+ 3
+lappunlist(f(descendants.idx, fu
+ 4: mclapply(X, FUN, ..., mc.silent = TRUE)
+ 5: f(descendants.idx, functi 7: FUN(X[[1L]], ...)
+ 8: lapply(tmp, function(phy) {    mm = match(p 6: unlist(f(descendants.idx, function(desc) {    hh = mm[desc]    ss[hh[!is.na(hh)]] = 1L    .md5(ss)}))
+ 7: FUN(X[[1L]], ...)
+ 8: lapply(tmp, function(phy) {    mm = match(phy$tip.label, tips)    ss = integer(length(tips))    descendants.idx = phy$desc$tips    hashes <- unlist(f(descendants.idx, function(desc) {        hh = mm[desc]        ss[hh[!is.na(hh)]] = 1L        .md5(ss)    }))    hashes[hashes == NULL_TIPS] = NA    phy$hash = hashes    attr(phy, "hashtips") = tips    class(phy) = c(class(phy), "hphylo")    return(.uniquify_hashes(phy))})
+ 9: hashes.phylo(scion, taxa)
+10: congruify.phylo(sal$fam, sal$phy, sal$tax, tol = 0, scale = NA)
+aborting ...
+> print(res$calibrations)
+                                MRCA MaxAge MinAge                 taxonA
+1   5cd993dbd9a942ac4e2dd0429e333071    183    183      Dicamptodon_copei
+3   636d04386be213bdb948520727bd3f78    160    160      Dicamptodon_copei
+4   577d99f955c7304faa80f7d99e3b7f12    145    145      Dicamptodon_copei
+5   a3ab57d53f53dd3165747ed8b51c1b35    106    106      Dicamptodon_copei
+53  f8102b4c13e08a0dd65a638c7f4c5607    151    151 Hemidactylium_scutatum
+54  078713bf5f633171c8b144f2725788cd    136    136 Hemidactylium_scutatum
+55  1c3d619d081bef8ef0c812ca3e915976    124    124 Hemidactylium_scutatum
+178 77eb9c9355259ec0b10b0fdd187b6f67    151    151     Andrias_davidianus
+                      taxonB
+1    Pseudobranchus_axanthus
+3     Hemidactylium_scutatum
+4   Salamandrina_terdigitata
+5          Ambystoma_texanum
+53          Proteus_anguinus
+54    Rhyacotriton_olympicus
+55         Amphiuma_pholeter
+178  Batrachuperus_pinchonii
+> plot(ladderize(sal$phy,right=FALSE), cex=0.35, type="fan", label.offset=2.5)
+Error in plot.new() : 
+  cannot open file '', reason No such file or directory
+Calls: plot -> plot.phylo -> plot.default -> plot.new
+Execution halted
+
+ *** caught segfault ***
+address (nil), cause 'memory not mapped'
+
+Traceback:
+ 1: plot.new()
+ 2: plot.default(0, type = "n", xlim = x.lim, ylim = y.lim, xlab = "",     ylab = "", axes = FALSE, asp = asp, ...)
+ 3: plot.phylo(ladderize(sal$phy, right = FALSE), cex = 0.35, type = "fan",     label.offset = 2.5)
+ 4: plot(ladderize(sal$phy, right = FALSE), cex = 0.35, type = "fan",     label.offset = 2.5)
+aborting ...
+Segmentation fault

@@ -1,0 +1,92 @@
+* using log directory ‘/home/kevin/RcppBiocChecks/CDM.Rcheck’
+* using R Under development (unstable) (2014-01-16 r64804)
+* using platform: x86_64-unknown-linux-gnu (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-vignettes’
+* checking for file ‘CDM/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘CDM’ version ‘2.6-13’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘CDM’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking compiled code ... OK
+* checking examples ... ERROR
+Running examples in ‘CDM-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: din.deterministic
+> ### Title: Deterministic Classification and Joint Maximum Likelihood
+> ###   Estimation of the Mixed DINA/DINO Model
+> ### Aliases: din.deterministic
+> ### Keywords: Deterministic classification Cluster analysis Joint maximum
+> ###   likelihood
+> 
+> ### ** Examples
+> 
+> #############################################################################
+> # SIMULATED EXAMPLE 1: 13 items and 3 attributes
+> #############################################################################
+> 
+> set.seed(679)
+> N <- 3000
+> # specify true Q-matrix
+> q.matrix <- matrix( 0 , 13 , 3 )
+> q.matrix[1:3,1] <- 1
+> q.matrix[4:6,2] <- 1
+> q.matrix[7:9,3] <- 1
+> q.matrix[10,] <- c(1,1,0)
+> q.matrix[11,] <- c(1,0,1)
+> q.matrix[12,] <- c(0,1,1)
+> q.matrix[13,] <- c(1,1,1)
+> q.matrix <- rbind( q.matrix , q.matrix )
+> colnames(q.matrix) <- paste0("Attr",1:ncol(q.matrix))
+> 
+> # simulate data according to the DINA model
+> dat <- sim.din( N=N , q.matrix)$dat
+> 
+> # Joint maximum likelihood estimation (the default: method="JML")
+> res1 <- din.deterministic( dat , q.matrix )
+Error in din.jml.devcrit(dat = dat, datresp = dat.resp, latresp, guess,  : 
+  function 'dataptr' not provided by package 'Rcpp'
+Calls: din.deterministic -> din.jml.devcrit -> .Call
+Execution halted

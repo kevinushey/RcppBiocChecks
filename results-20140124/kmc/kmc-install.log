@@ -1,0 +1,14 @@
+* installing *source* package ‘kmc’ ...
+** package ‘kmc’ successfully unpacked and MD5 sums checked
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c RcppExport.cpp -o RcppExport.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c kmc.cpp -o kmc.o
+clang++ -shared -L/usr/local/lib -o kmc.so RcppExport.o kmc.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/kmc.Rcheck/kmc/libs
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (kmc)

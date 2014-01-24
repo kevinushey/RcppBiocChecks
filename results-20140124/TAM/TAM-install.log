@@ -1,0 +1,21 @@
+* installing *source* package ‘TAM’ ...
+** package ‘TAM’ successfully unpacked and MD5 sums checked
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c prior_normal_density_c.cpp -o prior_normal_density_c.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c rowcumsums_source.cpp -o rowcumsums_source.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c tam_calcexp.cpp -o tam_calcexp.o
+clang -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c tam_caux__3-04.04.c -o tam_caux__3-04.04.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c tam_ctt_c.cpp -o tam_ctt_c.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c tam_helper_ccode.cpp -o tam_helper_ccode.o
+clang++ -shared -L/usr/local/lib -o TAM.so prior_normal_density_c.o rowcumsums_source.o tam_calcexp.o tam_caux__3-04.04.o tam_ctt_c.o tam_helper_ccode.o -L/usr/lib/lapack -llapack -L/usr/lib/openblas-base -lopenblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/TAM.Rcheck/TAM/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (TAM)

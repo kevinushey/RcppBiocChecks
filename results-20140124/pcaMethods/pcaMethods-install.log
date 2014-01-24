@@ -1,0 +1,23 @@
+* installing *source* package ‘pcaMethods’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c nipals.cpp -o nipals.o
+clang++ -shared -L/usr/local/lib -o pcaMethods.so nipals.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/pcaMethods.Rcheck/pcaMethods/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+Creating a new generic function for ‘loadings’ in package ‘pcaMethods’
+Creating a generic function for ‘print’ from package ‘base’ in package ‘pcaMethods’
+Creating a generic function for ‘biplot’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘summary’ from package ‘base’ in package ‘pcaMethods’
+Creating a generic function for ‘predict’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘resid’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘fitted’ from package ‘stats’ in package ‘pcaMethods’
+Creating a generic function for ‘plot’ from package ‘graphics’ in package ‘pcaMethods’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (pcaMethods)

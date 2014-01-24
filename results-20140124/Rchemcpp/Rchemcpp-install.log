@@ -1,0 +1,132 @@
+* installing *source* package ‘Rchemcpp’ ...
+** libs
+make[1]: Entering directory `/home/kevin/RcppBiocChecks/Rchemcpp.Rcheck/00_pkg_src/Rchemcpp/src/chemcpp/src'
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o constant.o constant.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o node.o node.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o atom.o atom.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o bond.o bond.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o cerror.o cerror.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o chemcpp.o chemcpp.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o datacontainer.o datacontainer.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o descriptor.o descriptor.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o elements.o elements.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o jlpioutils.o jlpioutils.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o kcfmolecule.o kcfmolecule.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o molecule.o molecule.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o moleculeset.o moleculeset.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o moleculeutils.o moleculeutils.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o ring.o ring.cpp
+clang++ -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/   -c -o stringutils.o stringutils.cpp
+clang++ -shared -o ../../libchemcpp.dll -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/ constant.o node.o atom.o bond.o cerror.o chemcpp.o datacontainer.o descriptor.o elements.o jlpioutils.o kcfmolecule.o molecule.o moleculeset.o moleculeutils.o ring.o stringutils.o
+clang++ -shared -o ../../libchemcpp.so -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -w -fPIC -I../src/ constant.o node.o atom.o bond.o cerror.o chemcpp.o datacontainer.o descriptor.o elements.o jlpioutils.o kcfmolecule.o molecule.o moleculeset.o moleculeutils.o ring.o stringutils.o
+make[1]: Leaving directory `/home/kevin/RcppBiocChecks/Rchemcpp.Rcheck/00_pkg_src/Rchemcpp/src/chemcpp/src'
+clang++ -I/usr/local/lib/R/include -DNDEBUG -I./chemcpp/src -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c Relements.cpp -o Relements.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -I./chemcpp/src -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c Rmolecule.cpp -o Rmolecule.o
+In file included from Rmolecule.cpp:2:
+./Rmolecule.h:14:7: warning: 'Rmolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        void addAtom(string aSymbol)
+             ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -I./chemcpp/src -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c Rmoleculeset.cpp -o Rmoleculeset.o
+In file included from Rmoleculeset.cpp:2:
+In file included from ./Rmoleculeset.h:8:
+./Rmolecule.h:14:7: warning: 'Rmolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        void addAtom(string aSymbol)
+             ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+In file included from Rmoleculeset.cpp:2:
+In file included from ./Rmoleculeset.h:10:
+In file included from ./chemcpp/src/moleculeset.h:39:
+./chemcpp/src/kcfmolecule.h:61:16: warning: 'KCFMolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        virtual Atom* addAtom(string aSymbol) throw( CError );
+                      ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -I./chemcpp/src -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c spectrum3Dhelper.cpp -o spectrum3Dhelper.o
+In file included from spectrum3Dhelper.cpp:32:
+In file included from ./spectrum3Dhelper.h:38:
+In file included from ./Rmoleculeset.h:8:
+./Rmolecule.h:14:7: warning: 'Rmolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        void addAtom(string aSymbol)
+             ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+In file included from spectrum3Dhelper.cpp:32:
+In file included from ./spectrum3Dhelper.h:38:
+In file included from ./Rmoleculeset.h:10:
+In file included from ./chemcpp/src/moleculeset.h:39:
+./chemcpp/src/kcfmolecule.h:61:16: warning: 'KCFMolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        virtual Atom* addAtom(string aSymbol) throw( CError );
+                      ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -I./chemcpp/src -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c spectrumhelper.cpp -o spectrumhelper.o
+In file included from spectrumhelper.cpp:32:
+In file included from ./spectrumhelper.h:38:
+In file included from ./Rmoleculeset.h:8:
+./Rmolecule.h:14:7: warning: 'Rmolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        void addAtom(string aSymbol)
+             ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+In file included from spectrumhelper.cpp:32:
+In file included from ./spectrumhelper.h:38:
+In file included from ./Rmoleculeset.h:10:
+In file included from ./chemcpp/src/moleculeset.h:39:
+./chemcpp/src/kcfmolecule.h:61:16: warning: 'KCFMolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        virtual Atom* addAtom(string aSymbol) throw( CError );
+                      ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -I./chemcpp/src -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c subtreehelper.cpp -o subtreehelper.o
+In file included from subtreehelper.cpp:32:
+In file included from ./subtreehelper.h:37:
+In file included from ./Rmoleculeset.h:8:
+./Rmolecule.h:14:7: warning: 'Rmolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        void addAtom(string aSymbol)
+             ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+In file included from subtreehelper.cpp:32:
+In file included from ./subtreehelper.h:37:
+In file included from ./Rmoleculeset.h:10:
+In file included from ./chemcpp/src/moleculeset.h:39:
+./chemcpp/src/kcfmolecule.h:61:16: warning: 'KCFMolecule::addAtom' hides overloaded virtual function [-Woverloaded-virtual]
+        virtual Atom* addAtom(string aSymbol) throw( CError );
+                      ^
+./chemcpp/src/molecule.h:133:16: note: hidden overloaded virtual function 'Molecule::addAtom' declared here: different number of parameters (2 vs 1)
+        virtual Atom* addAtom( string aSymbol, bool resetSSSR = true ) throw( CError );
+                      ^
+subtreehelper.cpp:59:6: warning: unused variable 'depth' [-Wunused-variable]
+        int depth = -1;
+            ^
+subtreehelper.cpp:138:6: warning: unused variable 'depth' [-Wunused-variable]
+        int depth = -1;
+            ^
+4 warnings generated.
+clang++ -shared -L/usr/local/lib -o Rchemcpp.so Relements.o Rmolecule.o Rmoleculeset.o spectrum3Dhelper.o spectrumhelper.o subtreehelper.o -L./ -lchemcpp -Wl,-rpath,/home/kevin/RcppBiocChecks/Rchemcpp.Rcheck/Rchemcpp/libs -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/Rchemcpp.Rcheck/Rchemcpp/libs
+** R
+** inst
+** preparing package for lazy loading
+in method for ‘length’ with signature ‘"Rcpp_Rmoleculeset"’: no definition for class “Rcpp_Rmoleculeset”
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (Rchemcpp)

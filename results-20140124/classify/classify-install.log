@@ -1,0 +1,18 @@
+* installing *source* package ‘classify’ ...
+** package ‘classify’ successfully unpacked and MD5 sums checked
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c exp.cpp -o exp.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c gpcm.cpp -o gpcm.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c rcpp_w_lord.cpp -o rcpp_w_lord.o
+clang++ -shared -L/usr/local/lib -o classify.so exp.o gpcm.o rcpp_w_lord.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/classify.Rcheck/classify/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+Creating a generic function for ‘summary’ from package ‘base’ in package ‘classify’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (classify)

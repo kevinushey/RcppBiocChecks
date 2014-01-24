@@ -1,0 +1,19 @@
+* installing *source* package ‘ddgraph’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mcX2cloop.cpp -o mcX2cloop.o
+mcX2cloop.cpp:14:2: warning: unused label 'Rcpp' [-Wunused-label]
+        Rcpp:NumericVector res(iB);
+        ^~~~~
+1 warning generated.
+clang++ -shared -L/usr/local/lib -o ddgraph.so mcX2cloop.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/ddgraph.Rcheck/ddgraph/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (ddgraph)

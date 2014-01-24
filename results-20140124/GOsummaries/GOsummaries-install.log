@@ -1,0 +1,15 @@
+* installing *source* package ‘GOsummaries’ ...
+** package ‘GOsummaries’ successfully unpacked and MD5 sums checked
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c findCoordinates.cpp -o findCoordinates.o
+clang++ -shared -L/usr/local/lib -o GOsummaries.so findCoordinates.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/GOsummaries.Rcheck/GOsummaries/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (GOsummaries)

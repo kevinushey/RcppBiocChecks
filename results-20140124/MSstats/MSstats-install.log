@@ -1,0 +1,14 @@
+* installing *source* package ‘MSstats’ ...
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+Warning: replacing previous import by ‘ggplot2::fortify’ when loading ‘MSstats’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Warning: replacing previous import by ‘ggplot2::fortify’ when loading ‘MSstats’
+* DONE (MSstats)

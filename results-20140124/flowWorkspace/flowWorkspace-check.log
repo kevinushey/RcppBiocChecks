@@ -1,0 +1,159 @@
+* using log directory ‘/home/kevin/RcppBiocChecks/flowWorkspace.Rcheck’
+* using R Under development (unstable) (2014-01-16 r64804)
+* using platform: x86_64-unknown-linux-gnu (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-vignettes’
+* checking for file ‘flowWorkspace/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘flowWorkspace’ version ‘3.9.45’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... NOTE
+Found the following apparent object files/libraries:
+  inst/lib/libflowWorkspace.so
+Object files/libraries should not be included in a source package.
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘flowWorkspace’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is 63.3Mb
+  sub-directories of 1Mb or more:
+    lib   31.1Mb
+    libs  31.2Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Packages listed in more than one of Depends, Imports, Suggests, Enhances:
+  ‘graph’ ‘Biobase’ ‘gridExtra’
+A package should be listed in only one of these fields.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Namespaces in Imports field not imported from:
+  ‘Cairo’ ‘IDPmisc’ ‘RBGL’ ‘graphics’ ‘hexbin’
+  All declared Imports should be used.
+Package in Depends field not imported from: ‘Rcpp’
+  These packages need to be imported from for the case when
+  this namespace is loaded but not attached.
+Unexported objects imported by ‘:::’ calls:
+  ‘flowCore:::checkClass’ ‘flowCore:::copyFlowSet’ ‘flowCore:::guid’
+  ‘graph:::.makeEdgeKeys’ ‘lattice:::updateList’
+  ‘ncdfFlow:::.isValidSamples’ ‘stats:::.splinefun’
+  See the note in ?`:::` about the use of this operator.
+There are ::: calls to the package's namespace in its code. A package
+  almost never needs to use ::: for its own objects:
+  ‘.getKeyword’ ‘.load_gs’ ‘.uuid_gen’ ‘trimWhiteSpace’
+See the information on DESCRIPTION files in the chapter ‘Creating R
+packages’ of the ‘Writing R Extensions’ manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+.getTransformations : <anonymous> : f: no visible binding for global
+  variable ‘max_val’
+.getTransformations : <anonymous> : f: no visible binding for global
+  variable ‘decade’
+.getTransformations : <anonymous> : f: no visible binding for global
+  variable ‘min_val’
+.getTransformations : <anonymous>: multiple local function definitions
+  for ‘f’ with different formal arguments
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking compiled code ... NOTE
+File ‘/home/kevin/RcppBiocChecks/flowWorkspace.Rcheck/flowWorkspace/libs/flowWorkspace.so’:
+  Found ‘_ZSt4cout’, possibly from ‘std::cout’ (C++)
+    Objects: ‘GatingHierarchy.o’, ‘GatingSet.o’, ‘flowJoWorkspace.o’,
+      ‘gate.o’, ‘macFlowJoWorkspace.o’, ‘nodeProperties.o’,
+      ‘transformation.o’, ‘winFlowJoWorkspace.o’, ‘workspace.o’
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console.
+
+See ‘Writing portable packages’ in the ‘Writing R Extensions’ manual.
+* checking sizes of PDF files under ‘inst/doc’ ... OK
+* checking installed files from ‘inst/doc’ ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘flowWorkspace-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: GatingHierarchy-class
+> ### Title: Class GatingHierarchy
+> ### Aliases: GatingHierarchy-class show,GatingHierarchy-method
+> 
+> ### ** Examples
+> 
+> require(flowWorkspaceData)
+Loading required package: flowWorkspaceData
+> 	d<-system.file("extdata",package="flowWorkspaceData")
+> 	wsfile<-list.files(d,pattern="A2004Analysis.xml",full=TRUE)
+> 	ws <- openWorkspace(wsfile);
+> 	G<-try(parseWorkspace(ws,path=d,name=1));
+Version recognised. Continuing..
+Parsing 2 samples
+calling c++ parser...
+mac version of flowJo workspace recognized.
+c++ parsing done!
+Creating flowSet...
+Warning in readBin(con = con, what = dattype, n = count, size = size, signed = signed,  :
+  'signed = FALSE' is only valid for integers of sizes 1 and 2
+Warning in readBin(con = con, what = dattype, n = count, size = size, signed = signed,  :
+  'signed = FALSE' is only valid for integers of sizes 1 and 2
+loading data: /home/kevin/RcppBiocChecks/libs/flowWorkspaceData/extdata/a2004_O1T2pb05i_A1_A01.fcs
+Compensating
+gating ...
+loading data: /home/kevin/RcppBiocChecks/libs/flowWorkspaceData/extdata/a2004_O1T2pb05i_A2_A02.fcs
+Compensating
+gating ...
+done!
+>  gh <- G[[1]]
+> 	getPopStats(gh);
+    flowCore.freq flowJo.count flowCore.count flowJo.freq       node
+ 1:   1.000000000        61832          61832 1.000000000       root
+ 2:   0.800297581        49542          49484 0.801235606       Live
+ 3:   0.084027160         4141           4158 0.083585645        APC
+ 4:   0.592352092         2271           2463 0.548418256     B Cell
+ 5:   0.123376623          502            513 0.121226757        mDC
+ 6:   0.005847953            2              3 0.003984064      IFNa+
+ 7:   0.042884990           22             22 0.043824701      IL-6+
+ 8:   0.005847953            2              3 0.003984064     IL-12+
+ 9:   0.140350877           71             72 0.141434263      TNFa+
+10:   0.107984608          446            449 0.107703453        pDC
+11:   0.002227171            1              1 0.002242152   10.IFNa+
+12:   0.000000000            0              0 0.000000000   11.IL-6+
+13:   0.561247216          250            252 0.560538117  12.IL-12+
+14:   0.000000000            0              0 0.000000000   13.TNFa+
+15:   0.542660254        26795          26853 0.540854225 CD14-MHC2-
+16:   0.058928138         2931           2916 0.059161923  Monocytes
+17:   0.003772291           13             11 0.004435346   16.IFNa+
+18:   0.237654321          694            693 0.236779256   17.IL-6+
+19:   0.047325103          146            138 0.049812351  18.IL-12+
+20:   0.250685871          754            731 0.257250085   19.TNFa+
+> 	plotPopCV(gh)
+Error in if (any(x < 0)) range(tapply(x[x < 0], y[x < 0, drop = TRUE],  : 
+  missing value where TRUE/FALSE needed
+Calls: plotPopCV ... limits.and.aspect -> do.call -> prepanel.default.function
+Execution halted

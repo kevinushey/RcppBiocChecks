@@ -1,0 +1,26 @@
+* installing *source* package ‘flowType’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"  -IboostIncl -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c countsAndMeans.cpp -o countsAndMeans.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"  -IboostIncl -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c flowType.cpp -o flowType.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"  -IboostIncl -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c numberGenerator.cpp -o numberGenerator.o
+clang++ -shared -L/usr/local/lib -o flowType.so countsAndMeans.o flowType.o numberGenerator.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/flowType.Rcheck/flowType/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+Warning: replacing previous import by ‘graphics::plot’ when loading ‘flowClust’
+Warning: replacing previous import by ‘flowClust::Map’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::normalize’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::sort’ when loading ‘flowMerge’
+Creating a generic function for ‘summary’ from package ‘base’ in package ‘flowType’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+Warning: replacing previous import by ‘graphics::plot’ when loading ‘flowClust’
+Warning: replacing previous import by ‘flowClust::Map’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::normalize’ when loading ‘flowMerge’
+Warning: replacing previous import by ‘flowCore::sort’ when loading ‘flowMerge’
+* DONE (flowType)

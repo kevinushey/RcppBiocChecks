@@ -1,0 +1,16 @@
+"pkg","code"
+"1","CARBayes",0
+"2","CDM",1
+"3","classify",0
+"4","diversitree",0
+"5","geiger",1
+"6","GeneticTools",0
+"7","GOsummaries",0
+"8","hypervolume",0
+"9","kmc",0
+"10","orQA",0
+"11","sirt",1
+"12","snplist",0
+"13","surveillance",0
+"14","TAM",1
+"15","tbart",0

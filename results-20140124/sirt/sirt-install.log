@@ -1,0 +1,27 @@
+* installing *source* package ‘sirt’ ...
+** package ‘sirt’ successfully unpacked and MD5 sums checked
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c eigenvaluessirt.cpp -o eigenvaluessirt.o
+In file included from eigenvaluessirt.cpp:6:
+./first_eigenvalue_sirt.h:13:13: warning: 'firsteigenvalsirt' has C-linkage specified, but returns user-defined type 'Rcpp::List' (aka 'Vector<19>') which is incompatible with C [-Wreturn-type-c-linkage]
+ Rcpp::List firsteigenvalsirt(arma::mat X, int maxit, double conv, double K) ;
+            ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c matrixfunctions_sirt.cpp -o matrixfunctions_sirt.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c md_pattern_csource.cpp -o md_pattern_csource.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mle_pcm_group_c.cpp -o mle_pcm_group_c.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c mml2_raschtype_cppcode.cpp -o mml2_raschtype_cppcode.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c monoreg_rowwise_c.cpp -o monoreg_rowwise_c.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c rm_cppcode.cpp -o rm_cppcode.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c smirt_cppcode.cpp -o smirt_cppcode.o
+clang++ -shared -L/usr/local/lib -o sirt.so eigenvaluessirt.o matrixfunctions_sirt.o md_pattern_csource.o mle_pcm_group_c.o mml2_raschtype_cppcode.o monoreg_rowwise_c.o rm_cppcode.o smirt_cppcode.o -L/usr/lib/lapack -llapack -L/usr/lib/openblas-base -lopenblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/sirt.Rcheck/sirt/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (sirt)

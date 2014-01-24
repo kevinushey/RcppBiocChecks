@@ -1,0 +1,19 @@
+* installing *source* package ‘GOSim’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"  `/usr/local/lib/R/bin/Rscript -e "require(Rcpp); Rcpp:::CxxFlags()"` -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c OAWrapper.cpp -o OAWrapper.o
+Loading required package: Rcpp
+clang -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c hungarian2.c -o hungarian2.o
+Loading required package: Rcpp
+clang++ -shared -L/usr/local/lib -o GOSim.so OAWrapper.o hungarian2.o -L/usr/local/lib/R/lib -lR
+Loading required package: Rcpp
+installing to /home/kevin/RcppBiocChecks/GOSim.Rcheck/GOSim/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (GOSim)

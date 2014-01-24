@@ -1,0 +1,103 @@
+* using log directory ‘/home/kevin/RcppBiocChecks/metaSeq.Rcheck’
+* using R Under development (unstable) (2014-01-16 r64804)
+* using platform: x86_64-unknown-linux-gnu (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-vignettes’
+* checking for file ‘metaSeq/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘metaSeq’ version ‘1.3.2’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘metaSeq’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  6.2Mb
+  sub-directories of 1Mb or more:
+    data   5.8Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Unexported objects imported by ‘:::’ calls:
+  ‘NOISeq:::busca’ ‘NOISeq:::n.menor’
+  See the note in ?`:::` about the use of this operator.
+There are ::: calls to the package's namespace in its code. A package
+  almost never needs to use ::: for its own objects:
+  ‘oneside.noiseq’
+See the information on DESCRIPTION files in the chapter ‘Creating R
+packages’ of the ‘Writing R Extensions’ manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+Found the following possibly unsafe calls:
+File ‘metaSeq/R/Accelerate.NOISeq.R’:
+  assignInNamespace("busca", busca, ns = "NOISeq", envir = env)
+  assignInNamespace("n.menor", nmenor, ns = "NOISeq", envir = env)
+  assignInNamespace("busca", busca, ns = "NOISeq", envir = env)
+  assignInNamespace("n.menor", nmenor, ns = "NOISeq", envir = env)
+File ‘metaSeq/R/Reset.Accelerate.NOISeq.R’:
+  assignInNamespace("busca", original.busca, ns = "NOISeq", envir = env)
+  assignInNamespace("n.menor", original.n.menor, ns = "NOISeq", 
+    envir = env)
+File ‘metaSeq/R/oneside.noiseq.R’:
+  assignInNamespace("probdeg", custom.probdeg, ns = "NOISeq", envir = env)
+  assignInNamespace("MD", custom.MD, ns = "NOISeq", envir = env)
+  assignInNamespace("probdeg", original.probdeg, ns = "NOISeq", 
+    envir = env)
+  assignInNamespace("MD", original.MD, ns = "NOISeq", envir = env)
+
+Accelerate.NOISeq: no visible binding for global variable
+  ‘text.n.menor_unix’
+Accelerate.NOISeq: no visible binding for global variable
+  ‘text.busca_unix’
+Accelerate.NOISeq: no visible binding for global variable ‘busca’
+Accelerate.NOISeq: no visible binding for global variable ‘nmenor’
+Accelerate.NOISeq: no visible binding for global variable
+  ‘text.n.menor_win’
+Accelerate.NOISeq: no visible binding for global variable
+  ‘text.busca_win’
+original.probdeg: no visible binding for global variable ‘n.menor’
+original.probdeg: no visible binding for global variable ‘busca’
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking sizes of PDF files under ‘inst/doc’ ... OK
+* checking installed files from ‘inst/doc’ ... NOTE
+The following files should probably not be installed:
+  ‘Fig1.jpeg’, ‘Fig2.png’
+
+Consider the use of a .Rinstignore file: see ‘Writing R Extensions’,
+or move the vignette sources from ‘inst/doc’ to ‘vignettes’.
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ... SKIPPED
+* checking re-building of vignette outputs ... SKIPPED
+NOTE: There were 4 notes.

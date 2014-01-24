@@ -1,0 +1,41 @@
+* installing *source* package ‘CARBayes’ ...
+** package ‘CARBayes’ successfully unpacked and MD5 sums checked
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c RcppExports.cpp -o RcppExports.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c cppfunctions.cpp -o cppfunctions.o
+cppfunctions.cpp:44:5: warning: unused variable 'accept' [-Wunused-variable]
+int accept=0;
+    ^
+cppfunctions.cpp:161:26: warning: multiple unsequenced modifications to 'accept' [-Wunsequenced]
+          accept = accept++;
+                 ~       ^
+cppfunctions.cpp:208:26: warning: multiple unsequenced modifications to 'accept' [-Wunsequenced]
+          accept = accept++;
+                 ~       ^
+cppfunctions.cpp:255:26: warning: multiple unsequenced modifications to 'accept' [-Wunsequenced]
+          accept = accept++;
+                 ~       ^
+cppfunctions.cpp:312:26: warning: multiple unsequenced modifications to 'accept' [-Wunsequenced]
+          accept = accept++;
+                 ~       ^
+cppfunctions.cpp:336:5: warning: unused variable 'accept' [-Wunused-variable]
+int accept=0;
+    ^
+cppfunctions.cpp:461:26: warning: multiple unsequenced modifications to 'accept' [-Wunsequenced]
+          accept = accept++;
+                 ~       ^
+cppfunctions.cpp:531:26: warning: multiple unsequenced modifications to 'accept' [-Wunsequenced]
+          accept = accept++;
+                 ~       ^
+8 warnings generated.
+clang++ -shared -L/usr/local/lib -o CARBayes.so RcppExports.o cppfunctions.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/CARBayes.Rcheck/CARBayes/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (CARBayes)

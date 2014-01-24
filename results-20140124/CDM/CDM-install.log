@@ -1,0 +1,20 @@
+* installing *source* package ‘CDM’ ...
+** package ‘CDM’ successfully unpacked and MD5 sums checked
+** libs
+clang -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c calc_posterior.c -o calc_posterior.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c din.deterministic.devcrit_c.cpp -o din.deterministic.devcrit_c.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c din.jml.devcrit_c.cpp -o din.jml.devcrit_c.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c gdd__c.cpp -o gdd__c.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include" -I"/home/kevin/RcppBiocChecks/libs/RcppArmadillo/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c modelfit_cor2_c.cpp -o modelfit_cor2_c.o
+clang++ -shared -L/usr/local/lib -o CDM.so calc_posterior.o din.deterministic.devcrit_c.o din.jml.devcrit_c.o gdd__c.o modelfit_cor2_c.o -L/usr/lib/lapack -llapack -L/usr/lib/openblas-base -lopenblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/CDM.Rcheck/CDM/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (CDM)

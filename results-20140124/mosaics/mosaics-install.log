@@ -1,0 +1,17 @@
+* installing *source* package ‘mosaics’ ...
+** libs
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c convolution_1S.cpp -o convolution_1S.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG  -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c convolution_2S.cpp -o convolution_2S.o
+clang++ -shared -L/usr/local/lib -o mosaics.so convolution_1S.o convolution_2S.o -L/usr/local/lib/R/lib -lR
+installing to /home/kevin/RcppBiocChecks/mosaics.Rcheck/mosaics/libs
+** R
+** inst
+** preparing package for lazy loading
+Creating a generic function for ‘print’ from package ‘base’ in package ‘mosaics’
+Creating a generic function for ‘plot’ from package ‘graphics’ in package ‘mosaics’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (mosaics)

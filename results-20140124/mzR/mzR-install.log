@@ -1,0 +1,1237 @@
+* installing *source* package ‘mzR’ ...
+** libs
+rm -f cramp.o  ramp_base64.o  ramp.o  RcppRamp.o RcppRampModule.o rnetCDF.o ./boost/system/src/error_code.o ./boost/regex/src/posix_api.o ./boost/regex/src/fileiter.o ./boost/regex/src/regex_raw_buffer.o ./boost/regex/src/cregex.o ./boost/regex/src/regex_debug.o ./boost/regex/src/instances.o ./boost/regex/src/icu.o ./boost/regex/src/usinstances.o ./boost/regex/src/regex.o ./boost/regex/src/wide_posix_api.o ./boost/regex/src/regex_traits_defaults.o ./boost/regex/src/winstances.o ./boost/regex/src/wc_regex_traits.o ./boost/regex/src/c_regex_traits.o ./boost/regex/src/cpp_regex_traits.o ./boost/regex/src/static_mutex.o ./boost/regex/src/w32_regex_traits.o ./pwiz/data/msdata/Version.o ./pwiz/utility/minimxml/XMLWriter.o ./pwiz/utility/minimxml/SAXParser.o ./boost/iostreams/src/zlib.o ./boost/thread/src/pthread/once.o ./boost/filesystem/src/operations.o ./pwiz/data/common/MemoryIndex.o ./pwiz/data/common/CVTranslator.o ./pwiz/data/common/cv.o ./pwiz/data/common/ParamTypes.o ./pwiz/data/common/BinaryIndexStream.o ./pwiz/data/common/diff_std.o ./pwiz/data/msdata/SpectrumList_MGF.o ./pwiz/data/msdata/DefaultReaderList.o ./pwiz/data/msdata/ChromatogramList_mzML.o ./pwiz/data/msdata/examples.o ./pwiz/data/msdata/Serializer_mzML.o ./pwiz/data/msdata/Serializer_MSn.o ./pwiz/data/msdata/Reader.o ./pwiz/data/msdata/Serializer_MGF.o ./pwiz/data/msdata/Serializer_mzXML.o ./pwiz/data/msdata/SpectrumList_mzML.o ./pwiz/data/msdata/SpectrumList_MSn.o ./pwiz/data/msdata/BinaryDataEncoder.o ./pwiz/data/msdata/Diff.o ./pwiz/data/msdata/MSData.o ./pwiz/data/msdata/References.o ./pwiz/data/msdata/SpectrumList_mzXML.o ./pwiz/data/msdata/IO.o ./pwiz/data/msdata/SpectrumList_BTDX.o ./pwiz/data/msdata/SpectrumInfo.o ./pwiz/data/msdata/RAMPAdapter.o ./pwiz/data/msdata/LegacyAdapter.o ./pwiz/data/msdata/SpectrumIterator.o ./pwiz/data/msdata/MSDataFile.o ./pwiz/data/msdata/SpectrumListCache.o ./pwiz/utility/misc/IntegerSet.o ./pwiz/utility/misc/Base64.o ./pwiz/utility/misc/IterationListener.o ./pwiz/utility/misc/MSIHandler.o ./pwiz/utility/misc/Filesystem.o ./pwiz/utility/misc/TabReader.o ./pwiz/utility/misc/random_access_compressed_ifstream.o ./pwiz/utility/misc/SHA1.o ./pwiz/utility/misc/SHA1Calculator.o ./pwiz/utility/misc/sha1calc.o ./random_access_gzFile.o rampR.o
+find . -name \*~ -exec rm {} \;   ## from cleanup
+find . -name \*.o -exec rm {} \;  ## from cleanup
+find . -name "#*#" -exec rm {} \; ## from cleanup
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c cramp.cpp -o cramp.o
+cramp.cpp:4:1: warning: '/*' within block comment [-Wcomment]
+/***************************************************************************
+^
+In file included from cramp.cpp:40:
+./cramp.h:236:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampScanInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:236:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+./cramp.h:283:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampRunInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:283:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+cramp.cpp:60:25: warning: field 'm_declaredScansOnly' will be initialized after field 'm_runInfo' [-Wreorder]
+  m_filename(fileName), m_declaredScansOnly(declaredScansOnly), m_runInfo()
+                        ^
+cramp.cpp:288:95: warning: while loop has empty body [-Wempty-body]
+        while (++m_currentScan <= m_cramp.getLastScan() && m_cramp.getScanOffset(m_currentScan) <= 0);
+                                                                                                     ^
+cramp.cpp:288:95: note: put the semicolon on a separate line to silence this warning
+5 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c ramp_base64.cpp -o ramp_base64.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c ramp.cpp -o ramp.o
+ramp.cpp:214:18: warning: unused variable 'fgot' [-Wunused-variable]
+           char *fgot=ramp_fgets(buf,sizeof(buf)-1,result);
+                 ^
+ramp.cpp:397:11: warning: unused variable 'nread' [-Wunused-variable]
+   size_t nread = ramp_fread(indexOffsetTemp, sizeof(indexOffsetTemp), pFI);
+          ^
+ramp.cpp:576:22: warning: unused variable 'fgot' [-Wunused-variable]
+               char *fgot=ramp_fgets(buf, SIZE_BUF, pFI);
+                     ^
+ramp.cpp:612:22: warning: unused variable 'fgot' [-Wunused-variable]
+               char *fgot=ramp_fgets(buf, SIZE_BUF, pFI);
+                     ^
+ramp.cpp:648:19: warning: unused variable 'fgot' [-Wunused-variable]
+            char *fgot=ramp_fgets(buf, SIZE_BUF, pFI);
+                  ^
+ramp.cpp:1227:22: warning: unused variable 'fgot' [-Wunused-variable]
+               char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+                     ^
+ramp.cpp:1305:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+            ^
+ramp.cpp:1301:10: warning: unused variable 'fgot' [-Wunused-variable]
+   char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+         ^
+ramp.cpp:1799:23: warning: unused variable 'nread' [-Wunused-variable]
+               size_t nread = ramp_fread(pData+partial,(int)(peaksLen-partial), pFI);
+                      ^
+ramp.cpp:1972:21: warning: unused variable 'fgot' [-Wunused-variable]
+              char *fgot=ramp_fgets(buf, sizeof(buf)-1 , pFI);
+                    ^
+ramp.cpp:2016:17: warning: unused variable 'nread' [-Wunused-variable]
+         size_t nread = ramp_fread(pData+partial,peaksLen-partial, pFI);
+                ^
+ramp.cpp:1897:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(buf, sizeof(buf)-1, pFI);
+            ^
+ramp.cpp:2174:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+            ^
+ramp.cpp:2194:13: warning: unused variable 'fgot' [-Wunused-variable]
+      char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+            ^
+ramp.cpp:2170:10: warning: unused variable 'fgot' [-Wunused-variable]
+   char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+         ^
+ramp.cpp:2336:16: warning: unused variable 'fgot' [-Wunused-variable]
+         char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+               ^
+ramp.cpp:2372:15: warning: unused variable 'fgot' [-Wunused-variable]
+        char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+              ^
+ramp.cpp:2326:10: warning: unused variable 'fgot' [-Wunused-variable]
+   char *fgot=ramp_fgets(stringBuf, SIZE_BUF, pFI);
+         ^
+18 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c RcppRamp.cpp -o RcppRamp.o
+In file included from RcppRamp.cpp:1:
+In file included from ./RcppRamp.h:4:
+./cramp.h:236:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampScanInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:236:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+./cramp.h:283:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampRunInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:283:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+RcppRamp.cpp:170:21: warning: unused variable 'info' [-Wunused-variable]
+      rampScanInfo *info = ramp->getScanHeaderInfo( 1 );
+                    ^
+3 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c RcppRampModule.cpp -o RcppRampModule.o
+In file included from RcppRampModule.cpp:2:
+In file included from ./RcppRamp.h:4:
+./cramp.h:236:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampScanInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:236:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+./cramp.h:283:15: warning: destination for this 'memmove' call is a pointer to dynamic class 'rampRunInfo'; vtable pointer will be overwritten [-Wdynamic-class-memaccess]
+      memmove(this,&rhs,sizeof(rhs));
+      ~~~~~~~ ^
+./cramp.h:283:15: note: explicitly cast the pointer to silence this warning
+      memmove(this,&rhs,sizeof(rhs));
+              ^
+              (void*)
+2 warnings generated.
+clang -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -std=gnu99 -Wall -pedantic -c rnetCDF.c -o rnetCDF.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/system/src/error_code.cpp -o boost/system/src/error_code.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/posix_api.cpp -o boost/regex/src/posix_api.o
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1092:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:919:21: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::c_regex_traits<char> >::calculate_backstep' requested here
+            = this->calculate_backstep(state->next.p);
+                    ^
+./boost/regex/v4/basic_regex_creator.hpp:709:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::c_regex_traits<char> >::create_startmaps' requested here
+   create_startmaps(m_pdata->m_first_state);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::c_regex_traits<char> >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<char, boost::c_regex_traits<char> >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<char, boost::c_regex_traits<char> >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+./boost/regex/v4/basic_regex.hpp:425:14: note: in instantiation of member function 'boost::basic_regex<char, boost::c_regex_traits<char> >::do_assign' requested here
+      return do_assign(p1, p2, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:630:7: note: in instantiation of member function 'boost::basic_regex<char, boost::c_regex_traits<char> >::assign' requested here
+      assign(p1, p2, f | regex_constants::no_except);
+      ^
+boost/regex/src/posix_api.cpp:126:53: note: in instantiation of member function 'boost::basic_regex<char, boost::c_regex_traits<char> >::set_expression' requested here
+      static_cast<c_regex_type*>(expression->guts)->set_expression(ptr, p2, flags);
+                                                    ^
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:715:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::c_regex_traits<char> >::create_startmap' requested here
+   create_startmap(m_pdata->m_first_state, m_pdata->m_startmap, &(m_pdata->m_can_be_null), mask_all);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::c_regex_traits<char> >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<char, boost::c_regex_traits<char> >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<char, boost::c_regex_traits<char> >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+./boost/regex/v4/basic_regex.hpp:425:14: note: in instantiation of member function 'boost::basic_regex<char, boost::c_regex_traits<char> >::do_assign' requested here
+      return do_assign(p1, p2, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:630:7: note: in instantiation of member function 'boost::basic_regex<char, boost::c_regex_traits<char> >::assign' requested here
+      assign(p1, p2, f | regex_constants::no_except);
+      ^
+boost/regex/src/posix_api.cpp:126:53: note: in instantiation of member function 'boost::basic_regex<char, boost::c_regex_traits<char> >::set_expression' requested here
+      static_cast<c_regex_type*>(expression->guts)->set_expression(ptr, p2, flags);
+                                                    ^
+In file included from boost/regex/src/posix_api.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1092:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:532:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<signed char>(signed char t1, signed char t2)
+            ^
+15 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/fileiter.cpp -o boost/regex/src/fileiter.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/regex_raw_buffer.cpp -o boost/regex/src/regex_raw_buffer.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/cregex.cpp -o boost/regex/src/cregex.o
+In file included from boost/regex/src/cregex.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1092:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:527:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<char>(char t1, char t2)
+            ^
+./boost/regex/v4/basic_regex_creator.hpp:532:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<signed char>(signed char t1, signed char t2)
+            ^
+9 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/regex_debug.cpp -o boost/regex/src/regex_debug.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/instances.cpp -o boost/regex/src/instances.o
+In file included from boost/regex/src/instances.cpp:30:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1092:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:919:21: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::calculate_backstep' requested here
+            = this->calculate_backstep(state->next.p);
+                    ^
+./boost/regex/v4/basic_regex_creator.hpp:709:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::create_startmaps' requested here
+   create_startmaps(m_pdata->m_first_state);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:715:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::create_startmap' requested here
+   create_startmap(m_pdata->m_first_state, m_pdata->m_startmap, &(m_pdata->m_can_be_null), mask_all);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<char, boost::regex_traits<char, boost::cpp_regex_traits<char> > >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+In file included from boost/regex/src/instances.cpp:30:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1092:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:532:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<signed char>(signed char t1, signed char t2)
+            ^
+15 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/icu.cpp -o boost/regex/src/icu.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/usinstances.cpp -o boost/regex/src/usinstances.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/regex.cpp -o boost/regex/src/regex.o
+In file included from boost/regex/src/regex.cpp:23:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1092:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:527:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<char>(char t1, char t2)
+            ^
+./boost/regex/v4/basic_regex_creator.hpp:532:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<signed char>(signed char t1, signed char t2)
+            ^
+9 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/wide_posix_api.cpp -o boost/regex/src/wide_posix_api.o
+In file included from boost/regex/src/wide_posix_api.cpp:25:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1092:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:919:21: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::c_regex_traits<wchar_t> >::calculate_backstep' requested here
+            = this->calculate_backstep(state->next.p);
+                    ^
+./boost/regex/v4/basic_regex_creator.hpp:709:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::c_regex_traits<wchar_t> >::create_startmaps' requested here
+   create_startmaps(m_pdata->m_first_state);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::c_regex_traits<wchar_t> >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<wchar_t, boost::c_regex_traits<wchar_t> >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<wchar_t, boost::c_regex_traits<wchar_t> >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+./boost/regex/v4/basic_regex.hpp:425:14: note: in instantiation of member function 'boost::basic_regex<wchar_t, boost::c_regex_traits<wchar_t> >::do_assign' requested here
+      return do_assign(p1, p2, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:630:7: note: in instantiation of member function 'boost::basic_regex<wchar_t, boost::c_regex_traits<wchar_t> >::assign' requested here
+      assign(p1, p2, f | regex_constants::no_except);
+      ^
+boost/regex/src/wide_posix_api.cpp:133:53: note: in instantiation of member function 'boost::basic_regex<wchar_t, boost::c_regex_traits<wchar_t> >::set_expression' requested here
+      static_cast<c_regex_type*>(expression->guts)->set_expression(ptr, p2, flags);
+                                                    ^
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:715:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::c_regex_traits<wchar_t> >::create_startmap' requested here
+   create_startmap(m_pdata->m_first_state, m_pdata->m_startmap, &(m_pdata->m_can_be_null), mask_all);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::c_regex_traits<wchar_t> >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<wchar_t, boost::c_regex_traits<wchar_t> >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<wchar_t, boost::c_regex_traits<wchar_t> >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+./boost/regex/v4/basic_regex.hpp:425:14: note: in instantiation of member function 'boost::basic_regex<wchar_t, boost::c_regex_traits<wchar_t> >::do_assign' requested here
+      return do_assign(p1, p2, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:630:7: note: in instantiation of member function 'boost::basic_regex<wchar_t, boost::c_regex_traits<wchar_t> >::assign' requested here
+      assign(p1, p2, f | regex_constants::no_except);
+      ^
+boost/regex/src/wide_posix_api.cpp:133:53: note: in instantiation of member function 'boost::basic_regex<wchar_t, boost::c_regex_traits<wchar_t> >::set_expression' requested here
+      static_cast<c_regex_type*>(expression->guts)->set_expression(ptr, p2, flags);
+                                                    ^
+In file included from boost/regex/src/wide_posix_api.cpp:25:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1092:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:527:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<char>(char t1, char t2)
+            ^
+./boost/regex/v4/basic_regex_creator.hpp:532:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<signed char>(signed char t1, signed char t2)
+            ^
+16 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/regex_traits_defaults.cpp -o boost/regex/src/regex_traits_defaults.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/winstances.cpp -o boost/regex/src/winstances.o
+In file included from boost/regex/src/winstances.cpp:30:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1092:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:919:21: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::calculate_backstep' requested here
+            = this->calculate_backstep(state->next.p);
+                    ^
+./boost/regex/v4/basic_regex_creator.hpp:709:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::create_startmaps' requested here
+   create_startmaps(m_pdata->m_first_state);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:715:4: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::create_startmap' requested here
+   create_startmap(m_pdata->m_first_state, m_pdata->m_startmap, &(m_pdata->m_can_be_null), mask_all);
+   ^
+./boost/regex/v4/basic_regex_parser.hpp:176:10: note: in instantiation of member function 'boost::re_detail::basic_regex_creator<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::finalize' requested here
+   this->finalize(p1, p2);
+         ^
+./boost/regex/v4/basic_regex.hpp:258:14: note: in instantiation of member function 'boost::re_detail::basic_regex_parser<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::parse' requested here
+      parser.parse(arg_first, arg_last, f);
+             ^
+./boost/regex/v4/basic_regex.hpp:704:10: note: in instantiation of member function 'boost::re_detail::basic_regex_implementation<wchar_t, boost::regex_traits<wchar_t, boost::cpp_regex_traits<wchar_t> > >::assign' requested here
+   temp->assign(p1, p2, f);
+         ^
+In file included from boost/regex/src/winstances.cpp:30:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1092:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:13: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+            ^     ~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:527:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<char>(char t1, char t2)
+            ^
+./boost/regex/v4/basic_regex_creator.hpp:532:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<signed char>(signed char t1, signed char t2)
+            ^
+16 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/wc_regex_traits.cpp -o boost/regex/src/wc_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/c_regex_traits.cpp -o boost/regex/src/c_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/cpp_regex_traits.cpp -o boost/regex/src/cpp_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/static_mutex.cpp -o boost/regex/src/static_mutex.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/regex/src/w32_regex_traits.cpp -o boost/regex/src/w32_regex_traits.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/Version.cpp -o pwiz/data/msdata/Version.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/minimxml/XMLWriter.cpp -o pwiz/utility/minimxml/XMLWriter.o
+pwiz/utility/minimxml/XMLWriter.cpp:160:39: warning: '&&' within '||' [-Wlogical-op-parentheses]
+        !style(StyleFlag_InlineOuter) && emptyElementTag==EmptyElement)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pwiz/utility/minimxml/XMLWriter.cpp:160:39: note: place parentheses around the '&&' expression to silence this warning
+        !style(StyleFlag_InlineOuter) && emptyElementTag==EmptyElement)
+                                      ^
+        (                                                             )
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/minimxml/SAXParser.cpp -o pwiz/utility/minimxml/SAXParser.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/iostreams/src/zlib.cpp -o boost/iostreams/src/zlib.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/thread/src/pthread/once.cpp -o boost/thread/src/pthread/once.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c boost/filesystem/src/operations.cpp -o boost/filesystem/src/operations.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/common/MemoryIndex.cpp -o pwiz/data/common/MemoryIndex.o
+In file included from pwiz/data/common/MemoryIndex.cpp:25:
+In file included from pwiz/data/common/MemoryIndex.hpp:26:
+In file included from pwiz/data/common/Index.hpp:30:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:30:
+./boost/checked_delete.hpp:34:5: warning: delete called on 'pwiz::data::MemoryIndex::Impl' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+    delete x;
+    ^
+./boost/smart_ptr/detail/shared_count.hpp:91:20: note: in instantiation of function template specialization 'boost::checked_delete<pwiz::data::MemoryIndex::Impl>' requested here
+            boost::checked_delete( p );
+                   ^
+./boost/smart_ptr/shared_ptr.hpp:187:44: note: in instantiation of function template specialization 'boost::detail::shared_count::shared_count<pwiz::data::MemoryIndex::Impl>' requested here
+    explicit shared_ptr( Y * p ): px( p ), pn( p ) // Y must be complete
+                                           ^
+pwiz/data/common/MemoryIndex.cpp:73:44: note: in instantiation of function template specialization 'boost::shared_ptr<pwiz::data::MemoryIndex::Impl>::shared_ptr<pwiz::data::MemoryIndex::Impl>' requested here
+PWIZ_API_DECL MemoryIndex::MemoryIndex() : impl_(new Impl) {}
+                                           ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/common/CVTranslator.cpp -o pwiz/data/common/CVTranslator.o
+pwiz/data/common/CVTranslator.cpp:133:44: warning: '&&' within '||' [-Wlogical-op-parentheses]
+    return (key=="unit_" && value==MS_unit && cvid==UO_unit ||
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~ ~~
+pwiz/data/common/CVTranslator.cpp:133:44: note: place parentheses around the '&&' expression to silence this warning
+    return (key=="unit_" && value==MS_unit && cvid==UO_unit ||
+                                           ^
+            (                                              )
+pwiz/data/common/CVTranslator.cpp:134:40: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            key=="pi_" && value==MS_PI && cvid==UO_pi || // MS_PI==photoionization, UO_pi==3.14
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+pwiz/data/common/CVTranslator.cpp:134:40: note: place parentheses around the '&&' expression to silence this warning
+            key=="pi_" && value==MS_PI && cvid==UO_pi || // MS_PI==photoionization, UO_pi==3.14
+                                       ^
+            (                                        )
+pwiz/data/common/CVTranslator.cpp:135:40: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            key=="pi_" && value==MS_PI && cvid==MS_pI || // MS_pI==isoelectric point
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+pwiz/data/common/CVTranslator.cpp:135:40: note: place parentheses around the '&&' expression to silence this warning
+            key=="pi_" && value==MS_PI && cvid==MS_pI || // MS_pI==isoelectric point
+                                       ^
+            (                                        )
+pwiz/data/common/CVTranslator.cpp:136:40: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            key=="de_" && value==MS_DE && cvid==1001274); // conflict between 1000246 and 1001274
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+pwiz/data/common/CVTranslator.cpp:136:40: note: place parentheses around the '&&' expression to silence this warning
+            key=="de_" && value==MS_DE && cvid==1001274); // conflict between 1000246 and 1001274
+                                       ^
+            (                                          )
+4 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/common/cv.cpp -o pwiz/data/common/cv.o
+In file included from pwiz/data/common/cv.cpp:32:
+In file included from ./boost_aux/boost/utility/singleton.hpp:19:
+In file included from ./boost_aux/boost/utility/detail/singleton_manager.hpp:19:
+In file included from ./boost/thread/mutex.hpp:16:
+In file included from ./boost/thread/pthread/mutex.hpp:12:
+In file included from ./boost/thread/locks.hpp:12:
+In file included from ./boost/thread/thread_time.hpp:10:
+In file included from ./boost/date_time/posix_time/posix_time_types.hpp:12:
+In file included from ./boost/date_time/posix_time/ptime.hpp:12:
+In file included from ./boost/date_time/posix_time/posix_time_system.hpp:13:
+In file included from ./boost/date_time/posix_time/posix_time_config.hpp:18:
+In file included from ./boost/date_time/gregorian/gregorian_types.hpp:19:
+In file included from ./boost/date_time/gregorian/greg_calendar.hpp:15:
+In file included from ./boost/date_time/gregorian_calendar.hpp:63:
+./boost/date_time/gregorian_calendar.ipp:50:15: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+    if ((week == 53)) {
+         ~~~~~^~~~~
+./boost/date_time/gregorian_calendar.ipp:50:15: note: remove extraneous parentheses around the comparison to silence this warning
+    if ((week == 53)) {
+        ~     ^    ~
+./boost/date_time/gregorian_calendar.ipp:50:15: note: use '=' to turn this equality comparison into an assignment
+    if ((week == 53)) {
+              ^~
+              =
+./boost/date_time/gregorian_calendar.ipp:50:15: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+    if ((week == 53)) {
+         ~~~~~^~~~~
+./boost/date_time/gregorian/greg_date.hpp:111:34: note: in instantiation of member function 'boost::date_time::gregorian_calendar_base<boost::date_time::year_month_day_base<boost::gregorian::greg_year, boost::gregorian::greg_month, boost::gregorian::greg_day>, unsigned int>::week_number' requested here
+      return gregorian_calendar::week_number(ymd);
+                                 ^
+./boost/date_time/gregorian_calendar.ipp:50:15: note: remove extraneous parentheses around the comparison to silence this warning
+    if ((week == 53)) {
+        ~     ^    ~
+./boost/date_time/gregorian_calendar.ipp:50:15: note: use '=' to turn this equality comparison into an assignment
+    if ((week == 53)) {
+              ^~
+              =
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/common/ParamTypes.cpp -o pwiz/data/common/ParamTypes.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/common/BinaryIndexStream.cpp -o pwiz/data/common/BinaryIndexStream.o
+In file included from pwiz/data/common/BinaryIndexStream.cpp:27:
+In file included from ./boost/thread/thread.hpp:17:
+In file included from ./boost/thread/pthread/thread_data.hpp:12:
+In file included from ./boost/thread/mutex.hpp:16:
+In file included from ./boost/thread/pthread/mutex.hpp:12:
+In file included from ./boost/thread/locks.hpp:12:
+In file included from ./boost/thread/thread_time.hpp:10:
+In file included from ./boost/date_time/posix_time/posix_time_types.hpp:12:
+In file included from ./boost/date_time/posix_time/ptime.hpp:12:
+In file included from ./boost/date_time/posix_time/posix_time_system.hpp:13:
+In file included from ./boost/date_time/posix_time/posix_time_config.hpp:18:
+In file included from ./boost/date_time/gregorian/gregorian_types.hpp:19:
+In file included from ./boost/date_time/gregorian/greg_calendar.hpp:15:
+In file included from ./boost/date_time/gregorian_calendar.hpp:63:
+./boost/date_time/gregorian_calendar.ipp:50:15: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+    if ((week == 53)) {
+         ~~~~~^~~~~
+./boost/date_time/gregorian_calendar.ipp:50:15: note: remove extraneous parentheses around the comparison to silence this warning
+    if ((week == 53)) {
+        ~     ^    ~
+./boost/date_time/gregorian_calendar.ipp:50:15: note: use '=' to turn this equality comparison into an assignment
+    if ((week == 53)) {
+              ^~
+              =
+./boost/date_time/gregorian_calendar.ipp:50:15: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+    if ((week == 53)) {
+         ~~~~~^~~~~
+./boost/date_time/gregorian/greg_date.hpp:111:34: note: in instantiation of member function 'boost::date_time::gregorian_calendar_base<boost::date_time::year_month_day_base<boost::gregorian::greg_year, boost::gregorian::greg_month, boost::gregorian::greg_day>, unsigned int>::week_number' requested here
+      return gregorian_calendar::week_number(ymd);
+                                 ^
+./boost/date_time/gregorian_calendar.ipp:50:15: note: remove extraneous parentheses around the comparison to silence this warning
+    if ((week == 53)) {
+        ~     ^    ~
+./boost/date_time/gregorian_calendar.ipp:50:15: note: use '=' to turn this equality comparison into an assignment
+    if ((week == 53)) {
+              ^~
+              =
+In file included from pwiz/data/common/BinaryIndexStream.cpp:25:
+In file included from pwiz/data/common/BinaryIndexStream.hpp:26:
+In file included from pwiz/data/common/Index.hpp:30:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:30:
+./boost/checked_delete.hpp:34:5: warning: delete called on 'pwiz::data::BinaryIndexStream::Impl' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]
+    delete x;
+    ^
+./boost/smart_ptr/detail/shared_count.hpp:91:20: note: in instantiation of function template specialization 'boost::checked_delete<pwiz::data::BinaryIndexStream::Impl>' requested here
+            boost::checked_delete( p );
+                   ^
+./boost/smart_ptr/shared_ptr.hpp:187:44: note: in instantiation of function template specialization 'boost::detail::shared_count::shared_count<pwiz::data::BinaryIndexStream::Impl>' requested here
+    explicit shared_ptr( Y * p ): px( p ), pn( p ) // Y must be complete
+                                           ^
+pwiz/data/common/BinaryIndexStream.cpp:402:82: note: in instantiation of function template specialization 'boost::shared_ptr<pwiz::data::BinaryIndexStream::Impl>::shared_ptr<pwiz::data::BinaryIndexStream::Impl>' requested here
+PWIZ_API_DECL BinaryIndexStream::BinaryIndexStream(shared_ptr<iostream> isPtr) : impl_(new Impl(isPtr)) {}
+                                                                                 ^
+3 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/common/diff_std.cpp -o pwiz/data/common/diff_std.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumList_MGF.cpp -o pwiz/data/msdata/SpectrumList_MGF.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/DefaultReaderList.cpp -o pwiz/data/msdata/DefaultReaderList.o
+In file included from pwiz/data/msdata/DefaultReaderList.cpp:40:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:67:
+In file included from ./boost/regex/v4/basic_regex.hpp:23:
+In file included from ./boost/functional/hash.hpp:6:
+In file included from ./boost/functional/hash/hash.hpp:494:
+In file included from ./boost/functional/hash/extensions.hpp:17:
+./boost/detail/container_fwd.hpp:71:24: warning: class template 'complex' was previously declared as a struct template [-Wmismatched-tags]
+    template <class T> class complex;
+                       ^
+/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/complex:125:12: note: previous use is here
+    struct complex
+           ^
+./boost/detail/container_fwd.hpp:71:24: note: did you mean struct here?
+    template <class T> class complex;
+                       ^~~~~
+                       struct
+In file included from pwiz/data/msdata/DefaultReaderList.cpp:40:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:70:
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+            else if((state->type == syntax_element_long_set_rep)) 
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: remove extraneous parentheses around the comparison to silence this warning
+            else if((state->type == syntax_element_long_set_rep)) 
+                    ~            ^                             ~
+./boost/regex/v4/basic_regex_creator.hpp:1021:34: note: use '=' to turn this equality comparison into an assignment
+            else if((state->type == syntax_element_long_set_rep)) 
+                                 ^~
+                                 =
+./boost/regex/v4/basic_regex_creator.hpp:1091:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1092:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1093:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\f'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1278:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\n'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1279:18: warning: array subscript is of type 'char' [-Wchar-subscripts]
+            l_map['\r'] |= mask;
+                 ^~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+               if((p->type == syntax_element_recurse))
+                   ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: remove extraneous parentheses around the comparison to silence this warning
+               if((p->type == syntax_element_recurse))
+                  ~        ^                        ~
+./boost/regex/v4/basic_regex_creator.hpp:1314:28: note: use '=' to turn this equality comparison into an assignment
+               if((p->type == syntax_element_recurse))
+                           ^~
+                           =
+./boost/regex/v4/basic_regex_creator.hpp:527:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<char>(char t1, char t2)
+            ^
+./boost/regex/v4/basic_regex_creator.hpp:532:13: warning: unused function 'char_less' [-Wunused-function]
+inline bool char_less<signed char>(signed char t1, signed char t2)
+            ^
+pwiz/data/msdata/DefaultReaderList.cpp:77:8: warning: unused function 'GetXMLRootElementFromFile' [-Wunused-function]
+string GetXMLRootElementFromFile(const string& filepath)
+       ^
+11 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/ChromatogramList_mzML.cpp -o pwiz/data/msdata/ChromatogramList_mzML.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/examples.cpp -o pwiz/data/msdata/examples.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/Serializer_mzML.cpp -o pwiz/data/msdata/Serializer_mzML.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/Serializer_MSn.cpp -o pwiz/data/msdata/Serializer_MSn.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/Reader.cpp -o pwiz/data/msdata/Reader.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/Serializer_MGF.cpp -o pwiz/data/msdata/Serializer_MGF.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/Serializer_mzXML.cpp -o pwiz/data/msdata/Serializer_mzXML.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumList_mzML.cpp -o pwiz/data/msdata/SpectrumList_mzML.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumList_MSn.cpp -o pwiz/data/msdata/SpectrumList_MSn.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/BinaryDataEncoder.cpp -o pwiz/data/msdata/BinaryDataEncoder.o
+In file included from pwiz/data/msdata/BinaryDataEncoder.cpp:28:
+./pwiz/utility/misc/endian.hpp:81:37: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+BOOST_STATIC_ASSERT(sizeof(unsigned long long) == 8); // 64 bits
+                                    ^
+./boost/static_assert.hpp:118:80: note: expanded from macro 'BOOST_STATIC_ASSERT'
+      sizeof(::boost::STATIC_ASSERTION_FAILURE< BOOST_STATIC_ASSERT_BOOL_CAST( B ) >)>\
+                                                                               ^
+./boost/static_assert.hpp:36:48: note: expanded from macro 'BOOST_STATIC_ASSERT_BOOL_CAST'
+#  define BOOST_STATIC_ASSERT_BOOL_CAST( x ) ((x) == 0 ? false : true)
+                                               ^
+In file included from pwiz/data/msdata/BinaryDataEncoder.cpp:28:
+./pwiz/utility/misc/endian.hpp:90:48: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+inline unsigned long long endianize64(unsigned long long n)
+                                               ^
+./pwiz/utility/misc/endian.hpp:90:17: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+inline unsigned long long endianize64(unsigned long long n)
+                ^
+./pwiz/utility/misc/endian.hpp:92:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+    return ((n&0x00000000000000ffll)<<56) | 
+               ^
+./pwiz/utility/misc/endian.hpp:93:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x000000000000ff00ll)<<40) | 
+               ^
+./pwiz/utility/misc/endian.hpp:94:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x0000000000ff0000ll)<<24) | 
+               ^
+./pwiz/utility/misc/endian.hpp:95:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x00000000ff000000ll)<<8)  |
+               ^
+./pwiz/utility/misc/endian.hpp:96:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x000000ff00000000ll)>>8)  | 
+               ^
+./pwiz/utility/misc/endian.hpp:97:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x0000ff0000000000ll)>>24) |
+               ^
+./pwiz/utility/misc/endian.hpp:98:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x00ff000000000000ll)>>40) | 
+               ^
+./pwiz/utility/misc/endian.hpp:99:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0xff00000000000000ll)>>56);
+               ^
+pwiz/data/msdata/BinaryDataEncoder.cpp:158:28: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+            const unsigned long long* from = reinterpret_cast<const unsigned long long*>(data);
+                           ^
+pwiz/data/msdata/BinaryDataEncoder.cpp:158:78: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+            const unsigned long long* from = reinterpret_cast<const unsigned long long*>(data);
+                                                                             ^
+pwiz/data/msdata/BinaryDataEncoder.cpp:159:22: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+            unsigned long long* to = reinterpret_cast<unsigned long long*>(&data64endianized[0]);
+                     ^
+pwiz/data/msdata/BinaryDataEncoder.cpp:159:64: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+            unsigned long long* to = reinterpret_cast<unsigned long long*>(&data64endianized[0]);
+                                                               ^
+pwiz/data/msdata/BinaryDataEncoder.cpp:260:22: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+            unsigned long long* p = reinterpret_cast<unsigned long long*>(byteBuffer);
+                     ^
+pwiz/data/msdata/BinaryDataEncoder.cpp:260:63: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+            unsigned long long* p = reinterpret_cast<unsigned long long*>(byteBuffer);
+                                                              ^
+17 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/Diff.cpp -o pwiz/data/msdata/Diff.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/MSData.cpp -o pwiz/data/msdata/MSData.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/References.cpp -o pwiz/data/msdata/References.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumList_mzXML.cpp -o pwiz/data/msdata/SpectrumList_mzXML.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/IO.cpp -o pwiz/data/msdata/IO.o
+pwiz/data/msdata/IO.cpp:1939:31: warning: '&&' within '||' [-Wlogical-op-parentheses]
+        else if (version == 1 && name == "acquisitionList" /* mzML 1.0 */ || name == "scanList")
+                 ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~
+pwiz/data/msdata/IO.cpp:1939:31: note: place parentheses around the '&&' expression to silence this warning
+        else if (version == 1 && name == "acquisitionList" /* mzML 1.0 */ || name == "scanList")
+                              ^
+                 (                                        )
+pwiz/data/msdata/IO.cpp:2643:31: warning: '&&' within '||' [-Wlogical-op-parentheses]
+        else if (version == 1 && name == "acquisitionSettings" /* mzML 1.0 */ ||
+                 ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~
+pwiz/data/msdata/IO.cpp:2643:31: note: place parentheses around the '&&' expression to silence this warning
+        else if (version == 1 && name == "acquisitionSettings" /* mzML 1.0 */ ||
+                              ^
+                 (                                            )
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumList_BTDX.cpp -o pwiz/data/msdata/SpectrumList_BTDX.o
+pwiz/data/msdata/SpectrumList_BTDX.cpp:276:19: warning: private field 'msd_' is not used [-Wunused-private-field]
+    const MSData& msd_;
+                  ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumInfo.cpp -o pwiz/data/msdata/SpectrumInfo.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/RAMPAdapter.cpp -o pwiz/data/msdata/RAMPAdapter.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/LegacyAdapter.cpp -o pwiz/data/msdata/LegacyAdapter.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumIterator.cpp -o pwiz/data/msdata/SpectrumIterator.o
+pwiz/data/msdata/SpectrumIterator.cpp:125:20: warning: '&&' within '||' [-Wlogical-op-parentheses]
+    return (done() && &that.spectrumList_==&pastEndMarker_ ||
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+pwiz/data/msdata/SpectrumIterator.cpp:125:20: note: place parentheses around the '&&' expression to silence this warning
+    return (done() && &that.spectrumList_==&pastEndMarker_ ||
+                   ^
+            (                                             )
+pwiz/data/msdata/SpectrumIterator.cpp:126:45: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            &spectrumList_==&pastEndMarker_ && that.done() ||
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+pwiz/data/msdata/SpectrumIterator.cpp:126:45: note: place parentheses around the '&&' expression to silence this warning
+            &spectrumList_==&pastEndMarker_ && that.done() ||
+                                            ^
+            (                                             )
+pwiz/data/msdata/SpectrumIterator.cpp:127:49: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            &spectrumList_==&that.spectrumList_ && currentIndex_==that.currentIndex_);
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pwiz/data/msdata/SpectrumIterator.cpp:127:49: note: place parentheses around the '&&' expression to silence this warning
+            &spectrumList_==&that.spectrumList_ && currentIndex_==that.currentIndex_);
+                                                ^
+            (                                                                       )
+pwiz/data/msdata/SpectrumIterator.cpp:141:34: warning: '&&' within '||' [-Wlogical-op-parentheses]
+    return !scanNumbers_.empty() && currentScanNumber_==scanNumbers_.end() ||
+           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+pwiz/data/msdata/SpectrumIterator.cpp:141:34: note: place parentheses around the '&&' expression to silence this warning
+    return !scanNumbers_.empty() && currentScanNumber_==scanNumbers_.end() ||
+                                 ^
+           (                                                              )
+4 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/MSDataFile.cpp -o pwiz/data/msdata/MSDataFile.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/data/msdata/SpectrumListCache.cpp -o pwiz/data/msdata/SpectrumListCache.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/IntegerSet.cpp -o pwiz/utility/misc/IntegerSet.o
+pwiz/utility/misc/IntegerSet.cpp:307:63: warning: '&&' within '||' [-Wlogical-op-parentheses]
+    return (it_!=end_ && that.it_!=that.end_ && it_==that.it_ && value_==that.value_ ||
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~ ~~
+pwiz/utility/misc/IntegerSet.cpp:307:63: note: place parentheses around the '&&' expression to silence this warning
+    return (it_!=end_ && that.it_!=that.end_ && it_==that.it_ && value_==that.value_ ||
+                                                              ^
+            (                                                                       )
+pwiz/utility/misc/IntegerSet.cpp:308:23: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            it_==end_ && that.it_==nothing_.end());
+            ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+pwiz/utility/misc/IntegerSet.cpp:308:23: note: place parentheses around the '&&' expression to silence this warning
+            it_==end_ && that.it_==nothing_.end());
+                      ^
+            (                                    )
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/Base64.cpp -o pwiz/utility/misc/Base64.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/IterationListener.cpp -o pwiz/utility/misc/IterationListener.o
+pwiz/utility/misc/IterationListener.cpp:75:85: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                callbackInfo_[*it].periodType == CallbackInfo::PeriodType_Iteration &&
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+pwiz/utility/misc/IterationListener.cpp:75:85: note: place parentheses around the '&&' expression to silence this warning
+                callbackInfo_[*it].periodType == CallbackInfo::PeriodType_Iteration &&
+                                                                                    ^
+pwiz/utility/misc/IterationListener.cpp:77:80: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                callbackInfo_[*it].periodType == CallbackInfo::PeriodType_Time &&
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+pwiz/utility/misc/IterationListener.cpp:77:80: note: place parentheses around the '&&' expression to silence this warning
+                callbackInfo_[*it].periodType == CallbackInfo::PeriodType_Time &&
+                                                                               ^
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/MSIHandler.cpp -o pwiz/utility/misc/MSIHandler.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/Filesystem.cpp -o pwiz/utility/misc/Filesystem.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/TabReader.cpp -o pwiz/utility/misc/TabReader.o
+pwiz/utility/misc/TabReader.cpp:44:22: warning: assigning field to itself [-Wself-assign-field]
+        comment_char = comment_char;
+                     ^
+1 warning generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/random_access_compressed_ifstream.cpp -o pwiz/utility/misc/random_access_compressed_ifstream.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/SHA1.cpp -o pwiz/utility/misc/SHA1.o
+In file included from pwiz/utility/misc/SHA1.cpp:10:
+pwiz/utility/misc/endian.hpp:81:37: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+BOOST_STATIC_ASSERT(sizeof(unsigned long long) == 8); // 64 bits
+                                    ^
+./boost/static_assert.hpp:118:80: note: expanded from macro 'BOOST_STATIC_ASSERT'
+      sizeof(::boost::STATIC_ASSERTION_FAILURE< BOOST_STATIC_ASSERT_BOOL_CAST( B ) >)>\
+                                                                               ^
+./boost/static_assert.hpp:36:48: note: expanded from macro 'BOOST_STATIC_ASSERT_BOOL_CAST'
+#  define BOOST_STATIC_ASSERT_BOOL_CAST( x ) ((x) == 0 ? false : true)
+                                               ^
+In file included from pwiz/utility/misc/SHA1.cpp:10:
+pwiz/utility/misc/endian.hpp:90:48: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+inline unsigned long long endianize64(unsigned long long n)
+                                               ^
+pwiz/utility/misc/endian.hpp:90:17: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+inline unsigned long long endianize64(unsigned long long n)
+                ^
+pwiz/utility/misc/endian.hpp:92:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+    return ((n&0x00000000000000ffll)<<56) | 
+               ^
+pwiz/utility/misc/endian.hpp:93:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x000000000000ff00ll)<<40) | 
+               ^
+pwiz/utility/misc/endian.hpp:94:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x0000000000ff0000ll)<<24) | 
+               ^
+pwiz/utility/misc/endian.hpp:95:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x00000000ff000000ll)<<8)  |
+               ^
+pwiz/utility/misc/endian.hpp:96:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x000000ff00000000ll)>>8)  | 
+               ^
+pwiz/utility/misc/endian.hpp:97:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x0000ff0000000000ll)>>24) |
+               ^
+pwiz/utility/misc/endian.hpp:98:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x00ff000000000000ll)>>40) | 
+               ^
+pwiz/utility/misc/endian.hpp:99:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0xff00000000000000ll)>>56);
+               ^
+pwiz/utility/misc/SHA1.cpp:152:8: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+        const INT_64 lFileSize = _ftelli64(fpIn);
+              ^
+pwiz/utility/misc/SHA1.h:179:16: note: expanded from macro 'INT_64'
+#define INT_64 long long
+               ^
+pwiz/utility/misc/SHA1.cpp:155:8: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+        const INT_64 lMaxBuf = SHA1_MAX_FILE_BUFFER;
+              ^
+pwiz/utility/misc/SHA1.h:179:16: note: expanded from macro 'INT_64'
+#define INT_64 long long
+               ^
+pwiz/utility/misc/SHA1.cpp:157:2: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+        INT_64 lRemaining = lFileSize;
+        ^
+pwiz/utility/misc/SHA1.h:179:16: note: expanded from macro 'INT_64'
+#define INT_64 long long
+               ^
+pwiz/utility/misc/SHA1.cpp:173:29: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+                lRemaining -= static_cast<INT_64>(uRead);
+                                          ^
+pwiz/utility/misc/SHA1.h:179:16: note: expanded from macro 'INT_64'
+#define INT_64 long long
+               ^
+15 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/SHA1Calculator.cpp -o pwiz/utility/misc/SHA1Calculator.o
+In file included from pwiz/utility/misc/SHA1Calculator.cpp:25:
+pwiz/utility/misc/endian.hpp:81:37: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+BOOST_STATIC_ASSERT(sizeof(unsigned long long) == 8); // 64 bits
+                                    ^
+./boost/static_assert.hpp:118:80: note: expanded from macro 'BOOST_STATIC_ASSERT'
+      sizeof(::boost::STATIC_ASSERTION_FAILURE< BOOST_STATIC_ASSERT_BOOL_CAST( B ) >)>\
+                                                                               ^
+./boost/static_assert.hpp:36:48: note: expanded from macro 'BOOST_STATIC_ASSERT_BOOL_CAST'
+#  define BOOST_STATIC_ASSERT_BOOL_CAST( x ) ((x) == 0 ? false : true)
+                                               ^
+In file included from pwiz/utility/misc/SHA1Calculator.cpp:25:
+pwiz/utility/misc/endian.hpp:90:48: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+inline unsigned long long endianize64(unsigned long long n)
+                                               ^
+pwiz/utility/misc/endian.hpp:90:17: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+inline unsigned long long endianize64(unsigned long long n)
+                ^
+pwiz/utility/misc/endian.hpp:92:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+    return ((n&0x00000000000000ffll)<<56) | 
+               ^
+pwiz/utility/misc/endian.hpp:93:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x000000000000ff00ll)<<40) | 
+               ^
+pwiz/utility/misc/endian.hpp:94:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x0000000000ff0000ll)<<24) | 
+               ^
+pwiz/utility/misc/endian.hpp:95:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x00000000ff000000ll)<<8)  |
+               ^
+pwiz/utility/misc/endian.hpp:96:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x000000ff00000000ll)>>8)  | 
+               ^
+pwiz/utility/misc/endian.hpp:97:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x0000ff0000000000ll)>>24) |
+               ^
+pwiz/utility/misc/endian.hpp:98:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0x00ff000000000000ll)>>40) | 
+               ^
+pwiz/utility/misc/endian.hpp:99:16: warning: 'long long' is a C++11 extension [-Wc++11-long-long]
+           ((n&0xff00000000000000ll)>>56);
+               ^
+11 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c pwiz/utility/misc/sha1calc.cpp -o pwiz/utility/misc/sha1calc.o
+In file included from pwiz/utility/misc/sha1calc.cpp:29:
+/usr/local/lib/R/library/Rcpp/include/Rcpp/iostream/Rostream.h:1:2: warning: #warning is a language extension [-Wpedantic]
+#warning The functionality in Rostream.h has been consolidated into Rstreambuf.h
+ ^
+/usr/local/lib/R/library/Rcpp/include/Rcpp/iostream/Rostream.h:1:2: warning: The functionality in Rostream.h has been consolidated into Rstreambuf.h [-W#warnings]
+2 warnings generated.
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c random_access_gzFile.cpp -o random_access_gzFile.o
+clang++ -I/usr/local/lib/R/include -DNDEBUG -D_LARGEFILE_SOURCE -I./boost_aux/ -I. -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -I/usr/local/include -I"/usr/local/lib/R/library/Rcpp/include"   -fpic  -g -O3 -march=native -pipe -Wall -pedantic -ftemplate-depth=999 -c rampR.cpp -o rampR.o
+/bin/bash: line 1: nc-config: command not found
+clang++ -shared -L/usr/local/lib -o mzR.so cramp.o ramp_base64.o ramp.o RcppRamp.o RcppRampModule.o rnetCDF.o ./boost/system/src/error_code.o ./boost/regex/src/posix_api.o ./boost/regex/src/fileiter.o ./boost/regex/src/regex_raw_buffer.o ./boost/regex/src/cregex.o ./boost/regex/src/regex_debug.o ./boost/regex/src/instances.o ./boost/regex/src/icu.o ./boost/regex/src/usinstances.o ./boost/regex/src/regex.o ./boost/regex/src/wide_posix_api.o ./boost/regex/src/regex_traits_defaults.o ./boost/regex/src/winstances.o ./boost/regex/src/wc_regex_traits.o ./boost/regex/src/c_regex_traits.o ./boost/regex/src/cpp_regex_traits.o ./boost/regex/src/static_mutex.o ./boost/regex/src/w32_regex_traits.o ./pwiz/data/msdata/Version.o ./pwiz/utility/minimxml/XMLWriter.o ./pwiz/utility/minimxml/SAXParser.o ./boost/iostreams/src/zlib.o ./boost/thread/src/pthread/once.o ./boost/filesystem/src/operations.o ./pwiz/data/common/MemoryIndex.o ./pwiz/data/common/CVTranslator.o ./pwiz/data/common/cv.o ./pwiz/data/common/ParamTypes.o ./pwiz/data/common/BinaryIndexStream.o ./pwiz/data/common/diff_std.o ./pwiz/data/msdata/SpectrumList_MGF.o ./pwiz/data/msdata/DefaultReaderList.o ./pwiz/data/msdata/ChromatogramList_mzML.o ./pwiz/data/msdata/examples.o ./pwiz/data/msdata/Serializer_mzML.o ./pwiz/data/msdata/Serializer_MSn.o ./pwiz/data/msdata/Reader.o ./pwiz/data/msdata/Serializer_MGF.o ./pwiz/data/msdata/Serializer_mzXML.o ./pwiz/data/msdata/SpectrumList_mzML.o ./pwiz/data/msdata/SpectrumList_MSn.o ./pwiz/data/msdata/BinaryDataEncoder.o ./pwiz/data/msdata/Diff.o ./pwiz/data/msdata/MSData.o ./pwiz/data/msdata/References.o ./pwiz/data/msdata/SpectrumList_mzXML.o ./pwiz/data/msdata/IO.o ./pwiz/data/msdata/SpectrumList_BTDX.o ./pwiz/data/msdata/SpectrumInfo.o ./pwiz/data/msdata/RAMPAdapter.o ./pwiz/data/msdata/LegacyAdapter.o ./pwiz/data/msdata/SpectrumIterator.o ./pwiz/data/msdata/MSDataFile.o ./pwiz/data/msdata/SpectrumListCache.o ./pwiz/utility/misc/IntegerSet.o ./pwiz/utility/misc/Base64.o ./pwiz/utility/misc/IterationListener.o ./pwiz/utility/misc/MSIHandler.o ./pwiz/utility/misc/Filesystem.o ./pwiz/utility/misc/TabReader.o ./pwiz/utility/misc/random_access_compressed_ifstream.o ./pwiz/utility/misc/SHA1.o ./pwiz/utility/misc/SHA1Calculator.o ./pwiz/utility/misc/sha1calc.o ./random_access_gzFile.o rampR.o -lpthread -lnetcdf -lz -L/usr/local/lib/R/lib -lR
+/bin/bash: line 2: nc-config: command not found
+installing to /home/kevin/RcppBiocChecks/mzR.Rcheck/mzR/libs
+** R
+** inst
+** preparing package for lazy loading
+Creating a generic function for ‘close’ from package ‘base’ in package ‘mzR’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (mzR)

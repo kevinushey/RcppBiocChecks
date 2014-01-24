@@ -31,9 +31,19 @@ countBioc <- function(vers="release") {
 AP.BioC <- union( countBioc("2.14"), countBioc("release") )
 res <- data.frame(pkg=AP.BioC, res=NA)
 
-## install the flow infrastructure mess
+## A function to grab a package, plus dependencies.
 get <- function(x, ...) {
-  biocLite(x, suppressUpdates=TRUE, lib=lib, destdir=normalizePath("tarballs"))
+  tryCatch(
+    install.packages(x, lib=lib, destdir=normalizePath("tarballs"),
+      dependencies=c("Depends", "Imports", "LinkingTo", "Suggests")
+    ), error=function(e) {
+      biocLite(x,
+        lib=lib, destdir=normalizePath("tarballs"),
+        dependencies=c("Depends", "Imports", "LinkingTo", "Suggests")
+      )
+    }
+
+  )
 }
 
 #for (pi in 1:nrow(res)) {
